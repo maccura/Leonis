@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImRgntScanDlg</class>
+ <widget class="BaseDlg" name="ImRgntScanDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImRgntScanDlg</string>
+  </property>
+  <widget class="QPushButton" name="OkBtn">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>246</y>
+     <width>110</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>246</y>
+     <width>110</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="ScanSpecPosRBtn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>98</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扫描选中试剂位置</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SpecPosEdit">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>137</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SpecPosMarkLab">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>137</y>
+     <width>351</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>例如：2,4,6-10</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="ScanAllRBtn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>197</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扫描全部试剂位置</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

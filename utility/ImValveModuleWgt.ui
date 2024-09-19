@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImValveModuleWgt</class>
+ <widget class="QWidget" name="ImValveModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ImValveModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1176</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>519</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1174</width>
+      <height>672</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>672</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>320</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第一磁分离注液</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离注液四联三通电磁阀3</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>20</y>
+       <width>320</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第二磁分离注液</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>360</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第一试剂一体泵</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离抽液四联三通电磁阀4</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_11">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>220</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离抽液四联三通电磁阀1</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_12">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>280</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离抽液四联三通电磁阀3</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_13">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>310</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离抽液四联三通电磁阀4</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>320</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第一磁分离抽液</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离抽液四联三通电磁阀1</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离抽液四联三通电磁阀3</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_14">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>250</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离抽液四联三通电磁阀2</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_35">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>80</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离注液四联三通电磁阀2</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>430</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第二试剂一体泵</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_9">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>460</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二试剂一体泵电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离注液四联三通电磁阀2</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_19">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离注液四联三通电磁阀3</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>390</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">加样一体泵电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_6">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>290</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">液路组件三通电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_8">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>390</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一试剂一体泵电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离抽液四联三通电磁阀2</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>190</y>
+       <width>320</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>第二磁分离抽液</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>260</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>液路组件纯水切换</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_10">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>140</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离注液四联三通电磁阀4</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>360</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>加样一体泵</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离注液四联三通电磁阀4</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_36">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第二磁分离注液四联三通电磁阀1</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_33">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">第一磁分离注液四联三通电磁阀1</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_22">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>140</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物切换水阀B</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_39">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>50</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物截止阀A</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_40">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>80</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物截止阀B</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>20</y>
+       <width>320</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>底物供给系统</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_26">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>110</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物切换水阀A</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_27">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>170</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物切换通道阀A</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_28">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>200</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">底物切换通道阀B</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">在线配置三通电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_30">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>460</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">浓缩清洗液仓体三通电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>400</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">纯水电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>430</y>
+       <width>320</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浓缩清洗液仓体</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>460</y>
+       <width>350</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string notr="true">在线配置两通电磁阀</string>
+     </property>
+     <property name="checks" stdset="0">
+      <string>push</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>320</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>在线配置系统</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

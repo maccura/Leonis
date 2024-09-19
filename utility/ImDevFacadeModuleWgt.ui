@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImDevFacadeModuleWgt</class>
+ <widget class="QWidget" name="ImDevFacadeModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ImDevFacadeModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QCheckBox" name="checkBox_18">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统状态指示灯绿色</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>试剂存储按键信号指示灯</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统状态指示灯黄色</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_34">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统状态指示灯红色</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>220</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>试剂存储系统</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>220</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统状态</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_33">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>显示屏亮灭</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>80</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>进样器进架按键指示灯</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>220</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>进样系统</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>50</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>进样器急诊按键指示灯</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_8">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>110</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>进架区域指示灯</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_9">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出架区域指示灯</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_10">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>250</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>底物指示灯A2</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>190</y>
+     <width>220</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>底物供给系统</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_11">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>220</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>底物指示灯A1</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_12">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>280</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>底物指示灯B1</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_13">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>310</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>底物指示灯B2</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_17">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>浓缩清洗液指示灯A</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>220</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>浓缩清洗液仓体</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_20">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>浓缩清洗液指示灯B</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

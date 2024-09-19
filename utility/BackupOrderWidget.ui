@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackupOrderWidget</class>
+ <widget class="QWidget" name="BackupOrderWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">BackupOrderWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="flat_return">
+   <property name="geometry">
+    <rect>
+     <x>1823</x>
+     <y>872</y>
+     <width>75</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">flat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="flat_save">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>875</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">flat</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>1908</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1916</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>4</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QCheckBox" name="sind_ckbox">
+      <property name="minimumSize">
+       <size>
+        <width>1901</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1901</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>自动测定血清指数（生化模块）</string>
+      </property>
+      <property name="checks" stdset="0">
+       <string notr="true">push</string>
+      </property>
+      <property name="borders" stdset="0">
+       <string notr="true">all</string>
+      </property>
+      <property name="paddings_left" stdset="0">
+       <string>l_30</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget1" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>1911</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1911</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="borders" stdset="0">
+       <string>all</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="backup_widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <property name="leftMargin">
+           <number>30</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>使用备用订单</string>
+            </property>
+            <property name="weights" stdset="0">
+             <string notr="true">bold</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>70</number>
+            </property>
+            <item>
+             <widget class="QCheckBox" name="get_order_fail_ckbox">
+              <property name="text">
+               <string>获取订单失败</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="scan_fail_ckbox">
+              <property name="text">
+               <string>样本条码扫描失败</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="order_null_ckbox">
+              <property name="text">
+               <string>订单为空</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget3" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>血清/血浆</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_1">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_1">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>222</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetDefaultConstraint</enum>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_1" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_1">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>其他</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_0">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_0">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>222</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_0" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_0">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>全血</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_3">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>223</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_3" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>脑脊液</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_4">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>223</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_4" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_4">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>尿液</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>222</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_2" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>浆膜腔积液</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="borders" stdset="0">
+               <string notr="true">all</string>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">gray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_5">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="bks" stdset="0">
+               <string notr="true">white</string>
+              </property>
+              <property name="paddings" stdset="0">
+               <string notr="true">set_left</string>
+              </property>
+              <property name="bordersT" stdset="0">
+               <string notr="true">top</string>
+              </property>
+              <property name="bordersB" stdset="0">
+               <string notr="true">bottom</string>
+              </property>
+              <property name="bordersR" stdset="0">
+               <string notr="true">right</string>
+              </property>
+              <property name="scrolls" stdset="0">
+               <string notr="true">layout_noborder</string>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>828</width>
+                 <height>222</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="sample_widget_5" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>828</width>
+                    <height>194</height>
+                   </size>
+                  </property>
+                  <property name="bks" stdset="0">
+                   <string notr="true">white</string>
+                  </property>
+                  <property name="buttons" stdset="0">
+                   <string notr="true">set_close</string>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <string notr="true">default_set</string>
+                  </property>
+                  <widget class="QPushButton" name="add_btn_5">
+                   <property name="geometry">
+                    <rect>
+                     <x>5</x>
+                     <y>0</y>
+                     <width>80</width>
+                     <height>44</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttons" stdset="0">
+                    <string notr="true">set_add</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>flat_return</zorder>
+  <zorder>flat_save</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

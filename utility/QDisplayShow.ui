@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDisplayShow</class>
+ <widget class="QWidget" name="QDisplayShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>953</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">QDisplayShow</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>953</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>日期格式</string>
+    </attribute>
+    <widget class="QComboBox" name="date_combox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>YYYY/MM/DD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MM/DD/YYYY</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DD/MM/YYYY</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>500</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>日期格式</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flat_save">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>812</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>flat</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>语言切换</string>
+    </attribute>
+    <widget class="QComboBox" name="lanuage_combox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>500</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>语言设置</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_Button">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>812</y>
+       <width>75</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>flat</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="flat_return">
+   <property name="geometry">
+    <rect>
+     <x>1823</x>
+     <y>870</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>63</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>63</y>
+     <width>1912</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>855</y>
+     <width>1912</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1911</x>
+     <y>63</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

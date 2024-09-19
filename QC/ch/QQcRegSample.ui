@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QQcRegSample</class>
+ <widget class="QWidget" name="QQcRegSample">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1640</width>
+    <height>790</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QQcRegSample</string>
+  </property>
+  <widget class="QLabel" name="state_label">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>422</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>659</y>
+     <width>1152</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget_qcReg">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>5</y>
+     <width>1152</width>
+     <height>656</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_qcreg_chim">
+    <attribute name="title">
+     <string>生化</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_chim">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1152</width>
+       <height>606</height>
+      </rect>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_qcreg_immy">
+    <attribute name="title">
+     <string>免疫</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_immy">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1152</width>
+       <height>606</height>
+      </rect>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="line_h_3">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>53</y>
+     <width>1152</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>36</y>
+     <width>341</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>604</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,1,0">
+     <property name="horizontalSpacing">
+      <number>20</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>30</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="bar_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="shortName_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QBaseDateEdit" name="expire_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::WheelFocus</enum>
+       </property>
+       <property name="displayFormat">
+        <string>yyyy/M/d</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>质控品编号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="qcType_Combo">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>质控品水平</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="name_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="sn_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>质控品简称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="level_Combo">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>质控品类型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>质控品名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="lot_Edit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>条码扫描</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>失效日期</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>质控品批号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>1585</x>
+     <y>53</y>
+     <width>1</width>
+     <height>606</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>53</y>
+     <width>1</width>
+     <height>606</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_errorshow">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>530</y>
+     <width>321</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="OutFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>0</y>
+     <width>1540</width>
+     <height>666</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid #a4a4a4;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="InnerFrame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>374</width>
+      <height>656</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid #a4a4a4;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="BottomFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>690</y>
+     <width>1541</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1541</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1541</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,0">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>1288</width>
+        <height>45</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonQcOk">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonQcCancel">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>BottomFrame</zorder>
+  <zorder>OutFrame</zorder>
+  <zorder>state_label</zorder>
+  <zorder>tabWidget_qcReg</zorder>
+  <zorder>line_h_3</zorder>
+  <zorder>widget</zorder>
+  <zorder>line_v_3</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>line_h_2</zorder>
+  <zorder>label_errorshow</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QBaseDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>shared/QComDelegate.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>bar_Edit</tabstop>
+  <tabstop>sn_Edit</tabstop>
+  <tabstop>name_Edit</tabstop>
+  <tabstop>shortName_Edit</tabstop>
+  <tabstop>qcType_Combo</tabstop>
+  <tabstop>level_Combo</tabstop>
+  <tabstop>lot_Edit</tabstop>
+  <tabstop>expire_Edit</tabstop>
+  <tabstop>buttonQcCancel</tabstop>
+  <tabstop>buttonQcOk</tabstop>
+  <tabstop>tableView_chim</tabstop>
+  <tabstop>tableView_immy</tabstop>
+  <tabstop>tabWidget_qcReg</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

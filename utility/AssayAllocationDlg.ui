@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AssayAllocationDlg</class>
+ <widget class="BaseDlg" name="AssayAllocationDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">AssayAllocationDlg</string>
+  </property>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>689</x>
+     <y>656</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>813</x>
+     <y>656</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>870</width>
+     <height>529</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+QTableView QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <property name="bordersT" stdset="0">
+    <string notr="true">top</string>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>300</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>44</number>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>40</number>
+   </attribute>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>628</y>
+     <width>870</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>1</width>
+     <height>529</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>919</x>
+     <y>100</y>
+     <width>1</width>
+     <height>529</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header location="global">basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>AssayAllocationDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>850</x>
+     <y>680</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

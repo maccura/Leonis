@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QSampleResultSetting</class>
+ <widget class="QWidget" name="QSampleResultSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1208</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">QSampleSetting</string>
+  </property>
+  <widget class="QPushButton" name="save_Button">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>812</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">flat</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>45</y>
+     <width>1000</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="concSampleButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>32</y>
+      <width>500</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浓度</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="siganlSampleButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>800</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>信号值/吸光度/电动势</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>187</y>
+     <width>1000</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="concCalibrateButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>24</y>
+      <width>500</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浓度</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="siganlCalibrateButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>800</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>信号值/吸光度/电动势</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCheckBox" name="editFlagEnable">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>1000</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>启用样本结果修改标识</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editFlagEdit">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>440</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>500</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>样本/质控</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>165</y>
+     <width>500</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>校准</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>619</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPatientDialog</class>
+ <widget class="BaseDlg" name="QPatientDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>885</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPatientDialog</string>
+  </property>
+  <widget class="QWidget" name="widget1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>95</y>
+     <width>1300</width>
+     <height>663</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetFixedSize</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>60</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>25</number>
+    </property>
+    <item row="7" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2">
+     <layout class="QVBoxLayout" name="patinetType_4">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>患者类型</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_sample_type">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="editable" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="2">
+     <layout class="QVBoxLayout" name="patinetType_17">
+      <item>
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>病区</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_inpatient">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="3">
+     <layout class="QVBoxLayout" name="patinetType_10">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>送检科室</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_department">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="3">
+     <layout class="QVBoxLayout" name="patinetType_11">
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>送检医师</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_tester">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QVBoxLayout" name="patinetType_104">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_4">
+        <property name="text">
+         <string>自定义四</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="customInfo_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="1">
+     <layout class="QVBoxLayout" name="patinetType_105">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_5">
+        <property name="text">
+         <string>自定义五</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="customInfo_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QVBoxLayout" name="patinetType_19">
+      <item>
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>主治医师</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_attending">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="patinetType_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>样本条码</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sample_bar">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <layout class="QVBoxLayout" name="patinetType_8">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>性别</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="patient_gender">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="patinetType_6">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_name">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="3">
+     <layout class="QVBoxLayout" name="patinetType_7">
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>年龄</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="gender_age">
+          <property name="minimumSize">
+           <size>
+            <width>160</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>160</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="maxLength">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="patient_age_unit">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>110</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="insertPolicy">
+           <enum>QComboBox::NoInsert</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="3">
+     <layout class="QVBoxLayout" name="patinetType_9">
+      <item>
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>送检时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_inspectTime">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>19</number>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <layout class="QVBoxLayout" name="patinetType_14">
+      <item>
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>住院号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_admission_no">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QVBoxLayout" name="patinetType_5">
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>临床诊断</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_diagnosis">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="3">
+     <layout class="QVBoxLayout" name="patinetType_20">
+      <item>
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>床号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_bed_no">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="2">
+     <layout class="QVBoxLayout" name="patinetType_12">
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>采样时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_samplingTime">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>19</number>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="1">
+     <layout class="QVBoxLayout" name="patinetType_18">
+      <item>
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>医保帐户</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_account">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="3">
+     <layout class="QVBoxLayout" name="patinetType_21">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>出生日期</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QBaseDateEdit" name="patient_birthday">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="maximumDateTime">
+         <datetime>
+          <hour>23</hour>
+          <minute>59</minute>
+          <second>59</second>
+          <year>2999</year>
+          <month>12</month>
+          <day>31</day>
+         </datetime>
+        </property>
+        <property name="minimumDateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>1800</year>
+          <month>9</month>
+          <day>14</day>
+         </datetime>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy-M-d</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0">
+     <layout class="QVBoxLayout" name="patinetType_15">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>收费类型</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_cost_type">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QVBoxLayout" name="patinetType_16">
+      <item>
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>审核医师</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_auditor">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="1">
+     <layout class="QVBoxLayout" name="patinetType_13">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>检验医师</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_doctor">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="1">
+     <layout class="QVBoxLayout" name="patinetType_23">
+      <item>
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>电话</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="patient_phone_no">
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2">
+     <layout class="QVBoxLayout" name="patinetType_101">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_1">
+        <property name="text">
+         <string>自定义一</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="customInfo_1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="3">
+     <layout class="QVBoxLayout" name="patinetType_102">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_2">
+        <property name="text">
+         <string>自定义二</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="customInfo_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="2">
+     <layout class="QVBoxLayout" name="patinetType_103">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_3">
+        <property name="text">
+         <string>自定义三</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="customInfo_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="patinetType_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>患者ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sample_medical_record_no">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="2">
+     <layout class="QVBoxLayout" name="patinetType_22">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="customInfo_lab_22">
+        <property name="text">
+         <string>备注</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QNoteComboBox" name="patient_comment">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="patinetType_1">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>样本号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sample_no">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>280</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>280</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>788</y>
+     <width>1306</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pre_btn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>上一条</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="next_btn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>下一条</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="save_btn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancel_btn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QBaseDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header location="global">shared/QComDelegate.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QNoteComboBox</class>
+   <extends>QComboBox</extends>
+   <header location="global">shared/QFilterComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

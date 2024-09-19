@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrkScanModuleWgt</class>
+ <widget class="QWidget" name="TrkScanModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>845</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>46</number>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="btn_execute">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>500</y>
+     <width>160</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>执行</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FlowName">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>0</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-left:15px;
+background: #e4e7ec;</string>
+   </property>
+   <property name="text">
+    <string>流程名称</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

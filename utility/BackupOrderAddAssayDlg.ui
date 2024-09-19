@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackupOrderAddAssayDlg</class>
+ <widget class="BaseDlg" name="BackupOrderAddAssayDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1580</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">BackupOrderAddAssayDlg</string>
+  </property>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>1287</x>
+     <y>853</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit_btn">
+   <property name="geometry">
+    <rect>
+     <x>1417</x>
+     <y>853</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QAssayCardPage" name="container" native="true">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>78</y>
+     <width>1514</width>
+     <height>740</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>1520</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>1</width>
+     <height>746</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1549</x>
+     <y>80</y>
+     <width>1</width>
+     <height>746</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>825</y>
+     <width>1520</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <zorder>save_btn</zorder>
+  <zorder>quit_btn</zorder>
+  <zorder>container</zorder>
+  <zorder>line_v</zorder>
+  <zorder>line_h</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>line_h_2</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QAssayCardPage</class>
+   <extends>QWidget</extends>
+   <header>shared/QButtonView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quit_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>BackupOrderAddAssayDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>508</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>BackupOrderAddAssayDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>functionManageDlg</class>
+ <widget class="BaseDlg" name="functionManageDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1275</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">functionManageDlg</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1275</width>
+     <height>757</height>
+    </rect>
+   </property>
+   <property name="scrolls" stdset="0">
+    <string>layout_noborder</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <property name="spacing">
+     <number>27</number>
+    </property>
+    <property name="leftMargin">
+     <number>47</number>
+    </property>
+    <property name="topMargin">
+     <number>100</number>
+    </property>
+    <property name="rightMargin">
+     <number>47</number>
+    </property>
+    <property name="bottomMargin">
+     <number>47</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>true</bool>
+        </property>
+        <property name="tabs" stdset="0">
+         <string notr="true">sub</string>
+        </property>
+        <property name="borders" stdset="0">
+         <string>tab</string>
+        </property>
+        <property name="pane_border" stdset="0">
+         <string>border_all</string>
+        </property>
+        <property name="paddings_right" stdset="0">
+         <string>r_3</string>
+        </property>
+        <property name="paddings_left" stdset="0">
+         <string>l_3</string>
+        </property>
+        <widget class="QWidget" name="tab_ch">
+         <attribute name="title">
+          <string>生化</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableView" name="ch_tableView">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="textElideMode">
+             <enum>Qt::ElideMiddle</enum>
+            </property>
+            <property name="verticalScrollMode">
+             <enum>QAbstractItemView::ScrollPerPixel</enum>
+            </property>
+            <property name="horizontalScrollMode">
+             <enum>QAbstractItemView::ScrollPerPixel</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="scrolls" stdset="0">
+             <string notr="true">layout_noborder</string>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>100</number>
+            </attribute>
+            <attribute name="horizontalHeaderHighlightSections">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>44</number>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_im">
+         <attribute name="title">
+          <string>免疫</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableView" name="im_tableView">
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <property name="scrolls" stdset="0">
+             <string>layout_noborder</string>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>320</number>
+            </attribute>
+            <attribute name="horizontalHeaderHighlightSections">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>44</number>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget1" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>14</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="function_set_btn">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>功能设置</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">btn_dlg</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="save_btn">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">btn_dlg</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="close_btn">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>取消</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">btn_dlg</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>close_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>functionManageDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1197</x>
+     <y>686</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>637</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

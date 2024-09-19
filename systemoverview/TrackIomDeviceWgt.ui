@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrackIomDeviceWgt</class>
+ <widget class="QWidget" name="TrackIomDeviceWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>90</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TrackIomDeviceWgt</string>
+  </property>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>178</y>
+     <width>40</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="colors" stdset="0">
+    <string notr="true">white</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_devPicture">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>178</y>
+     <width>90</width>
+     <height>216</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_status">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>396</y>
+     <width>86</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #535c66;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">device_status</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_light">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>150</y>
+     <width>64</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_status</zorder>
+  <zorder>label_light</zorder>
+  <zorder>label_devPicture</zorder>
+  <zorder>label_name</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

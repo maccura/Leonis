@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <property name="bks" stdset="0">
+   <string>white</string>
+  </property>
+  <widget class="QFrame" name="ToolBarFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="TabFrame">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>1500</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="WorkBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>8</y>
+       <width>130</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>工作</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RegentBtn">
+     <property name="geometry">
+      <rect>
+       <x>166</x>
+       <y>8</y>
+       <width>130</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>试剂</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CalBtn">
+     <property name="geometry">
+      <rect>
+       <x>312</x>
+       <y>8</y>
+       <width>130</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>校准</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="QcBtn">
+     <property name="geometry">
+      <rect>
+       <x>458</x>
+       <y>8</y>
+       <width>130</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>质控</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AppBtn">
+     <property name="geometry">
+      <rect>
+       <x>604</x>
+       <y>8</y>
+       <width>130</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>应用</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="CmdBtnFrame">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>6</y>
+      <width>860</width>
+      <height>97</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="AnalysisBtn">
+     <property name="geometry">
+      <rect>
+       <x>181</x>
+       <y>2</y>
+       <width>123</width>
+       <height>93</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StopSamplingBtn">
+     <property name="geometry">
+      <rect>
+       <x>314</x>
+       <y>2</y>
+       <width>123</width>
+       <height>93</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>暂停</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="StopBtn">
+     <property name="geometry">
+      <rect>
+       <x>447</x>
+       <y>2</y>
+       <width>123</width>
+       <height>93</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>停止</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="OptionBtn">
+     <property name="geometry">
+      <rect>
+       <x>775</x>
+       <y>11</y>
+       <width>75</width>
+       <height>75</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/venus/resource/image/OptionBtn.bmp);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AlarmLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>160</width>
+       <height>97</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AlarmBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>160</width>
+       <height>97</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="alarm_font_label">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>55</y>
+       <width>101</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>报警</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>618</x>
+       <y>9</y>
+       <width>145</width>
+       <height>83</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <property name="formAlignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="horizontalSpacing">
+         <number>12</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="icon_user">
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>19</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="UserLab">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string notr="true">12346789/455646456454646</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="CurDateTimeLab">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true">0428    12:20</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="colors" stdset="0">
+         <string notr="true">white</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <zorder>widget</zorder>
+    <zorder>AnalysisBtn</zorder>
+    <zorder>StopSamplingBtn</zorder>
+    <zorder>StopBtn</zorder>
+    <zorder>OptionBtn</zorder>
+    <zorder>AlarmBtn</zorder>
+    <zorder>AlarmLabel</zorder>
+    <zorder>alarm_font_label</zorder>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="CentralStackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>114</y>
+     <width>1920</width>
+     <height>912</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>5</number>
+   </property>
+   <widget class="QWidget" name="MenuPage"/>
+   <widget class="QWidget" name="WorkPage"/>
+   <widget class="QWidget" name="RegentPage"/>
+   <widget class="QWidget" name="CalPage"/>
+   <widget class="QWidget" name="QcPage"/>
+   <widget class="QWidget" name="AppPage"/>
+  </widget>
+  <widget class="QFrame" name="StatusBarFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1029</y>
+     <width>1920</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="LogoLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>22</y>
+      <width>114</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>114</width>
+      <height>15</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>114</width>
+      <height>15</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/venus/resource/image/logo.png);
+color: rgb(255, 255, 255);
+font: bold 14px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MenuLocLab">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>5</y>
+      <width>651</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&gt; 工作</string>
+    </property>
+    <property name="colors" stdset="0">
+     <string notr="true">white</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="device_status_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>0</y>
+      <width>1741</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>562</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="printf_label">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lis_label">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

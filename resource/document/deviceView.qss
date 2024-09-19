@@ -1,0 +1,6275 @@
+﻿* {
+    font-family:"HarmonyOS Sans SC";
+    font-size:18px;
+    outline:none;
+    color:#565656;
+}
+
+#OkBtn[canStart=true] {
+    background: url(:/Leonis/resource/image/icon-start.png);
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+#OkBtn[canStart=false] {
+    background: url(:/Leonis/resource/image/icon-start-dis.png);
+    border: 0;
+    color: #c6d7fd;
+    font-size: 30px;
+}
+
+#OkBtn[canStart=true]:hover {
+    background: url(:/Leonis/resource/image/icon-start-hv.png);
+    color: #fff;
+    font-size: 30px;
+}
+
+#OkBtn[canStart=false]:hover {
+    background: url(:/Leonis/resource/image/icon-start-dis-hv.png);
+    color: #c6d7fd;
+    font-size: 30px;
+}
+
+#ToolBarFrame {
+    background: url(:/Leonis/resource/image/bk-main-btn.png);
+}
+
+#WorkBtn  {
+    border: 0;
+    background: url(:/Leonis/resource/image/btn-work.png);
+    padding-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#WorkBtn:hover  {
+    background:url(:/Leonis/resource/image/btn-work-hv.png);
+}
+
+#WorkBtn:checked  {
+    background:url(:/Leonis/resource/image/btn-work-checked.png);
+}
+
+#RegentBtn  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-regent.png);
+    padding-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#RegentBtn:hover  {
+    background:url(:/Leonis/resource/image/btn-regent-hv.png);
+}
+
+#RegentBtn:checked  {
+    background:url(:/Leonis/resource/image/btn-regent-checked.png);
+}
+
+#CalBtn  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-cal.png);
+    padding-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#CalBtn:hover  {
+    background:url(:/Leonis/resource/image/btn-cal-hv.png);
+}
+
+#CalBtn:checked  {
+    background:url(:/Leonis/resource/image/btn-cal-checked.png);
+}
+
+#QcBtn  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-qc.png);
+    padding-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#QcBtn:hover  {
+    background:url(:/Leonis/resource/image/btn-qc-hv.png);
+}
+
+#QcBtn:checked  {
+    background:url(:/Leonis/resource/image/btn-qc-checked.png);
+}
+
+#AppBtn  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-application.png);
+    padding-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#AppBtn:hover  {
+    background:url(:/Leonis/resource/image/btn-application-hv.png);
+}
+
+#AppBtn:checked  {
+    background:url(:/Leonis/resource/image/btn-application-checked.png);
+}
+
+#CmdBtnFrame {
+    background:url(:/Leonis/resource/image/bk-contr.png) no-repeat;
+}
+
+#AnalysisBtn[canStart=true]  {
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #fff;
+    background: url(:/Leonis/resource/image/btn-analysis.png);
+}
+
+#AnalysisBtn[canStart=false]  {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-analysis-disable.png);
+}
+
+#AnalysisBtn[canStart=true]:hover  {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #fff;
+    background:url(:/Leonis/resource/image/btn-analysis-hv.png);
+}
+
+#AnalysisBtn[canStart=false]:hover  {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-analysis-hv-disable.png);
+}
+
+#StopSamplingBtn[canClick=true]  {
+    border:0;
+    font-size: 16px;
+    font-weight:bold;
+    padding-top: 50px;
+    color: #fff;
+    background:url(:/Leonis/resource/image/btn-stopSampling.png);
+}
+
+#StopSamplingBtn[canClick=false]  {
+    border:0;
+    font-size: 16px;
+    font-weight:bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-stopSampling-disable.png);
+}
+
+#StopSamplingBtn[canClick=true]:hover  {
+    border:0;
+    font-size: 16px;
+    font-weight:bold;
+    padding-top: 50px;
+    color: #fff;
+    background:url(:/Leonis/resource/image/btn-stopSampling-hv.png);
+}
+
+#StopSamplingBtn[canClick=false]:hover  {
+    border:0;
+    font-size: 16px;
+    font-weight:bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-stopSampling-hv-disable.png);
+}
+
+/*#StopSamplingBtn:focus  {
+    background:url(:/Leonis/resource/image/btn-stopSampling-hv.png);
+}*/
+
+#StopBtn[canClick=true]  {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #fff;
+    background:url(:/Leonis/resource/image/btn-stop.png);
+}
+
+#StopBtn[canClick=false] {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-stop-disable.png);
+}
+
+#StopBtn[canClick=true]:hover {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #fff;
+    background:url(:/Leonis/resource/image/btn-stop-hv.png);
+}
+
+#StopBtn[canClick=false]:hover  {
+    border:0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #809dc0;
+    background:url(:/Leonis/resource/image/btn-stop-hv-disable.png);
+}
+
+/*#StopBtn:focus  {
+    background:url(:/Leonis/resource/image/btn-stop-hv.png);
+}*/
+
+#OptionBtn  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-exit.png);
+}
+
+#OptionBtn:hover  {
+    border:0;
+    background:url(:/Leonis/resource/image/btn-exit-hv.png);
+}
+
+#AlarmBtn[level="transparent"]  {
+    border:0;
+    background: transparent;
+}
+
+#AlarmBtn[level="none"]  {
+    border:0;
+    background: url(:/Leonis/resource/image/btn-alarm-none.png);
+}
+
+#AlarmBtn[level="samplestop"]  {
+    border:0;
+    background: url(:/Leonis/resource/image/btn-alarm-sample-stop.png);
+}
+
+#AlarmBtn[level="stop"]  {
+    border:0;
+    background: url(:/Leonis/resource/image/btn-alarm-stop.png);
+}
+
+#alarm_font_label[level="none"]  {
+    border:0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#alarm_font_label[level="samplestop"]  {
+    border:0;
+    color: #ffc44f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#alarm_font_label[level="stop"]  {
+    border:0;
+    color: #fa3741;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#UserLab {
+    font-size: 18px;
+    color: #fff;
+}
+
+*[bks="white"]  {
+    background: #fff;
+}
+
+*[bks="transparent"]  {
+    background: transparent;
+}
+
+*[bks="gray"]  {
+    background: #e4e7ec;
+}
+
+*[bks="light_gray"]  {
+    background: #f5f7fb;
+}
+
+*[bks="blue_gray"]  {
+    background: #e6eaf4;
+}
+
+ *[bks="machine-state"]  {
+    border-width: 30px;
+    border-image: url(:/Leonis/resource/image/bk-machine-state.png) 30 fill repeat;
+}
+
+*[weights="bold"]  {
+    font-weight: bold;
+} 
+
+*[bordersT="top"]  {
+    border-top: 1px solid #a4a4a4;
+}
+
+*[bordersR="right"]  {
+    border-right: 1px solid #a4a4a4;
+}
+
+*[bordersB="bottom"]  {
+    border-bottom: 1px solid #a4a4a4;
+}
+
+*[bordersL="left"]  {
+    border-left: 1px solid #a4a4a4;
+}
+
+*[borders="all"]  {
+    border: 1px solid #a4a4a4;
+}
+
+*[borders="none"]  {
+    border: 0;
+}
+
+*[borders="tables"]  {
+    border-top: 1px solid #a4a4a4;
+    border-right: 1px solid #a4a4a4;
+}
+
+*[borders="radius"]  {
+    border-radius: 6px;
+}
+
+*[borders="page_block"]  {
+    border: 1px solid #a4a4a4;
+}
+
+*[borders="light_gray"]  {
+	border: 1px solid #ced6ea;
+}
+
+*[borders="state_hover"]:hover  {
+	border: 2px solid #025bc7;
+}
+
+*[margins="top_4"]  {
+	margin-top: 4px;
+}
+
+*[margins="top_6"]  {
+	margin-top: 6px;
+}
+                         
+*[margins="top_20"]  {
+	margin-top: 20px;
+}
+
+*[margins="bottom_2"]  {
+	margin-bottom: 2px;
+}
+
+#Diluent_Sample  {
+	border: 2px solid pink;
+}
+
+#Diluent_Sample:hover  {
+	border: 2px solid blue;
+}
+
+*[radiuses="rds_4"]  {
+    border-radius: 4px;
+}
+
+*[radiuses="rds_6"]  {
+    border-radius: 6px;
+}
+
+*[radiuses_top_left="top_left_rds_6"]  {
+    border-top-left-radius: 6px;
+}
+
+*[radiuses_top_right="top_right_rds_6"]  {
+    border-top-right-radius: 6px;
+}
+
+*[radiuses_bottom_left="bottom_left_rds_6"]  {
+    border-bottom-left-radius: 6px;
+}
+
+*[radiuses_bottom_right="bottom_right_rds_6"]  {
+    border-bottom-right-radius: 6px;
+}
+
+*[fonts="10"]  {
+    font-size: 10px;
+}
+
+*[fonts="12"]  {
+    font-size: 12px;
+}
+
+*[fonts="14"]  {
+    font-size: 14px;
+}
+
+*[fonts="16"]  {
+    font-size: 16px;
+}
+
+*[fonts="18"]  {
+    font-size: 18px;
+}
+
+*[fonts="20"]  {
+    font-size: 20px;
+}
+
+*[fonts="24"]  {
+    font-size: 24px;
+}
+
+*[fonts="36"]  {
+    font-size: 36px;
+}
+
+*[fonts="48"]  {
+    font-size: 48px;
+}
+
+*[fonts="60"]  {
+    font-size: 60px;
+}
+
+*[fonts="130"]  {
+    font-size: 130px;
+}
+
+*[dividers="gray"] {
+    font-size: 12px;
+    color: #a4a4a4;
+}
+
+*[heights="h_20"] {
+    min-height: 10px;
+    max-height: 10px;
+}
+
+*[paddings_all="a_0"] {
+    padding: 0;
+}
+
+*[paddings_top="t_8"] {
+    padding-top: 8px;
+}
+
+*[paddings_top="t_10"] {
+    padding-top: 10px;
+}
+
+*[paddings_top="t_20"] {
+    padding-top: 20px;
+}
+
+*[paddings_top="t_30"] {
+    padding-top: 30px;
+}
+
+*[paddings_left="l_3"] {
+    padding-left: 3px;
+}
+
+*[paddings_left="l_10"] {
+    padding-left: 10px;
+}
+
+*[paddings_left="l_15"] {
+    padding-left: 15px;
+}
+
+*[paddings_left="l_20"] {
+    padding-left: 20px;
+}
+
+*[paddings_left="l_30"] {
+    padding-left: 30px;
+}
+
+*[paddings_right="r_0"] {
+    padding-right: 0;
+}
+
+*[paddings_right="r_3"] {
+    padding-right: 3px;
+}
+
+*[paddings_right="r_10"] {
+    padding-right: 10px;
+}
+
+*[paddings="text"] {
+    padding-top:45px;
+    padding-left:15px;
+}
+
+QFrame  {
+	border: 0;
+}
+
+QFrame[lines="solid"]  {
+    border:0;
+    background:#a4a4a4;
+}
+
+QFrame[lines="light_solid"]  {
+    border:0;
+    background:#c5c5c5;
+}
+
+QFrame[lines="white"]  {
+    border:0;
+    background:#fff;
+}
+
+*[buttons="line"]  {
+  color: #025bc7;
+  font-size: 16px;
+  border: 1px solid #025bc7;
+  border-radius: 4px;
+}
+
+*[buttons="line"]:hover  {
+  color: #69c;
+  border: 1px solid #69c;
+}
+
+*[buttons="line"]:disabled  {
+  color: #69c;
+  border: 1px solid #69c;
+}
+
+*[buttons= "btn-common-dlg"]  {
+    min-width: 31px;
+    max-width: 81px;
+    min-height: 26px;
+    max-height: 26px;
+    border-width:7px;
+    border-image:url(:/Leonis/resource/image/bk-dlg-btn.png) 7 fill repeat;
+}
+
+*[buttons= "btn-common-dlg"]:hover  {
+    border-width:7px;
+    border-image:url(:/Leonis/resource/image/bk-dlg-btn-hover.png) 7 fill repeat;
+}
+
+*[buttons= "btn-common-dlg"]:pressed  {
+    border-width:7px;
+    border-image:url(:/Leonis/resource/image/bk-dlg-btn-active.png) 7 fill repeat;
+    color:#fff;
+}
+
+*[buttons= "btn-common-dlg"]:disabled  {
+    border-width:7px;
+    border-image:url(:/Leonis/resource/image/bk-dlg-btn-dis.png) 7 fill repeat;
+    color: #aeaeae;
+}
+
+*[buttons="flat"]  {
+    color:#545454;
+    font-size:18px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: 0;
+}
+
+*[buttons="flat"]:hover  {
+    color:#025bc7;
+    background: transparent;
+    border: 0;
+}
+
+*[buttons="flat"]:disabled  {
+    color: #adadad;
+}
+
+*[buttons="flat_btn"]  {
+    border: 1px solid #a4a4a4;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="flat_btn"]:hover, *[buttons="flat_btn"]:checked  {
+    color: #fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="flat_btn"]:disabled  {
+    color:rgba（84,84,84,50%）;
+}
+
+*[buttons="flat_btn_blue"]  {
+    border: 1px solid #025bc7;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="flat_btn_blue"]:hover, *[buttons="flat_btn_blue"]:checked  {
+    color: #fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="flat_btn_blue"]:disabled  {
+    color:rgba（84,84,84,40%）;
+}
+
+*[buttons="flat_btn_gray"]  {
+    border: 1px solid #a4a4a4;
+    font-size: 14px;
+    background: #edeef0;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="flat_btn_gray"]:hover, *[buttons="flat_btn_gray"]:checked  {
+    color: #fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="flat_btn_gray"]:disabled  {
+    color:rgba（84,84,84,50%）;
+}
+
+*[buttons="flat_button"]  {
+    border: 1px solid #a4a4a4;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="flat_button_no_border"]  {
+    border: 0;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="flat_button"]:hover, *[buttons="flat_button"]:checked, *[buttons="flat_button_no_border"]:hover, *[buttons="flat_button_no_border"]:checked  {
+    color: #459fff;
+    background: #e5f5ff;
+    border: 1px solid #459fff;
+}
+
+*[buttons="flat_button"]:disabled  {
+    color: #848484;
+    background: #F5F5F5;
+    border: 1px solid #848484;
+}
+
+*[buttons="flat_icon_button"]  {
+    border-width: 10px;
+     border-image: url(:/Leonis/resource/image/bk-flat-icon-micro.png) 28 10 10 10 fill repeat;
+    font-size: 16px;
+
+}
+
+*[buttons="flat_icon_button"]:hover, *[buttons="flat_icon_button"]:checked  {
+    color: #459fff;
+    background: #e5f5ff;
+    border: 1px solid #459fff;
+}
+
+*[buttons="flat_icon_button"]:disabled  {
+    color:rgba（84,84,84,40%）;
+}
+
+*[buttons="location"]  {
+    color:#565656;
+    font-size:14px;
+    background-color: #fff;
+    border: 1px solid #a4a4a4;
+	border-radius: 6px;
+}
+
+*[buttons="location"]:hover  {
+    color:#fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="location"]:selected  {
+    color:#fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="location"]:focus  {
+    color:#fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="location"]:disabled  {
+    color:rgba（84,84,84,40%）;
+}
+
+*[buttons="share_cancel"]  {
+	border: 0;
+    background: url(:/Leonis/resource/image/icon-down-cancel.png) center no-repeat;
+}
+
+*[buttons="share_cancel"]:hover  {
+    background: url(:/Leonis/resource/image/icon-down-cancel-hv.png) center no-repeat;
+}
+
+QGroupBox  {
+	border: 0;
+}
+
+QGroupBox::title  {
+	max-height: 0;
+}
+
+*[borders="tab"] QTabWidget::pane  {
+    border:1px solid #a4a4a4;
+    background:#fff;
+}
+
+QTabWidget::pane  {
+    border:0;
+    background:#fff;
+}
+
+QTabBar::tab  {
+    border: 1px solid #a3a3a3;
+    background: #e4e7ec;
+    min-width: 106px;
+    max-width: 260px;
+    min-height: 62px;
+    max-height: 62px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 2px;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+}
+
+QTabBar::tab:hover  {
+    border: 1px solid #d1d1d1;
+    background: #f1f3f5;
+    border-bottom: 1px solid #025bc7;
+}
+
+QTabBar::tab:selected  {
+    border: 0;
+    background: #025bc7;
+    color: #fff;
+    border-bottom: 1px solid #025bc7;
+}
+
+QTabBar::tab:!selected  {
+    border-bottom: 0;
+}
+
+QTabWidget::pane#worktTabWidget  {
+    border:0;
+    background:#fff;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#AssayDetailStkWgt QTabBar::tab  {
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 28px;
+    max-height: 28px;
+	padding-left: 0;
+	padding-right: 0;
+    border-width:10px;
+    border-image: url(:/Leonis/resource/image/bk-stack-pane.png) 10 fill repeat;
+    margin-right: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 16px;
+}
+
+#AssayDetailStkWgt QTabBar::tab:hover  {
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 28px;
+    max-height: 28px;
+	padding-left: 0;
+	padding-right: 0;
+    border-width:10px;
+    border-image: url(:/Leonis/resource/image/bk-stack-pane-hv.png) 10 fill repeat;
+    margin-right: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#AssayDetailStkWgt QTabBar::tab:selected   {
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 28px;
+    max-height: 28px;
+	padding-left: 0;
+	padding-right: 0;
+    border-width:10px;
+    border-image: url(:/Leonis/resource/image/bk-stack-pane-select.png) 10 fill repeat;
+    margin-right: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+}
+
+#tabWidget_ruleSet QTabBar::tab, #tabWidget_qcReg QTabBar::tab  {
+    min-height: 48px;
+    max-height: 48px;
+}
+
+QTableView {
+    border: 0;
+    selection-color: #333; 
+}
+
+QTableView::item  {
+    padding-left: 5px;
+	padding-right: 5px;
+	border-left: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+QTableView[items="right_border"]  {
+    border-left: 1px solid #a4a4a4;
+}
+
+QTableView[items="right_border"]::item  {
+    padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+    border-left: 0;
+}
+
+QTableView::item::selected  {
+   background: rgba(2,132,255,10%);
+}
+
+QHeaderView::section::horizontal  {
+    background-color: #e4e7ec;
+    border: 0;
+    min-height: 43px;
+    border-bottom: 1px solid #a4a4a4;
+    font-size: 18px;
+}
+
+QHeaderView::section::vertical  {
+    background-color: #e4e7ec;
+    border: 0;
+    min-width: 79px;
+	padding-left: 5px;
+	border-bottom: 1px solid #c5c5c5;
+    font-size: 18px;
+}
+
+#pWgtAssayBtnContainer{
+    background-color: #ffffff;
+    padding-left: 20px;
+}
+
+#caliDataView QHeaderView::section::horizontal  {
+    font-size: 14px;
+}
+
+QScrollBar:vertical  {
+    width: 14px;
+    background: #e4e7ec;
+    padding: 0;
+}
+
+QScrollBar::handle:vertical  {
+    width: 9px;
+    min-height: 100px;
+    border-radius: 4px;
+    background: #fff;
+    border: 0;
+}
+
+QScrollBar::add-line:vertical  {
+    height: 0;
+    width: 0;
+}
+
+QScrollBar::sub-line:vertical  {
+    height: 0; 
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical  {
+    background: transparent;
+}
+
+QWidget QScrollBar::handle:vertical  {
+    margin: 3px 3px 3px 2px;
+}
+
+QWidget QScrollBar::sub-line:vertical  {
+    height: 0; 
+    border-bottom: 0;
+}
+
+QComboBox QScrollBar:vertical  {
+    width: 13px;
+}
+
+QComboBox QScrollBar::handle:vertical  {
+    margin: 2px;
+}
+
+QComboBox QScrollBar::sub-line:vertical  {
+    height: 0; 
+    border-bottom: 0;
+}
+
+QTableView QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+QTableView QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#tableView_maintain_item QScrollBar::handle:vertical  {
+    margin-top: 46px;
+}
+
+#tableView_maintain_item QScrollBar::sub-line:vertical  {
+    height: 29px; 
+}
+
+#SoftwareVersionManageDlg QScrollBar:vertical  {
+    width: 13px;
+}
+
+#SoftwareVersionManageDlg QScrollBar::handle:vertical  {
+    margin: 46px 2px 3px 2px;
+}
+
+#SoftwareVersionManageDlg QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#AssayNameTbl QScrollBar:vertical  {
+    width: 13px;
+}
+
+#AssayNameTbl QScrollBar::handle:vertical  {
+    margin: 49px 2px 3px 2px;
+}
+
+#AssayNameTbl QScrollBar::sub-line:vertical  {
+    height: 46px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#AssayNameTbl QHeaderView::section::horizontal  {
+    min-height: 46px;
+}
+
+#DevManageDlg QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+#DevManageDlg QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#RefRangeTable QScrollBar:vertical  {
+    width: 13px;
+}
+
+#RefRangeTable QScrollBar::handle:vertical  {
+    margin: 46px 2px 3px 2px;
+    border: 0;
+}
+
+#RefRangeTable QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#RecheckConditionsDlg QScrollBar::handle:vertical  {
+    margin-top: 46px;
+}
+
+#RecheckConditionsDlg QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#tableView_group_cfg QHeaderView::section::horizontal  {
+    min-height: 43px;
+}
+
+#tableView_group_cfg QScrollBar::handle:vertical  {
+    margin-top: 46px;
+}
+
+#tableView_group_cfg QScrollBar::sub-line:vertical  {
+    height: 29px; 
+}
+
+#QMaintainSetPage QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+    border: 0;
+}
+
+#QMaintainSetPage QScrollBar::sub-line:vertical  {
+    height: 43px; 
+}
+
+#QMachineFactor QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+#QMachineFactor QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#QAlarmDialog QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+#QAlarmDialog QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#QAutoMaintainCfgDlg QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+#QAutoMaintainCfgDlg QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#ch_tableView QScrollBar::handle:vertical  {
+    margin: 46px 2px 2px 2px;
+    border: 0;
+}
+
+#ch_tableView QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#im_tableView QScrollBar::handle:vertical  {
+    width: 8px;
+    margin: 46px 2px 2px 2px;
+    border: 0;
+}
+
+#im_tableView QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+QWidget#BackupOrderWidget QScrollBar:vertical  {
+    width: 13px;
+}
+
+QWidget#BackupOrderWidget QScrollBar::handle:vertical  {
+    margin: 2px;
+    border: 0;
+}
+
+#DevMaintainDetail QScrollBar:vertical  {
+    width: 13px;
+}
+
+#DevMaintainDetail QScrollBar::handle:vertical  {
+    margin: 2px;
+}
+
+#QGroupAssayPositionSettings QScrollBar::handle:vertical  {
+    margin: 2px 3px 2px 2px;
+    border: 0;
+}
+
+#QGroupAssayPositionSettings QScrollBar::sub-line:vertical  {
+    height: 0; 
+    border-bottom: 0;
+}
+
+#QCaliRackOverview QHeaderView::section::horizontal  {
+    min-height: 35px;
+    font-size: 14px;
+}
+
+#QOperationLogWgt QScrollBar:vertical  {
+    width: 13px;
+}
+
+#QOperationLogWgt QScrollBar::handle:vertical  {
+    margin: 46px 2px 3px 2px;
+    border: 0;
+}
+
+#QOperationLogWgt QScrollBar::sub-line:vertical  {
+    height: 30px; 
+}
+
+#QFaultLogWidget QTableView QScrollBar:vertical  {
+    width: 13px;
+}
+
+#QFaultLogWidget QTableView QScrollBar::handle:vertical  {
+    margin: 46px 2px 3px 2px;
+    border: 0;
+}
+
+#QFaultLogWidget QTableView QScrollBar::sub-line:vertical  {
+    height: 30px; 
+}
+
+#parameter QScrollBar::handle:vertical  {
+    margin: 38px 3px 3px 2px;
+}
+
+#parameter QScrollBar::sub-line:vertical  {
+    height: 21px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#SampleRackAllocationDlg QScrollBar::handle:vertical  {
+    margin: 46px 3px 3px 2px;
+}
+
+#SampleRackAllocationDlg QScrollBar::sub-line:vertical  {
+    height: 43px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+QTableView#comboxTable  {
+    font-size: 16px;
+}
+
+#comboxTable QHeaderView::section::horizontal  {
+    font-size: 16px;
+}
+
+QTableView::item#comboxTable  {
+    border-left: 1px solid transparent;
+}
+
+#conc QScrollBar::handle:vertical  {
+    margin: 31px 3px 3px 2px;
+}
+
+#conc QScrollBar::sub-line:vertical  {
+    height: 14px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+QTableView#TemplateTable QScrollBar::handle:vertical  {
+    margin: 3px 3px 3px 2px;
+}
+
+QTableView#single_assay_stackedWidget QScrollBar::handle:vertical  {
+    margin: 3px 3px 3px 2px;
+}
+
+QTableView#comboxTable QScrollBar:vertical  {
+    width: 13px;
+}
+
+QTableView#comboxTable QScrollBar::handle:vertical  {
+    margin-right: 2px;
+}
+
+QTableView#comboxTable QScrollBar::sub-line:vertical  {
+    background: #e5f2ff;
+}
+
+QTableView#beSelect_View QScrollBar::handle:vertical  {
+    margin: 47px 3px 3px 2px;
+}
+
+QTableView#beSelect_View QScrollBar::sub-line:vertical  {
+    height: 44px; 
+}
+
+QTableView#selected_View QScrollBar::handle:vertical, #tableView_right QScrollBar::handle:vertical, #tableView_left QScrollBar::handle:vertical  {
+    margin: 51px 3px 3px 2px;
+}
+
+QTableView#selected_View QScrollBar::sub-line:vertical  {
+    height: 48px; 
+}
+
+QTableView#sample_list QHeaderView::section::horizontal, #show_assay_list QHeaderView::section::horizontal, QTableView#QcApplyTable QHeaderView::section::horizontal  {
+    min-height: 44px;
+}
+
+QTableView#QcApplyTable QHeaderView::section::horizontal  {
+    min-height: 44px;
+}
+
+QTableView#QcApplyTable QScrollBar::handle:vertical  {
+    margin-top: 47px;
+}
+
+QTableView#QcApplyTable QScrollBar::sub-line:vertical  {
+    height: 44px; 
+}
+
+QTableView#sample_list QScrollBar::handle:vertical, #show_assay_list QScrollBar::handle:vertical  {
+    margin: 47px 3px 3px 2px;
+}
+
+QTableView#sample_list QScrollBar::sub-line:vertical, #show_assay_list QScrollBar::sub-line:vertical  {
+    height: 44px; 
+}
+
+#SoftwareVersionDlg QScrollBar::handle:vertical  {
+    margin: 38px 3px 3px 2px;
+}
+
+#SoftwareVersionDlg QScrollBar::sub-line:vertical  {
+    height: 35px; 
+}
+
+QScrollBar:horizontal  {
+    height: 14px;
+    background: #e4e7ec;
+    padding: 0;
+}
+
+QScrollBar::handle:horizontal  {
+    height: 9px;
+    min-width: 100px;
+    background: #fff;
+    margin: 2px 2px 3px 2px;
+    border-radius: 4px;
+    border: 0;
+}
+
+QScrollBar::sub-line:horizontal  {
+    width: 0;
+    height: 0;
+}
+
+QScrollBar::add-line:horizontal  {
+    width: 0;
+    height: 0;
+}
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal  {
+    background: transparent;
+}
+
+#CalHisCurveWgt QScrollBar:horizontal  {
+    height: 14px;
+    background: #e4e7ec;
+    padding: 0;
+    border-top: 0;
+    border-left: 1px solid #a4a4a4;
+}
+
+#CalHisCurveWgt QScrollBar::handle:horizontal  {
+    height: 9px;
+    min-width: 30px;
+    background: #fff;
+    margin: 2px;
+    border-radius: 4px;
+    border: 0;
+}
+
+#CalHisCurveWgt QScrollBar::sub-line:horizontal  {
+    width: 0;
+}
+
+#CalHisCurveWgt QScrollBar::add-line:horizontal  {
+    width: 0;
+    height: 0;
+}
+
+#CalHisCurveWgt QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal  {
+    background: transparent;
+}
+
+#conc QHeaderView::section::horizontal  {
+    min-height: 28px;
+	background: #fff;
+	border-right: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+#parameter QHeaderView::section::horizontal  {
+    min-height: 35px;
+}
+
+QTableView#beSelect_View QHeaderView::section::horizontal  {
+    min-height: 44px;
+}
+
+#caliDataView QHeaderView::section::vertical  {
+    font-size: 14px;
+    background: #fff;
+}
+
+#caliDataView QHeaderView::section::vertical  {
+    min-width: 340px;
+}
+
+#tableView QHeaderView::section::vertical  {
+    min-width: 120px;
+}
+
+#QIseCaliBrateResult QHeaderView::section::vertical  {
+    background-color: #fff;
+    min-width: 120px;
+}
+
+QTableView QTableCornerButton::section {
+	background: #e4e7ec;
+    border: 0;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+QLineEdit, QSpinBox, QDoubleSpinBox, QDateEdit, QComboBox, QTextEdit, QTextBrowser, QDateTimeEdit {
+    border: 1px solid #a4a4a4;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+QTextEdit QScrollBar:vertical  {
+    width: 13px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QDateTimeEdit {
+    background: #fff;
+}
+
+QLineEdit:hover, QSpinBox:hover, QDoubleSpinBox:hover, QDateEdit:hover, QComboBox:hover, QTextEdit:hover, QTextBrowser:hover, QDateTimeEdit:hover, QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus, QComboBox:focus, QTextEdit:focus, QTextBrowser:focus, QDateTimeEdit:focus  {
+    border: 1px solid #025bc7;
+}
+
+QLineEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled, QDateEdit:disabled, QComboBox:disabled, QTextEdit:disabled, QTextBrowser:disable, QDateTimeEdit:disabled {
+    border: 1px solid #d1d1d1;
+    background: #f6f6f6;
+    color: #b1b1b1;
+}
+
+QDateEdit::drop-down, QDateTimeEdit::drop-down, QDateEdit::drop-up, QDateTimeEdit::drop-up  {
+    min-width: 34px;
+    border-radius: 0;
+}
+
+QDateEdit::down-button, QDateTimeEdit::down-button, QDateEdit::up-button, QDateTimeEdit::up-button  {
+    border: 0;
+}
+
+QDateEdit::up-arrow, QDateTimeEdit::up-arrow  {
+    min-height: 28px;
+    min-width: 28px;
+    background: url(:/Leonis/resource/image/icon-up-arrow.png) no-repeat center;
+}
+
+QDateEdit::down-arrow, QDateTimeEdit::down-arrow  {
+    min-height: 28px;
+    min-width: 28px;
+    background: url(:/Leonis/resource/image/icon-down-arrow.png) no-repeat center;
+}
+
+QDateEdit::up-arrow:hover, QDateTimeEdit::up-arrow:hover  {
+    background: url(:/Leonis/resource/image/icon-up-arrow-hv.png) no-repeat center;
+}
+
+QDateEdit::down-arrow:hover, QDateTimeEdit::down-arrow:hover  {
+    background: url(:/Leonis/resource/image/icon-down-arrow-hv.png) no-repeat center;
+}
+
+QDateEdit::up-arrow:disabled，QDateTimeEdit::up-arrow:disabled  {
+    background: url(:/Leonis/resource/image/icon-up-arrow-dis.png) no-repeat center;
+}
+
+QDateEdit::down-arrow:disabled，QDateTimeEdit::down-arrow:disabled  {
+    background: url(:/Leonis/resource/image/icon-down-arrow-dis.png) no-repeat center;
+}
+
+QDateEdit#lower_date_edit, QDateEdit#upper_date_edit {
+    background: #fff;
+}
+
+QDateEdit::down-arrow#lower_date_edit, QDateEdit::down-arrow#upper_date_edit {
+    min-height: 28px;
+    min-width: 28px;
+    background: url(:/Leonis/resource/image/icon-down-arrow.png) no-repeat center;
+}
+
+QDateEdit::down-arrow:hover#lower_date_edit, QDateEdit::down-arrow:hover#upper_date_edit  {
+    background: url(:/Leonis/resource/image/icon-down-arrow-hv.png) no-repeat center;
+}
+
+QDateEdit::down-arrow:disabled#lower_date_edit, QDateEdit::down-arrow:disabled#upper_date_edit  {
+    background: url(:/Leonis/resource/image/icon-down-arrow-dis.png) no-repeat center;
+}
+
+#QFilterSample QSpinBox  {
+    color: #fff;
+    background: #025bc7;
+}
+#QFilterSample QSpinBox::up-button  {
+    background: url(:/Leonis/resource/image/icon-spin-date-pre.png) center no-repeat;
+}
+
+#QFilterSample QSpinBox::up-button:hover  {
+    image: url(:/Leonis/resource/image/icon-spin-date-pre-hover.png);
+}
+
+#QFilterSample QSpinBox::down-button  {
+    background: url(:/Leonis/resource/image/icon-spin-date-next.png) center no-repeat;
+}	
+
+#QFilterSample QSpinBox::down-button:hover  {
+    image: url(:/Leonis/resource/image/icon-spin-date-next-hover.png);
+}
+
+QWidget#widget_postion QSpinBox::up-button  {
+    subcontrol-position: right;
+    width: 42px;
+    height: 42px;
+    background: #e4e7ec;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #a4a4a4;
+    image: url(:/Leonis/resource/image/btn-spin-plus.png);
+}
+
+QWidget#widget_postion QSpinBox::up-button:hover  {
+    image: url(:/Leonis/resource/image/btn-spin-plus-hv.png);
+}
+
+QWidget#widget_postion QSpinBox::down-button  {
+    subcontrol-position: left;
+    width: 42px;
+    height: 42px;
+    background: #e4e7ec;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #a4a4a4;
+    image: url(:/Leonis/resource/image/btn-spin-minus.png);
+}	
+
+QWidget#widget_postion QSpinBox::down-button:hover  {
+    image: url(:/Leonis/resource/image/btn-spin-minus-hv.png);
+}
+
+QCheckBox  {
+    spacing: 10px; 
+    height: 40px;
+}
+
+QCheckBox::indicator  {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border: 2px solid #a4a4a4;
+    background: #fff;
+}
+
+QCheckBox::indicator:hover  {
+    border: 2px solid #025bc7;
+}
+
+QCheckBox::indicator:checked  {
+    border: 0;
+    background: url(:/Leonis/resource/image/bk-checked.png) center no-repeat;
+}
+
+QCheckBox::indicator:disabled  {
+    border: 2px solid #d1d1d1;
+    background: #f6f6f6;
+}
+
+QCheckBox::indicator:checked:disabled  {
+    border: 0;
+    background: url(:/Leonis/resource/image/bk-checked-dis.png) center no-repeat;
+}
+
+QHeaderView QCheckBox::indicator  {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #a4a4a4;
+    background: #fff;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+
+QHeaderView QCheckBox::indicator:checked  {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background:url(:/Leonis/resource/image/bk-checked.png) center no-repeat;
+}
+
+QHeaderView QCheckBox::indicator:disabled  {
+    border: 2px solid #d1d1d1;
+    background: #f6f6f6;
+}
+
+QHeaderView QCheckBox::indicator:checked:disabled  {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: url(:/Leonis/resource/image/bk-checked-dis.png) center no-repeat;
+}
+
+QRadioButton::indicator  {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: url(:/Leonis/resource/image/bk-radio.png);
+    background-color: #fff;
+    margin-top: 1px;
+    margin-right: 3px;
+}
+
+QRadioButton::indicator:hover  {
+    background-image: url(:/Leonis/resource/image/bk-radio-hv.png);
+    background-color: #fff;
+}
+
+QRadioButton::indicator:checked  {
+    border: 0;
+    background-image: url(:/Leonis/resource/image/bk-radio-checked.png);
+    background-color: #fff;
+}
+
+QRadioButton::indicator:disabled  {
+    background:url(:/Leonis/resource/image/bk-radio-dis.png);
+}
+
+QRadioButton::indicator:checked:disabled  {
+    background:url(:/Leonis/resource/image/bk-radio-checked-dis.png);
+}
+
+QProPertyWidget  {
+    qproperty-fan_tops: 0;
+    qproperty-fan_lefts: 0;
+    qproperty-fan_widths: 421;
+    qproperty-fan_heights: 371;
+    qproperty-fan_startXPointer: 350;
+    qproperty-fan_startYPointer: 0;
+    qproperty-fan_tranXPointer: 35;
+    qproperty-fan_tranYPointer: 385;
+    qproperty-visable: false;
+    qproperty-tops: 0;
+    qproperty-lefts: 0;
+    qproperty-widths: 40;
+    qproperty-heights: 104;
+    qproperty-statetops: 60;  /*图标坐标*/
+    qproperty-statelefts: 11;  /*图标坐标*/
+    qproperty-statewidths: 20;
+    qproperty-stateheights: 20;
+    qproperty-sparetops: 75;  /*数字坐标*/
+    qproperty-sparelefts: 15;  /*数字坐标*/
+    qproperty-sparewidths: 20;
+    qproperty-spareheights: 20;
+    qproperty-platewidths: 714;
+    qproperty-plateheights: 714;
+    qproperty-platetops: 0;
+    qproperty-platelefts: 0;
+    qproperty-shiftAngle: -4;
+    qproperty-innerNumber: 23;
+    qproperty-outerNumber: 42;
+	qproperty-innerStartXPointer: 337;
+    qproperty-innerStartYPointer: 137;
+	qproperty-outerStartXPointer: 337;
+    qproperty-outerStartYPointer: 15;
+	qproperty-scale: 121;
+	qproperty-itemwidth: 40;
+    qproperty-outerRadius: 341;
+}
+
+QFanItem {
+    qproperty-tops: 0;
+    qproperty-lefts: 0;
+    qproperty-widths: 421;
+    qproperty-heights: 371;
+}
+
+QComboBox QAbstractItemView  {
+    color:black;
+    border:1px solid #9fa4aa;
+    border-bottom-right-radius:0;
+    selection-color: #f30;
+	/*selection-background: #69c;*/
+    outline:none;
+}
+
+QComboBox QAbstractItemView::item  {
+    background:transparent;
+    padding-left:7px;
+	min-height:38px;
+}
+
+QComboBox QAbstractItemView::item:selected  {
+    background: #d1ecff;
+	padding-left:6px;
+    color:#565656;
+}
+
+QComboBox QAbstractItemView::item:hover  {
+    background:#fff;
+	border:1px solid #025bc7;
+	padding-left:6px;
+    color:#565656;
+}
+
+QComboBox:enabled:hover  {
+    background: #fff;
+}
+
+QComboBox::drop-down  {
+    min-width: 12px;
+    border-radius:0px;
+    margin-right: 19px;
+    margin-left: 3px;
+}
+
+QComboBox::drop-down:hover  {
+    background: transparent;
+}
+
+QComboBox::down-arrow , QBaseDateEdit::down-arrow ,QWidget[objectName = "test_start_time"]::down-arrow
+,QWidget[objectName = "test_stop_time"]::down-arrow{
+    image:url(:/Leonis/resource/image/icon-down-arrow.png);
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
+QComboBox::down-arrow:hover ,QBaseDateEdit::down-arrow:hover ,QWidget[objectName = "test_start_time"]::down-arrow:hover
+,QWidget[objectName = "test_stop_time"]::down-arrow:hover {
+    image:url(:/Leonis/resource/image/icon-down-arrow-hv.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+QComboBox::down-arrow:disabled,QBaseDateEdit::down-arrow:disabled,QWidget[objectName = "test_start_time"]::down-arrow:disabled
+,QWidget[objectName = "test_stop_time"]::down-arrow:disabled  {
+    image:url(:/Leonis/resource/image/icon-down-arrow-dis.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+QFilterComboBox::drop-down  {
+	min-width:33px;
+}
+
+QProgressBar  {
+	min-height: 8px;
+	max-height: 8px;
+	background: #fff;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+QProgressBar::chunk  {
+	background: #1b7df5;
+	border-radius: 4px;
+}
+
+QProgressBar[bars="normal"]   {
+	min-height: 45px;
+	max-height: 45px;
+	background: #e4e7ec;
+	padding: 0;
+	border-radius: 0;
+    text-align: right;
+    margin-right: 45px;
+}
+
+QProgressBar[bars="normal"]::chunk   {
+	background: #1fb558;
+	border-radius: 0;
+}
+
+#qt_calendar_calendarview {
+    background: #fff;
+    border-radius:20px;
+}
+
+QToolButton#qt_calendar_monthbutton,#qt_calendar_yearbutton  {
+    color: #fff; 
+    background:#025bc7;
+}
+
+QDateTimeEdit QToolButton  {
+    width : 80px;
+    border:0;
+}
+
+#qt_calendar_navigationbar {
+    background:#025bc7;
+    color:#fff;
+}
+
+QToolButton#qt_calendar_prevmonth  {
+    border:0px;
+    qproperty-icon: url(:/Leonis/resource/image/icon-calendar-pre.png);
+    background:transparent;
+    width:40px;
+    height:32px;
+}
+
+QToolButton#qt_calendar_nextmonth  {
+    qproperty-icon: url(:/Leonis/resource/image/icon-calendar-next.png);
+    background:#025bc7;
+    width:40px;
+    height:32px;
+}
+
+QDateTimeEdit QTableView  {
+    border-top:0;
+    border-bottom:0;
+    alternate-background-color: #f5f5f5; 
+}
+
+QDateEdit QAbstractItemView  {
+    /*selection-background-color : #025bc7;*/
+}
+
+QCalendarWidget QAbstractItemView  { 
+    selection-color: #fff;
+}
+
+QCalendarWidget QAbstractItemView:disabled  { 
+    color: gray; 
+}
+
+QToolButton#qt_calendar_monthbutton::menu-indicator  {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    right: 3px;
+    width: 10px;
+}
+
+#logo_main[devtype="ch-im"]{
+    background: url(:/Leonis/resource/image/logo-main-ch-im.png) center no-repeat;
+}
+#logo_main[devtype="ch"]{
+    background: url(:/Leonis/resource/image/logo-main-ch.png) center no-repeat;
+}
+#logo_main[devtype="im"]{
+    background: url(:/Leonis/resource/image/logo-main-im.png) center no-repeat;
+}
+
+#errorTips {
+    font-size: 14px;
+    color: #ff6669;
+}
+
+*[lineEdits="login"]  {
+    border:1px solid transparent;
+    border-radius:6px;
+    background:#041f36;
+    color:#fff;
+    font-size:24px;
+    padding-left:80px;
+}
+
+#userNameEdit  {
+    background-image: url(:/Leonis/resource/image/icon-login-user.png);
+    background-position:left;
+    background-repeat:no-repeat;
+}
+
+#passwordEdit  {
+    background-image: url(:/Leonis/resource/image/icon-login-password.png);
+    background-position:left;
+    background-repeat:no-repeat;
+}
+
+*[buttons="exit"]  {
+    font-size:22px;
+    color:#fff;
+    background-image:url(:/Leonis/resource/image/icon-login-exit.png);
+    border:0;
+    text-decoration:underline;
+}
+
+*[buttons="exit"]:hover  {
+    background-image:url(:/Leonis/resource/image/icon-login-exit-hover.png);
+}
+
+*[buttons="exit"]:pressed  {
+    background-image:url(:/Leonis/resource/image/icon-login-exit-pressed.png);
+}
+
+*[buttons="login"]  {
+    color: #fff;
+    border: 0;
+    font-size: 26px;
+    padding-left: 11px;
+    background-image: url(:/Leonis/resource/image/bk-login.png);
+}
+
+*[buttons="login"]:hover  {
+    background-image:url(:/Leonis/resource/image/bk-login-hover.png);
+}
+
+*[buttons="login"]:pressed  {
+    background-image:url(:/Leonis/resource/image/bk-login-pressed.png);
+}
+
+*[backgrounds="errTips"]  {
+    color:#e30;
+    font-size:14px;
+}
+
+#bkLoginLab  {
+    background: url(:/Leonis/resource/image/bk-login.jpg);
+}
+ 
+#bk_plate  {
+    background: url(:/Leonis/resource/image/bk-plate.png) left no-repeat;
+}
+
+*[shapes="legend"]  {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 4px;
+}
+
+*[legends="wave_main"]  {
+    border-radius: 4px;
+    background: #3b8ff6;
+}
+
+*[legends="wave_sub"]  {
+    border-radius: 4px;
+    background: #fa9016;
+}
+
+*[legends="wave_main_sub"]  {
+    border-radius: 4px;
+    background: #41c46a;
+}
+
+*[bks="color_empty"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-empty) no-repeat center;
+}
+
+*[bks="color_empty_bottle"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-empty-bottle.png) no-repeat center;
+}
+
+*[bks="color_spare"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-spare.png) no-repeat center;
+}
+
+*[bks="color_inuse"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-inuse.png) no-repeat center;
+}
+
+*[bks="color_alarm"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-alarm.png) no-repeat center;
+}
+
+*[bks="color_remind"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-remind.png) no-repeat center;
+}
+
+*[bks="color_dis"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-mask.png) no-repeat center;
+}
+
+*[bks="color_scan_failed"]  {
+    background: url(:/Leonis/resource/image/icon-rgnt-scan-failed.png) no-repeat center;
+}
+
+*[bks="color_open"]  {
+    background: url(:/Leonis/resource/image/ch/c1005/bk-legend-open.png);
+}
+
+*[bks="color_place"]  {
+    background: #d1ecff;
+    border: 1px solid #459fff;
+}
+
+*[bks="color_success"]  {
+    background: #d3ffe1;
+    border: 2px solid #42c56b;
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    border-radius: 4px;
+}
+
+*[bks="color_fail"]  {
+    background: url(:/Leonis/resource/image/ch/c1005/loader-color-fail.png);
+}
+
+*[bks="color_unload"]  {
+    background: #e4c7fa;
+    border: 2px solid #a821f6;
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    border-radius: 4px;
+}
+
+*[bks="color_idle"]  {
+    background: #fff;
+    border: 1px solid #a4a4a4;
+}
+
+*[bks="color_add_sample"]  {
+    background: #d3ffe1;
+    border: 1px solid #42c46b;
+}
+
+*[bks="color_to_be_cleaned"]  {
+    background: #8a97ad;
+    border: 1px solid #485467;
+}
+
+*[bks="btn_pre"]  {
+    image: url(:/Leonis/resource/image/icon-pre-arrow.png) no-repeat center;
+}
+
+*[bks="btn_pre"]:hover  {
+    image: url(:/Leonis/resource/image/icon-pre-arrow-hv.png) no-repeat center;
+}
+
+*[bks="btn_pre"]:disabled  {
+    image: url(:/Leonis/resource/image/icon-pre-arrow-dis.png) no-repeat center;
+}
+
+*[bks="btn_next"]  {
+    image: url(:/Leonis/resource/image/icon-next-arrow.png) no-repeat center;
+}
+
+*[bks="btn_next"]:hover  {
+    image: url(:/Leonis/resource/image/icon-next-arrow-hv.png) no-repeat center;
+}
+
+*[bks="btn_next"]:disabled  {
+    image: url(:/Leonis/resource/image/icon-next-arrow-dis.png) no-repeat center;
+}
+
+*[colors="white"]  {
+    color: #fff;
+}
+
+*[colors="gray"]  {
+    color: #a4a4a4;
+}
+
+*[colors="light"]  {
+    color: #d1d9eb;
+}
+
+*[colors="light_gray"]  {
+    color: #828282;
+}
+
+*[colors="blue_gray"]  {
+    color: #8a97ad;
+}
+
+*[colors="disabled"]  {
+    color: #b7b7b7;
+}
+
+*[colors="red"]  {
+    color: #f33;
+}
+
+*[colors="blue"]  {
+    color: #025bc7;
+}
+
+*[colors="light_blue"]  {
+    color: #3b8ff6;
+}
+
+*[bks="icon_cancel"]  {
+    background: url(:/Leonis/resource/image/ch/c1005/bk-legend-cancel.png);
+}
+
+*[states="empty"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/states-empty.png) center no-repeat;
+}
+
+*[states="uninstall"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/states-uninstall.png) center no-repeat;
+}
+
+*[states="success"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/states-success.png) center no-repeat;
+}
+
+*[states="fail"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/states-fail.png) center no-repeat;
+}
+
+*[states="suspend"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/states-suspend.png) center no-repeat;
+}
+
+*[states="supply-success"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/supply-states-success.png) center no-repeat;
+}
+
+*[states="supply-uninstall"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/supply-states-uninstall.png) center no-repeat;
+}
+
+*[states="supply-suspend"]  {
+	background: url(:/Leonis/resource/image/ch/c1005/supply-states-suspend.png) center no-repeat;
+}
+
+*[states="color"]  {
+	color: #fff;
+    font-size: 16px;
+}
+
+*[states="color"]:disabled  {
+	color: #565656;
+}
+
+*[bks="icon_lot"]  {
+    background: url(:/Leonis/resource/image/ch/c1005/bk-legend-lot.png);
+}
+
+#StatusBarFrame  {
+    background: url(:/Leonis/resource/image/main-bottom.png) no-repeat;
+}
+
+*[titles="tit"]  {
+    border-radius: 4px;
+    background: #e6eaf4;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+*[titles="sub_tit_angle_14"]  {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #e6eaf4;
+    font-size: 14px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+*[titles="sub_tit_right_angle"]  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #f2f4fa;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+*[titles="sub_tit_right_angle_14"]  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #e6eaf4;
+    font-size: 14px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+*[titles="sub_tit_right_angle_14_w"]  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #fff;
+    font-size: 14px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+*[titles="sub_tit_right_angle_16"]  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    background: #f2f4fa;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#base_dlg_content_frame  {
+    border-width:32px;
+    border-image: url(:/Leonis/resource/image/bk-dlg-frame.png) 32 fill repeat;
+}
+
+#base_dlg_title_lab  {
+    border-width: 26px 26px 5px 26px ;
+    border-image: url(:/Leonis/resource/image/bk-dlg-title.png) 26 26 5 26 fill repeat;
+	border-color: blue;
+	border-style: solid;
+    color: #fff;
+ }
+
+#reagentshield  {
+    background: url(:/Leonis/resource/image/icon-reagentshield.png) left center no-repeat;
+}
+
+#reagentshield:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentshield-hv.png) left center no-repeat;
+}
+
+#reagentshield:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentshield-dis.png) left center no-repeat;
+}
+
+#reagentPriority, #supplyPriority  {
+    background: url(:/Leonis/resource/image/icon-reagentPriority.png) left center no-repeat;
+}
+
+#reagentPriority:hover, #supplyPriority:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentPriority-hv.png) left center no-repeat;
+}
+
+#reagentPriority:disabled, #supplyPriority:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentPriority-dis.png) left center no-repeat;
+}
+
+#reagentRegister  {                  
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentRegister.png) left center no-repeat;
+}
+
+#reagentRegister:hover  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentRegister-hv.png) left center no-repeat;
+}
+
+#reagentRegister:disabled  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentRegister-dis.png)  left center no-repeat;
+}
+
+#reagentUnload  {
+    background: url(:/Leonis/resource/image/icon-reagentUnload.png)  left center no-repeat;
+}
+
+#reagentUnload:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentUnload-hv.png)  left center no-repeat;
+}
+
+#reagentUnload:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentUnload-dis.png)  left center no-repeat;
+}
+
+#reagentAllowance  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentAllowance.png)  left center no-repeat;
+}
+
+#reagentAllowance:hover  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentAllowance-hv.png)  left center no-repeat;
+}
+
+#reagentAllowance:disabled  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reagentAllowance-dis.png)  left center no-repeat;
+}
+
+#RequireCalcBtn  {
+    background: url(:/Leonis/resource/image/icon-reqcalc.png)  left center no-repeat;
+}
+
+#RequireCalcBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-reqcalc-hv.png)  left center no-repeat;
+}
+
+#RequireCalcBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-reqcalc-dis.png)  left center no-repeat;
+}
+
+#reagentScan  {
+    background: url(:/Leonis/resource/image/icon-reagentScan.png) left center no-repeat;
+}
+
+#reagentScan:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentScan-hv.png) left center no-repeat;
+}
+
+#reagentScan:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentScan-dis.png) left center no-repeat;
+}
+
+#selectCheck  {
+    background: url(:/Leonis/resource/image/icon-selectCheck.png) left center no-repeat;
+}
+
+#selectCheck:hover  {
+    background: url(:/Leonis/resource/image/icon-selectCheck-hv.png) left center no-repeat;
+}
+
+#selectCheck:disabled  {
+    background: url(:/Leonis/resource/image/icon-selectCheck-dis.png) left center no-repeat;
+}
+
+#calibrate_sel_btn  {
+    background: url(:/Leonis/resource/image/icon-sel-btn.png) left center no-repeat;
+}
+
+#calibrate_sel_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-sel-btn-hover.png) left center no-repeat;
+}
+
+#calibrate_sel_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-sel-btn-disable.png) left center no-repeat;
+}
+
+#caliBrateApp_Button  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-caliBrateApp.png) left center no-repeat;
+}
+
+#caliBrateApp_Button:hover  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-caliBrateApp-hv.png) left center no-repeat;
+}
+
+#caliBrateApp_Button:disabled  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-caliBrateApp-dis.png) left center no-repeat;
+}
+
+#unMaskButton, #clear_alarm_filter_btn  {
+    background: url(:/Leonis/resource/image/icon-unMask.png) left center no-repeat;
+}
+
+#unMaskButton:hover, #clear_alarm_filter_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-unMask-hv.png) left center no-repeat;
+}
+
+#unMaskButton:disabled, #clear_alarm_filter_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-unMask-dis.png) left center no-repeat;
+}
+
+#calibrate_result_btn  {
+    background: url(:/Leonis/resource/image/icon-calibrate-result-btn.png) left center no-repeat;
+}
+
+#calibrate_result_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-calibrate-result-btn-hv.png) left center no-repeat;
+}
+
+#calibrate_result_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-calibrate-result-btn-dis.png) left center no-repeat;
+}
+
+#Reaction_Button  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reaction.png) left center no-repeat;
+}
+
+#Reaction_Button:hover  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reaction-hv.png) left center no-repeat;
+}
+
+#Reaction_Button:disabled  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-reaction-dis.png) left center no-repeat;
+}
+
+#del_Button  {
+    background: url(:/Leonis/resource/image/icon-del.png) left center no-repeat;
+}
+
+#del_Button:hover  {
+    background: url(:/Leonis/resource/image/icon-del-hv.png) left center no-repeat;
+}
+
+#del_Button:disabled  {
+    background: url(:/Leonis/resource/image/icon-del-dis.png) left center no-repeat;
+}
+
+#patient_btn  {
+    background: url(:/Leonis/resource/image/icon-patient.png) left center no-repeat;
+}
+
+#patient_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-patient-hv.png) left center no-repeat;
+}
+
+#patient_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-patient-dis.png) left center no-repeat;
+}
+
+#flat_recheck  {
+    background: url(:/Leonis/resource/image/icon-recheck.png) left center no-repeat;
+}
+
+#flat_recheck:hover  {
+    background: url(:/Leonis/resource/image/icon-recheck-hv.png) left center no-repeat;
+}
+
+#flat_recheck:disabled  {
+    background: url(:/Leonis/resource/image/icon-recheck-dis.png) left center no-repeat;
+}
+
+#flat_examine  {
+    background: url(:/Leonis/resource/image/icon-examine.png) left center no-repeat;
+}
+
+#flat_examine:hover  {
+    background: url(:/Leonis/resource/image/icon-examine-hv.png) left center no-repeat;
+}
+
+#flat_examine:disabled  {
+    background: url(:/Leonis/resource/image/icon-examine-dis.png) left center no-repeat;
+}
+
+#flat_manual_transfer  {
+    background: url(:/Leonis/resource/image/icon-manual-transfer.png) left center no-repeat;
+}
+
+#flat_manual_transfer:hover  {
+    background: url(:/Leonis/resource/image/icon-manual-transfer-hv.png) left center no-repeat;
+}
+
+#flat_manual_transfer:disabled  {
+    background: url(:/Leonis/resource/image/icon-manual-transfer-dis.png) left center no-repeat;
+}
+
+#flat_print, #print_btn, #PrintBtn  {
+    background: url(:/Leonis/resource/image/icon-print.png) left center no-repeat;
+}
+
+#flat_print:hover, #print_btn:hover, #PrintBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-print-hv.png) left center no-repeat;
+}
+
+#flat_print:disabled, #print_btn:disabled, #PrintBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-print-dis.png) left center no-repeat;
+}
+
+#export_btn, #flat_export  {
+    background: url(:/Leonis/resource/image/icon-export.png) left center no-repeat;
+}
+
+#export_btn:hover, #flat_export:hover  {
+    background: url(:/Leonis/resource/image/icon-export-hv.png) left center no-repeat;
+}
+
+#export_btn:disabled, #flat_export:disabled  {
+    background: url(:/Leonis/resource/image/icon-export-dis.png) left center no-repeat;
+}
+
+#flat_del_all  {
+    background: url(:/Leonis/resource/image/icon-del-all.png) left center no-repeat;
+}
+
+#flat_del_all:hover  {
+    background: url(:/Leonis/resource/image/icon-del-all-hv.png) left center no-repeat;
+}
+
+#flat_del_all:disabled  {
+    background: url(:/Leonis/resource/image/icon-del-all-dis.png) left center no-repeat;
+}
+
+#flat_recalculate  {
+    background: url(:/Leonis/resource/image/icon-recalculate.png) left center no-repeat;
+}
+
+#flat_recalculate:hover  {
+    background: url(:/Leonis/resource/image/icon-recalculate-hv.png) left center no-repeat;
+}
+
+#flat_recalculate:disabled  {
+    background: url(:/Leonis/resource/image/icon-recalculate-dis.png) left center no-repeat;
+}
+
+#flat_Ai  {
+    background: url(:/Leonis/resource/image/icon-flat-ai.png) left center no-repeat;
+}
+
+#flat_Ai:hover  {
+    background: url(:/Leonis/resource/image/icon-flat-ai-hv.png) left center no-repeat;
+}
+
+#flat_Ai:disabled  {
+    background: url(:/Leonis/resource/image/icon-flat-ai-dis.png) left center no-repeat;
+}
+
+#flat_pre  {
+    background: url(:/Leonis/resource/image/icon-previous.png) left center no-repeat;
+}
+
+#flat_pre:hover  {
+    background: url(:/Leonis/resource/image/icon-previous-hv.png) left center no-repeat;
+}
+
+#flat_pre:disabled  {
+    background: url(:/Leonis/resource/image/icon-previous-dis.png) left center no-repeat;
+}
+
+#result_detail_btn  {
+    background: url(:/Leonis/resource/image/icon-result.png) left center no-repeat;
+}
+
+#result_detail_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-result-hv.png) left center no-repeat;
+}
+
+#result_detail_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-result-dis.png) left center no-repeat;
+}
+
+#flat_next  {
+    background: url(:/Leonis/resource/image/icon-next.png) left center no-repeat;
+}
+
+#flat_next:hover  {
+    background: url(:/Leonis/resource/image/icon-next-hv.png) left center no-repeat;
+}
+
+#flat_next:disabled  {
+    background: url(:/Leonis/resource/image/icon-next-dis.png) left center no-repeat;
+}
+
+#supplyLoad_btn  {
+    background: url(:/Leonis/resource/image/icon-supplyLoad.png) left center no-repeat;
+}
+
+#supplyLoad_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-supplyLoad-hover.png) left center no-repeat;
+}
+
+#supplyLoad_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-supplyLoad-dis.png) left center no-repeat;
+}
+
+#AddReactionBtn  {
+    background: url(:/Leonis/resource/image/icon-add-react.png) left center no-repeat;
+}
+
+#AddReactionBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-add-react-hover.png) left center no-repeat;
+}
+
+#AddReactionBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-add-react-dis.png) left center no-repeat;
+}
+
+#perfusion_btn  {
+    background: url(:/Leonis/resource/image/ise/icon-ise.png) left center no-repeat;
+}
+
+#perfusion_btn:hover  {
+    background: url(:/Leonis/resource/image/ise/icon-ise-hover.png) left center no-repeat;
+}
+
+#perfusion_btn:disabled  {
+    background: url(:/Leonis/resource/image/ise/icon-ise-dis.png) left center no-repeat;
+}
+
+#reagentLoad  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad.png) left center no-repeat;
+}
+
+#reagentLoad:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-hover.png) left center no-repeat;
+}
+
+#reagentLoad:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-dis.png) left center no-repeat;
+}
+
+#reagentUploadBtn  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad.png) left center no-repeat;
+}
+
+#reagentUploadBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-hover.png) left center no-repeat;
+}
+
+#reagentUploadBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-dis.png) left center no-repeat;
+}
+
+#LoadRgntBtn  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad.png) left center no-repeat;
+}
+
+#LoadRgntBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-hover.png) left center no-repeat;
+}
+
+#LoadRgntBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-reagentLoad-dis.png) left center no-repeat;
+}
+
+#MixBtn  {
+    background: url(:/Leonis/resource/image/icon-mix.png) left center no-repeat;
+}
+
+#MixBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-mix-hover.png) left center no-repeat;
+}
+
+#MixBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-mix-dis.png) left center no-repeat;
+}
+
+#mixMagneticBtn  {
+    background: url(:/Leonis/resource/image/icon-mix.png) left center no-repeat;
+}
+
+#mixMagneticBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-mix-hover.png) left center no-repeat;
+}
+
+#mixMagneticBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-mix-dis.png) left center no-repeat;
+}
+
+#flat_m_regist  {
+    background: url(:/Leonis/resource/image/icon-regist.png) left center no-repeat;
+}
+
+#flat_m_regist:hover  {
+    background: url(:/Leonis/resource/image/icon-regist-hv.png) left center no-repeat;
+}
+
+#flat_m_regist:disabled  {
+    background: url(:/Leonis/resource/image/icon-regist-dis.png) left center no-repeat;
+}
+
+#flat_modify  {
+    background: url(:/Leonis/resource/image/icon-modify.png) left center no-repeat;
+}
+
+#flat_modify:hover  {
+    background: url(:/Leonis/resource/image/icon-modify-hv.png) left center no-repeat;
+}
+
+#flat_modify:disabled  {
+    background: url(:/Leonis/resource/image/icon-modify-dis.png) left center no-repeat;
+}
+
+#flat_regist  {
+    background: url(:/Leonis/resource/image/icon-regist.png) left center no-repeat;
+}
+
+#flat_regist:hover  {
+    background: url(:/Leonis/resource/image/icon-regist-hv.png) left center no-repeat;
+}
+
+#flat_regist:disabled  {
+    background: url(:/Leonis/resource/image/icon-regist-dis.png) left center no-repeat;
+}
+
+#flat_qc_rule  {
+    background: url(:/Leonis/resource/image/icon-qc-rule.png) left center no-repeat;
+}
+
+#flat_qc_rule:hover  {
+    background: url(:/Leonis/resource/image/icon-qc-rule-hv.png) left center no-repeat;
+}
+
+#flat_qc_rule:disabled  {
+    background: url(:/Leonis/resource/image/icon-qc-rule-dis.png) left center no-repeat;
+}
+
+#flat_new, #flat_new_add  {
+    background: url(:/Leonis/resource/image/icon-new-add.png) left center no-repeat;
+}
+
+#flat_new:hover, #flat_new_add:hover  {
+    background: url(:/Leonis/resource/image/icon-new-add-hv.png) left center no-repeat;
+}
+
+#flat_new:disabled, #flat_new_add:disabled  {
+    background: url(:/Leonis/resource/image/icon-new-add-dis.png) left center no-repeat;
+}
+
+#flat_edit  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-flat-edit.png) left center no-repeat;
+}
+
+#flat_edit:hover  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-flat-edit-hv.png) left center no-repeat;
+}
+
+#flat_edit:disabled  {
+    background: url(:/Leonis/resource/image/ch/c1005/icon-flat-edit-dis.png) left center no-repeat;
+}
+
+#sampel_btn  {
+    background: url(:/Leonis/resource/image/icon-sampel.png) left center no-repeat;
+}
+
+#sampel_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-sampel-hv.png) left center no-repeat;
+}
+
+#sampel_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-sampel-dis.png) left center no-repeat;
+}
+
+#sampleApp_btn  {
+    background: url(:/Leonis/resource/image/icon-sampleapp.png) left center no-repeat;
+}
+
+#sampleApp_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-sampleapp-hv.png) left center no-repeat;
+}
+
+#sampleApp_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-sampleapp-dis.png) left center no-repeat;
+}
+
+#batch_btn  {
+    background: url(:/Leonis/resource/image/icon-batch.png) left center no-repeat;
+}
+
+#batch_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-batch-hv.png) left center no-repeat;
+}
+
+#batch_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-batch-dis.png) left center no-repeat;
+}
+
+#DefaultQcBtn  {
+    background: url(:/Leonis/resource/image/icon-default.png) left center no-repeat;
+}
+
+#DefaultQcBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-default-hv.png) left center no-repeat;
+}
+
+#DefaultQcBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-default-dis.png) left center no-repeat;
+}
+
+#BackupRgntQcBtn  {
+    background: url(:/Leonis/resource/image/icon-backup.png) left center no-repeat;
+}
+
+#BackupRgntQcBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-backup-hv.png) left center no-repeat;
+}
+
+#BackupRgntQcBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-backup-dis.png) left center no-repeat;
+}
+
+#flat_save, #save_Button, #pushButton_save  {
+    background: url(:/Leonis/resource/image/icon-save.png) left center no-repeat;
+}
+
+#flat_save:hover, #save_Button:hover, #pushButton_save:hover  {
+    background: url(:/Leonis/resource/image/icon-save-hv.png) left center no-repeat;
+}
+
+#flat_save:disabled, #save_Button:disabled, #pushButton_save:disabled  {
+    background: url(:/Leonis/resource/image/icon-save-dis.png) left center no-repeat;
+}
+
+#flat_music  {
+    background: url(:/Leonis/resource/image/icon-music.png) left center no-repeat;
+}
+
+#flat_music:hover  {
+    background: url(:/Leonis/resource/image/icon-music-hv.png) left center no-repeat;
+}
+
+#flat_music:disabled  {
+    background: url(:/Leonis/resource/image/icon-music-dis.png) left center no-repeat;
+}
+
+#flat_clear_custom  {
+    background: url(:/Leonis/resource/image/icon-clear-custom.png) left center no-repeat;
+}
+
+#flat_clear_custom:hover  {
+    background: url(:/Leonis/resource/image/icon-clear-custom-hv.png) left center no-repeat;
+}
+
+#flat_clear_custom:disabled  {
+    background: url(:/Leonis/resource/image/icon-clear-custom-dis.png) left center no-repeat;
+}
+
+#flat_parameter_download  {
+    background: url(:/Leonis/resource/image/icon-parameter-download.png) left center no-repeat;
+}
+
+#flat_parameter_download:hover  {
+    background: url(:/Leonis/resource/image/icon-parameter-download-hv.png) left center no-repeat;
+}
+
+#flat_parameter_download:disabled  {
+    background: url(:/Leonis/resource/image/icon-parameter-download-dis.png) left center no-repeat;
+}
+
+#flat_alternative_unit  {
+    background: url(:/Leonis/resource/image/icon-alternative-unit.png) left center no-repeat;
+}
+
+#flat_alternative_unit:hover  {
+    background: url(:/Leonis/resource/image/icon-alternative-unit-hv.png) left center no-repeat;
+}
+
+#flat_alternative_unit:disabled  {
+    background: url(:/Leonis/resource/image/icon-alternative-unit-dis.png) left center no-repeat;
+}
+
+#btn_assayCodeMag  {
+    background: url(:/Leonis/resource/image/icon-assayCodeMag.png) left center no-repeat;
+}
+
+#btn_assayCodeMag:hover  {
+    background: url(:/Leonis/resource/image/icon-assayCodeMag-hv.png) left center no-repeat;
+}
+
+#btn_assayCodeMag:disabled  {
+    background: url(:/Leonis/resource/image/icon-assayCodeMag-dis.png) left center no-repeat;
+}
+
+#flat_return  {
+    background: url(:/Leonis/resource/image/icon-return.png) left center no-repeat;
+}
+
+#flat_return:hover  {
+    background: url(:/Leonis/resource/image/icon-return-hv.png) left center no-repeat;
+}
+
+#flat_return:disabled  {
+    background: url(:/Leonis/resource/image/icon-return-dis.png) left center no-repeat;
+}
+
+#machineFactor  {
+    background: url(:/Leonis/resource/image/icon-machine.png) left center no-repeat;
+}
+
+#machineFactor:hover  {
+    background: url(:/Leonis/resource/image/icon-machine-hv.png) left center no-repeat;
+}
+
+#machineFactor:disabled  {
+    background: url(:/Leonis/resource/image/icon-machine-dis.png) left center no-repeat;
+}
+
+#caliFactorEdit_btn  {
+    background: url(:/Leonis/resource/image/icon-cal-coeff-edit.png) left center no-repeat;
+}
+
+#caliFactorEdit_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-cal-coeff-edit-h.png) left center no-repeat;
+}
+
+#caliFactorEdit_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-cal-coeff-edit-d.png) left center no-repeat;
+}
+
+#caliRackOverview_btn  {
+    background: url(:/Leonis/resource/image/icon-cal-rack-gen.png) left center no-repeat;
+}
+
+#caliRackOverview_btn:hover  {
+    background: url(:/Leonis/resource/image/icon-cal-rack-gen-h.png) left center no-repeat;
+}
+
+#caliRackOverview_btn:disabled  {
+    background: url(:/Leonis/resource/image/icon-cal-rack-gen-d.png) left center no-repeat;
+}
+
+#qcruleset_Button {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_rule.png) left center no-repeat;
+}
+
+#qcruleset_Button:hover {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_rule_hover.png) left center no-repeat;
+}
+
+#download_Button {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_download.png) left center no-repeat;
+}
+
+#download_Button:hover {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_download_hover.png) left center no-repeat;
+}
+
+#modefine_Button {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_modify.png) left center no-repeat;
+}
+
+#modefine_Button:hover {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_modify_hover.png) left center no-repeat;
+}
+
+#scan_Button {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_scan.png) left center no-repeat;
+}
+
+#scan_Button:hover {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_scan_hover.png) left center no-repeat;
+}
+
+#manu_Button {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_manualregister.png) left center no-repeat;
+}
+
+#manu_Button:hover {
+	background: url(:/Leonis/resource/image/im/qc/qc_setting_manualregister_hover.png) left center no-repeat;
+}
+
+#RgntMaskBtn  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_shielding.png) left center no-repeat;
+}
+
+#RgntMaskBtn:hover  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_shielding_hover.png) left center no-repeat;
+}
+
+#RgntMaskBtn:disabled  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_shielding_dis.png) left center no-repeat;
+}
+
+#PriorUseBtn  {
+    background: url(:/Leonis/resource/image/im/reagent/priority_use.png) left center no-repeat;
+}
+
+#PriorUseBtn:hover  {
+    background: url(:/Leonis/resource/image/im/reagent/priority_use_hover.png) left center no-repeat;
+}
+
+#PriorUseBtn:disabled  {
+    background: url(:/Leonis/resource/image/im/reagent/priority_use_dis.png) left center no-repeat;
+}
+
+#UnloadRgntBtn  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_unloading.png)  left center no-repeat;
+}
+
+#UnloadRgntBtn:hover  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_unloading_hover.png)  left center no-repeat;
+}
+
+#UnloadRgntBtn:disabled  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_unloading_dis.png)  left center no-repeat;
+}
+
+#RgntScanBtn  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_scanning.png) left center no-repeat;
+}
+
+#RgntScanBtn:hover  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_scanning_hover.png) left center no-repeat;
+}
+
+#RgntScanBtn:disabled  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_scanning_dis.png) left center no-repeat;
+}
+
+#LoadPartResetBtn  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_reset.png) left center no-repeat;
+}
+
+#LoadPartResetBtn:hover  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_reset_hover.png) left center no-repeat;
+}
+
+#LoadPartResetBtn:disabled  {
+    background: url(:/Leonis/resource/image/im/reagent/reagent_reset_dis.png) left center no-repeat;
+}
+
+#ExportBtn {
+	background: url(:/Leonis/resource/image/im/reagent/export.png) left center no-repeat;
+}
+
+#ExportBtn:hover {
+	background: url(:/Leonis/resource/image/im/reagent/export_hover.png) left center no-repeat;
+}
+
+#ExportBtn:disabled {
+	background: url(:/Leonis/resource/image/im/reagent/export_dis.png) left center no-repeat;
+}
+
+/*#OutCtrlBtn {
+	background: url(:/Leonis/resource/image/icon-OutCtrl.png) left center no-repeat;
+}
+
+#OutCtrlBtn:hover {
+	background: url(:/Leonis/resource/image/icon-OutCtrl-hv.png) left center no-repeat;
+}
+
+#OutCtrlBtn:disabled {
+	background: url(:/Leonis/resource/image/icon-OutCtrl-dis.png) left center no-repeat;
+}*/
+
+#TargetValUpdateBtn {
+	background: url(:/Leonis/resource/image/icon-TargetValUpdate.png) left center no-repeat;
+}
+
+#TargetValUpdateBtn:hover {
+	background: url(:/Leonis/resource/image/icon-TargetValUpdate-hv.png) left center no-repeat;
+}
+
+#TargetValUpdateBtn:disabled {
+	background: url(:/Leonis/resource/image/icon-TargetValUpdate-dis.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #ProfileCfgBtn  {
+    background: url(:/Leonis/resource/image/icon-maintain-profile-cfg.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #ProfileCfgBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-maintain-profile-cfg-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #MaintainLogBtn  {
+    background: url(:/Leonis/resource/image/icon-maintain-log.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #MaintainLogBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-maintain-log-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #MaintainLogBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-maintain-log-dis.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #AutoMaintainCfgBtn  {
+    background: url(:/Leonis/resource/image/icon-auto-maintain-cfg.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #AutoMaintainCfgBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-auto-maintain-cfg-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #AutoMaintainCfgBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-auto-maintain-cfg-dis.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #StopMaintainBtn  {
+    background: url(:/Leonis/resource/image/icon-stop-maintain.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #StopMaintainBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-stop-maintain-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #StopMaintainBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-stop-maintain-dis.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #DisplayInfoCfg  {
+    background: url(:/Leonis/resource/image/icon-progress-fmt-cfg.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #DisplayInfoCfg:hover  {
+    background: url(:/Leonis/resource/image/icon-progress-fmt-cfg-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #DisplayInfoCfg:disabled  {
+    background: url(:/Leonis/resource/image/icon-progress-fmt-cfg-dis.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #ElectrodeCleanSetBtn  {
+    background: url(:/Leonis/resource/image/icon-electrode-clean-set.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #ElectrodeCleanSetBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-electrode-clean-set-hv.png) left center no-repeat;
+}
+
+QWidget#MaintainWidget #ElectrodeCleanSetBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-electrode-clean-set-dis.png) left center no-repeat;
+}
+
+#DetectDebugBtn  {
+    background: url(:/Leonis/resource/image/icon-detect-debug.png) left center no-repeat;
+}
+
+#DetectDebugBtn:hover  {
+    background: url(:/Leonis/resource/image/icon-detect-debug-hv.png) left center no-repeat;
+}
+
+#DetectDebugBtn:disabled  {
+    background: url(:/Leonis/resource/image/icon-detect-debug-dis.png) left center no-repeat;
+}
+
+#RgntPlateDetailFrame{
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #e4e7ec;
+}
+
+#AddReactBtn {
+	border: 1px solid #a4a4a4 ;
+    border-radius: 4px;
+	background: url(:/Leonis/resource/image/icon-add.png) center no-repeat;
+}
+
+#BaseLiquidGrp1Frame,#BaseLiquidGrp2Frame,#CleanLiquid2Frame,#CleanLiquid1Frame,#ReactionFrame,#WasteSolidFrame,#WasteLiquidFrame{
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #ced6ea;
+}
+
+#BaseLiquidGrp1Lab,#BaseLiquidGrp2Lab,#CleanLiquid1Lab,#CleanLiquid2Lab,#ReactionLab,#WasteSolidLab,#WasteLiquidLab{
+	background-color: #e6eaf5;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 6px;
+	border-top:1px solid #e6eaf5;
+	opacity: 0.5;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 14px;
+	line-height: 16px;
+	color: #565656;
+}
+
+*[buttons="wash"]  {
+    background: transparent; 
+}
+
+*[buttons="wash_refresh"]  {
+    border: 0;
+    background-color: transparent; 
+    background-image: url(:/Leonis/resource/image/ch/c1005/icon-wash-refresh.png);
+}
+
+*[buttons="wash_refresh"]:hover  {
+    border: 0;
+    background-color: transparent; 
+    background-image: url(:/Leonis/resource/image/ch/c1005/icon-wash-refresh-hv.png);
+}
+
+#icon_small_close  {
+    background: url(:/Leonis/resource/image/icon-small-close.png) center bottom no-repeat;
+    border: 0;
+} 
+
+#icon_small_close:hover  {
+    background-image: url(:/Leonis/resource/image/icon-small-close-hv.png) center bottom no-repeat;
+}
+
+#chemistry  {
+    min-width: 92px;
+    max-width: 92px;
+    min-height: 48px;
+    max-height: 48px;
+    background: #e6eaf4;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#chemistry:pressed  {
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 44px;
+    max-height: 44px;
+    border: 2px solid #e6eaf4;
+    background: #025bc7;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#Immunity  {
+    min-width: 92px;
+    max-width: 92px;
+    min-height: 48px;
+    max-height: 48px;
+    background: #e6eaf4;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#Immunity:pressed  {
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 44px;
+    max-height: 44px;
+    border: 2px solid #e6eaf4;
+    background: #025bc7;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#title_label  {
+	padding-top: 23px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+*[buttons="btn_dlg"], *[buttons="btn_dlg_gray"]  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg.png) 9 9 9 9 fill repeat;
+	font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="btn_dlg"]:hover, *[buttons="btn_dlg_gray"]:hover  {
+	border-width:9px 9px 9px 9px;
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg-hv.png) 9 9 9 9 fill repeat;
+}
+
+*[buttons="btn_dlg"]:pressed, *[buttons="btn_dlg_gray"]:pressed  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+*[buttons="btn_dlg"]:disabled  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(224, 224, 224),stop:1 rgb(255, 255, 255));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-dis.png) 9 9 9 9 fill repeat;
+	color: #adadad;
+}
+
+/**[buttons="btn_dlg"]:focus, *[buttons="btn_dlg_gray"]:focus  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}*/
+
+*[buttons="btn_dlg_gray"]:disabled  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(224, 224, 224),stop:1 rgb(255, 255, 255));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-dis-gray.png) 9 9 9 9 fill repeat;
+	color: #adadad;
+}
+
+*[assays="card_page"]  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+QTableView:disabled {
+    background: #f6f6f6;
+}
+
+*[icons="page_pre"]  {
+	background-image: url(:/Leonis/resource/image/page-pre.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_pre"]:hover  {
+	background-image: url(:/Leonis/resource/image/page-pre.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_pre"]:pressed  {
+	background-image: url(:/Leonis/resource/image/page-pre-hv.png);
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_pre"]:disabled  {
+	background-image: url(:/Leonis/resource/image/page-pre-dis.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_next"]  {
+	background-image: url(:/Leonis/resource/image/page-next.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_next"]:hover  {
+	background-image: url(:/Leonis/resource/image/page-next.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_next"]:pressed  {
+	background-image: url(:/Leonis/resource/image/page-next-hv.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+*[icons="page_next"]:disabled  {
+	background-image: url(:/Leonis/resource/image/page-next-dis.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#assayName  {
+	padding-left: 5px;
+}
+
+#M1, #M2, #M3, #M4, #M5, #M6  {
+	padding-left: 6px;
+}
+
+*[cards="card_normal"]  {
+	background: #e8f2fe;
+	border-radius: 4px;
+}
+
+*[cards="card_normal"] #test  {
+	background: #bacfed;
+	padding-left: 5px;
+}
+
+*[cards="card_normal"] #last  {
+	background: #bacfed;
+	padding-right: 5px;
+}
+
+*[cards="card_waring"]  {
+	background: #feedda;
+	border-radius: 4px;
+}
+
+*[cards="card_waring"] #test  {
+	background: #fa9016;
+	padding-left: 5px;
+}
+
+*[cards="card_waring"] #last  {
+	background: #fa9016;
+	padding-right: 5px;
+}
+
+*[cards="card_errorstate"]  {
+	background: #ffe4e5;
+	border-radius: 4px;
+}
+
+*[cards="card_errorstate"] #test  {
+	background: #ff565f;
+	padding-left: 5px;
+}
+
+*[cards="card_errorstate"] #last  {
+	background: #ff565f;
+	padding-right: 5px;
+}
+
+#not_loadable_icon  {
+	background: #8a98ad;
+	min-width: 16px;
+	max-width: 16px;
+	min-height: 16px;
+	max-height: 16px;
+	border-radius: 8px;
+}
+
+#QShowDetailCalibrate > QCalibrateParameter  {
+	border-radius: 6px;
+	border: 1px solid #a4a4a4;
+}
+
+#QShowDetailCalibrate > QCalibrateParameter:hover {
+	border: 2px solid #025bc7;
+}
+
+#QShowDetailCalibrate > QCalibrateParameter:pressed {
+	border: 2px solid #025bc7;
+}
+
+#Paramter_com *, #Parameter_current *  {
+	font-size: 14px; 
+}
+
+QCalibrateParameter[parameter="normals"]>#title  {
+	font-size: 20px;
+}
+
+QCalibrateParameter[parameter="hovers"]>#title, QCalibrateParameter[parameter="presseds"]>#title  {
+	font-size: 20px;
+	color: #1fb558; 
+	padding-left: 25px;
+	background: url(:/Leonis/resource/image/ch/c1005/icon-title.png) no-repeat;
+}
+
+*[parameter="bks"]  {
+	background: #f6f6f6;
+	border: 1px solid #d1d1d1;
+	padding-left: 5px;
+}
+
+#Warning_Widget  {
+	font-size: 18px;
+	color: #ff565f;
+}
+
+*[state_bks="normal"]  {
+	border-radius: 6px;
+	border: 1px solid #a4a4a4;
+}
+
+*[state_bks="wait"]  {
+	border-radius: 6px;
+	background: #e2efff;
+	border: 1px solid #4092f6;
+}
+
+*[state_bks="ok"]  {
+	border-radius: 6px;
+	background: #dff6e6;
+	border: 1px solid #4fc976;
+}
+
+*[state_bks="recheck"]  {
+	border-radius: 6px;
+	background: #ffecd7;
+	border: 1px solid #fa931c;
+}
+
+*[state_bks="disable"]  {
+	border-radius: 6px;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+    color: #b7b7b7;
+}
+
+*[state_texts="assay_name"]  {
+	font-size: 18px;
+}
+
+*[state_texts="assay_name_hv"]  {
+	font-size: 18px;
+}
+
+*[state_texts="assay_name_dis"]  {
+	font-size: 18px;
+    color: #d1d1d1;
+}
+
+*[states="none"]  {
+	background: transparent;
+}
+
+*[states="item_mask"]  {
+	background: url(:/Leonis/resource/image/icon-item-mask.png) no-repeat center;
+}
+
+*[states="item_mask_hv"]  {
+	background: url(:/Leonis/resource/image/icon-item-mask-hv.png) no-repeat center;
+}
+
+*[states="item_mask_dis"]  {
+	background: url(:/Leonis/resource/image/icon-item-mask-dis.png) no-repeat center;
+}
+
+*[states="reagentdis"]  {
+	background: url(:/Leonis/resource/image/icon-reagentdis.png) no-repeat center;
+}
+
+*[states="reagentdis_hv"]  {
+	background: url(:/Leonis/resource/image/icon-reagentdis-hv.png) no-repeat center;
+}
+
+*[states="reagentdis_dis"]  {
+	background: url(:/Leonis/resource/image/icon-reagentdis-dis.png) no-repeat center;
+}
+
+*[states="caldis"] {
+	background: url(:/Leonis/resource/image/icon-caldis.png) no-repeat center;
+}
+
+*[states="caldis_hv"] {
+	background: url(:/Leonis/resource/image/icon-caldis-hv.png) no-repeat center;
+}
+
+*[states="caldis_dis"] {
+	background: url(:/Leonis/resource/image/icon-caldis-dis.png) no-repeat center;
+}
+
+#dillute_label {
+    color: #0c9586;
+    border: 1px solid transparent;
+    margin-bottom: 1px;
+}
+
+*[states="inc"] {
+	background: url(:/Leonis/resource/image/icon-inc-lengend.png) no-repeat center left;
+}
+
+*[states="inc_hv"] {
+	background: url(:/Leonis/resource/image/icon-inc-hv.png) no-repeat center left;
+}
+
+*[states="inc_dis"] {
+	background: url(:/Leonis/resource/image/icon-inc-dis.png) no-repeat center left;
+}
+
+*[states="dec"] {
+	background: url(:/Leonis/resource/image/icon-dec-lengend.png) no-repeat center left;
+}
+
+*[states="dec_hv"] {
+	background: url(:/Leonis/resource/image/icon-dec-hv.png) no-repeat center left;
+}
+
+*[states="dec_dis"] {
+	background: url(:/Leonis/resource/image/icon-dec-dis.png) no-repeat center left;
+}
+
+#dulition_btn, #batchRegister, #save_btn  {
+	min-height: 32px;
+	max-height: 32px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg.png) 9 9 9 9 fill repeat;
+	font-size: 18px;
+    color: #565656;
+}
+
+#dulition_btn:hover, #batchInput_btn:hover, #save_btn:hover  {
+	border-width:9px 9px 9px 9px;
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg-hv.png) 9 9 9 9 fill repeat;
+}
+
+#dulition_btn:pressed, #batchInput_btn:pressed, #save_btn:pressed  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+#dulition_btn:disabled, #batchInput_btn:disabled, #save_btn:disabled  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(224, 224, 224),stop:1 rgb(255, 255, 255));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-dis.png) 9 9 9 9 fill repeat;
+	color: #adadad;
+}
+
+#bgCorner {
+    background: #e6eaf4;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+#btn_conner_chemistry {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    min-height: 42px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e6eaf4;
+    padding: 0 12px 2px 10px;
+    margin-bottom: 8px;
+}
+
+#btn_conner_immunity {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 42px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e6eaf4;
+    padding: 0 10px 2px 8px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+#bgCornerShow {
+    background: #e6eaf4;
+    border-radius: 8px;
+    margin-right: 11px;
+    margin-bottom: 10px;
+    min-height: 48px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#bgChImBtn {
+    background: #e6eaf4;
+    border-radius: 8px;
+}
+
+#showByChBtn {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-height: 42px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e6eaf4;
+    padding: 0 14px 2px 11px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+#showByImBtn {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 42px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e6eaf4;
+    padding: 0 12px 2px 9px;
+    margin-bottom: 8px;
+    margin-right: 11px;
+    margin-top: 5px;
+}
+
+#ch_rabtn {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    min-height: 42px;
+    max-height: 42px;
+    padding: 0 14px 2px 11px;
+}
+
+#im_rabtn {
+    color: #808080;
+    background: #e6eaf4;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 42px;
+    max-height: 42px;
+    padding: 0 12px 2px 9px;
+}
+
+#ch_rabtn:checked, #im_rabtn:checked, #ch_rabtn:hover, #im_rabtn:hover  {
+	background: #025bc7;
+	color: #fff;
+    border: 0;
+    border-radius: 6px;
+}
+
+#btn_conner_chemistry:checked, #btn_conner_immunity:checked, #btn_conner_chemistry:hover, #btn_conner_immunity:hover, 
+#showByChBtn:checked, #showByImBtn:checked, #showByChBtn:hover, #showByImBtn:hover  {
+	background: #025bc7;
+	color: #fff;
+    border: 2px solid #e6eaf4;
+    border-radius: 8px;
+}
+
+*[buttons="left"]  {
+	background: #fff;
+	border-left: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0;
+    padding-right: 4px;
+    padding-left: 5px;
+}
+
+*[buttons="right"]  {
+	background: #fff;
+	border-right: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    padding-right: 5px;
+    padding-left: 4px;
+}
+
+*[buttons="left"]:hover, *[buttons="right"]:hover  {
+    border-top: 1px solid #025bc7;
+    border-bottom: 1px solid #025bc7;
+	color: #025bc7;
+}
+
+*[buttons="left"]:hover  {
+	border-left: 1px solid #025bc7;
+}
+
+*[buttons="right"]:hover {
+    border-right: 1px solid #025bc7;
+}
+
+*[buttons="left"]:checked, *[buttons="left"]:checked:hover, *[buttons="right"]:checked, *[buttons="right"]:checked:hover {
+	background: #025bc7;
+	color: #fff;
+    border: 0;
+}
+
+#dev_type_group QRadioButton  {
+	font-size: 16px;
+    margin-top: 9px;
+}
+
+QRadioButton#item_chemistry  {
+    min-height: 48px;
+    max-height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+	background: #fff;
+	border-left: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0;
+}
+
+QRadioButton::indicator#item_chemistry, QRadioButton::indicator#item_immune,
+QRadioButton::indicator#showByChBtn, QRadioButton::indicator#showByImBtn,
+QRadioButton::indicator#ch_rabtn, QRadioButton::indicator#im_rabtn {
+    width: 0;
+    text-align: center;
+}
+
+QRadioButton#item_chemistry:hover, QRadioButton#item_immune:hover  {
+    border-top: 1px solid #025bc7;
+    border-bottom: 1px solid #025bc7;
+	color: #025bc7;
+}
+
+QRadioButton#item_chemistry:hover  {
+	border-left: 1px solid #025bc7;
+}
+
+QRadioButton#item_immune:hover {
+    border-right: 1px solid #025bc7;
+}
+
+QRadioButton#item_chemistry:checked, QRadioButton#item_chemistry:checked:hover, QRadioButton#item_immune:checked, QRadioButton#item_immune:checked:hover  {
+	border: 0;
+	color: #fff;
+    background: #025bc7;
+}
+
+QRadioButton#item_chemistry::indicator, QRadioButton#item_chemistry::indicator:hover, QRadioButton#item_chemistry::indicator:checked, QRadioButton#item_chemistry::indicator:disabled, QRadioButton#item_chemistry::indicator:checked:disabled,
+QRadioButton#item_immune::indicator, QRadioButton#item_immune::indicator:hover, QRadioButton#item_immune::indicator:checked, QRadioButton#item_immune::indicator:disabled, QRadioButton#item_immune::indicator:checked:disabled   {
+    border:0;
+    background:none;
+}
+
+QRadioButton#item_immune  {
+    max-height:48px;
+    min-height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+	background: #fff;
+	border-right: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+}
+
+QRadioButton#chButton  {
+    max-width: 90px;
+    min-width: 90px;
+    max-height: 48px;
+    min-height: 48px;
+	background: #fff;
+	border-left: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0;
+}
+
+QRadioButton#chButton:hover, QRadioButton#imButton:hover  {
+    border-top: 1px solid #025bc7;
+    border-bottom: 1px solid #025bc7;
+	color: #025bc7;
+}
+
+QRadioButton#chButton:hover  {
+	border-left: 1px solid #025bc7;
+}
+
+QRadioButton#imButton:hover {
+    border-right: 1px solid #025bc7;
+}
+
+QRadioButton#chButton:checked, QRadioButton#imButton:checked  {
+	border: 0;
+	color: #fff;
+    background: #025bc7;
+}
+
+QRadioButton#chButton::indicator, QRadioButton#chButton::indicator:hover, QRadioButton#chButton::indicator:checked, QRadioButton#chButton::indicator:disabled, QRadioButton#chButton::indicator:checked:disabled,
+QRadioButton#imButton::indicator, QRadioButton#imButton::indicator:hover, QRadioButton#imButton::indicator:checked, QRadioButton#imButton::indicator:disabled, QRadioButton#imButton::indicator:checked:disabled   {
+    border:0;
+    background:none;
+}
+
+QRadioButton#imButton  {
+    max-width: 90px;
+    min-width: 90px;
+    max-height:38px;
+    min-height: 38px;
+	background: #fff;
+	border-right: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+	color: #333;
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+}
+
+*[tabs="sub"] QTabBar::tab, *[tabs="sub_border"] QTabBar::tab  {
+    min-width: 80px;
+    min-height: 47px;
+    max-height: 47px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    border: 1px solid #a3a3a3;
+    border-bottom: 0;
+}
+
+*[tabs="sub"] QTabBar::tab:hover, *[tabs="sub_border"] QTabBar::tab:hover  {
+    color: #565656;
+    min-height: 48px;
+    max-height: 48px;
+    border: 1px solid #d1d1d1;
+    border-bottom: 1px solid #f1f3f5;
+    background: #f1f3f5;
+}
+
+*[tabs="sub"] QTabBar::tab:selected, *[tabs="sub_border"] QTabBar::tab:selected  {
+    background: #025bc7;
+    color: #fff;
+    min-height: 48px;
+    max-height: 48px;
+    border: 0;
+}
+
+*[tabs="sub_border"]::pane  {
+    border: 1px solid #a4a4a4;
+}
+
+*[tab_borders="all"]::pane  {
+    border: 1px solid #a4a4a4;
+}
+
+*[tabs="min_fix"] QTabBar::tab  {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 47px;
+    max-height: 47px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    border: 1px solid #a3a3a3;
+    border-bottom: 0;
+}
+
+*[tabs="min_fix"] QTabBar::tab:hover  {
+    color: #565656;
+    min-height: 48px;
+    max-height: 48px;
+    border: 1px solid #d1d1d1;
+    border-bottom: 1px solid #f1f3f5;
+    background: #f1f3f5;
+}
+
+*[tabs="min_fix"] QTabBar::tab:selected  {
+    background: #025bc7;
+    color: #fff;
+    min-height: 48px;
+    max-height: 48px;
+    border: 0;
+}
+
+*[tabs="west"] QTabBar::tab  {
+    min-width: 170px;
+    max-width: 170px;
+    min-height: 80px;
+    max-height: 80px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+*[tabs="west"] QTabBar::tab:hover  {
+    background: #025bc7;
+    color: #fff;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+*[tabs="west"] QTabBar::tab:selected  {
+    border-left: 0;
+    background: #025bc7;
+    color: #fff;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+*[states_border="border_acidity_spare"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-acidity-spare.png);
+}
+
+*[states_border="border_acidity_inuse"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-acidity-inuse.png);
+}
+
+*[states_border="border_acidity_remind"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-acidity-remind.png);
+}
+
+*[states_border="border_acidity_alarm"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-acidity-alarm.png);
+}
+
+*[states_border="border_alkalinity_spare"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-alkalinity-spare.png);
+}
+
+*[states_border="border_alkalinity_inuse"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-alkalinity-inuse.png);
+}
+
+*[states_border="border_alkalinity_remind"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-alkalinity-remind.png);
+}
+
+*[states_border="border_alkalinity_alarm"] {
+    background: url(:/Leonis/resource/image/ch/c1005/border-alkalinity-alarm.png);
+}
+
+*[states_water="water_acidity_spare"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-acidity-spare.png);
+}
+
+*[states_water="water_acidity_inuse"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-acidity-inuse.png);
+}
+
+*[states_water="water_acidity_remind"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-acidity-remind.png);
+}
+
+*[states_water="water_acidity_alarm"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-acidity-alarm.png);
+}
+
+*[states_water="water_alkalinity_spare"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-alkalinity-spare.png);
+}
+
+*[states_water="water_alkalinity_inuse"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-alkalinity-inuse.png);
+}
+
+*[states_water="water_alkalinity_remind"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-alkalinity-remind.png);
+}
+
+*[states_water="water_alkalinity_alarm"] {
+    background: url(:/Leonis/resource/image/ch/c1005/water-alkalinity-alarm.png);
+}
+
+*[states="add_notice"] {
+    background: url(:/Leonis/resource/image/ch/c1005/add-notice.png);
+}
+
+[checks="push"]::indicator {
+    width: 40px;
+    height: 20px;
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+    margin-left: 5px;
+}
+
+[checks="push"]::indicator:hover {
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+}
+
+[checks="push"]::indicator:checked {
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+}
+
+[checks="push"]::indicator:disabled {
+    background: url(:/Leonis/resource/image/icon-push-dis.png) no-repeat;
+}
+
+[checks="push"]::indicator:checked:disabled {
+    background: url(:/Leonis/resource/image/icon-push-on-dis.png) no-repeat;
+}
+
+[checks="push"] QCheckBox::indicator {
+    width: 40px;
+    height: 20px;
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+    margin-left: 5px;
+}
+
+[checks="push"] QCheckBox::indicator:hover {
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+}
+
+[checks="push"] QCheckBox::indicator:checked {
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+}
+
+[checks="push"] QCheckBox::indicator:disabled {
+    background: url(:/Leonis/resource/image/icon-push-dis.png) no-repeat;
+}
+
+[checks="push"] QCheckBox::indicator:checked:disabled {
+    background: url(:/Leonis/resource/image/icon-push-on-dis.png) no-repeat;
+}
+
+#icon_user {
+    background: url(:/Leonis/resource/image/icon-user.png) center no-repeat;
+    margin-top: 2px;
+}
+
+#curve_current, #im_curve_current {
+    border: 1px solid #1fb558;
+    background: #e1fae3;
+    border-radius: 3px;
+}
+
+#text_work_curve_label {
+    border-top: 2px solid #1fb558;
+    color: #1fb558;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#master_curve_legend_label {
+    border-top: 2px solid #a4a4a4;
+    color: #e4e7ec;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#lot_lable_icon {
+    background: url(:/Leonis/resource/image/ch/c1005/ch-curve-current-lot.png) no-repeat;
+}
+
+#time_lable_icon {
+    background: url(:/Leonis/resource/image/ch/c1005/ch-curve-current-time.png) no-repeat;
+}
+
+#history_btn, #history_btn:hover, #history_btn:pressed, #im_history_btn, #im_history_btn:hover, #im_history_btn:pressed   {
+    border: 1px solid #459fff;
+    background: #e5f2ff;
+    border-radius: 3px;
+}
+
+#text_history_curve_label {
+    border-top: 2px solid #459fff;
+    color: #3b8ff6;
+    font-size: 16px;
+}
+
+#lot_lable_his_icon {
+    background: url(:/Leonis/resource/image/ch/c1005/ch-history-btn-lot.png) no-repeat;
+}
+
+#time_lable_his_icon {
+    background: url(:/Leonis/resource/image/ch/c1005/ch-history-btn-time.png) no-repeat;
+}
+
+#ch_history_btn_arrow {
+    background: url(:/Leonis/resource/image/ch/c1005/ch-history-btn-arrow.png) no-repeat;
+}
+
+#im_history_btn_arrow {
+    background: url(:/Leonis/resource/image/im/im-history-btn-arrow.png) no-repeat;
+}
+
+#showByAssay_btn, #showBySample_btn {
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+#samplesource_type_view QComboBox  {
+	border: 0;
+}
+
+#help_btn {
+    background: url(:/Leonis/resource/image/ch/c1005/sev_help.png) bottom no-repeat;
+    padding-left: 25px;
+    color: #3538cc;
+    font-size: 17px;
+    border: 0;
+}
+
+*[buttons="system"] {
+    max-width: 252px;
+    max-height: 66px;
+    min-height: 66px;
+    border-width:20px;
+    border-image: url(:/Leonis/resource/image/btn-sys.png) 20 fill repeat;
+	font-size: 18px;
+    text-align: right center;
+    padding-right: 9px;
+}
+
+*[buttons="system"]:hover {
+    border-image: url(:/Leonis/resource/image/btn-sys-hv.png) 20 fill repeat;
+}
+
+*[buttons="system"]:pressed {
+    border-image: url(:/Leonis/resource/image/btn-sys-pressed.png) 20 fill repeat;
+}
+
+*[buttons="systemDebug"] {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 52px;
+    min-height: 52px;
+    background: #facd89;
+	font-size: 18px;
+    text-align: right center;
+    padding-right: 9px;
+    border-radius: 10px;
+    border: 8px solid transparent;
+    margin: 4px;
+}
+
+*[buttons="systemDebug"]:hover {
+    background: #ffd9a0;
+}
+
+*[buttons="systemDebug"]:pressed {
+    background: #facc85;
+}
+
+*[switches="chemistry"] {
+    border: 1px solid #025bc7;
+    border-radius: 12px;
+    color: #025bc7;
+    font-size: 16px;
+}
+
+*[switches="immune"] {
+    border: 1px solid #18a532;
+    border-radius: 12px;
+    color: #18a532;
+    font-size: 16px;
+}
+
+#icon_assay_order  {
+    background: url(:/Leonis/resource/image/icon-assay-order.png) center no-repeat;
+}
+
+#icon_data_dic  {
+    background: url(:/Leonis/resource/image/icon-assay-postion.png) center no-repeat;
+}
+
+#icon_alarm_set  {
+    background: url(:/Leonis/resource/image/icon-calc.png) center no-repeat;
+}
+
+#icon_enable_audi {
+    background: url(:/Leonis/resource/image/icon-enable-audi.png) center no-repeat;
+}
+
+QSlider::groove:horizontal  {
+    border-radius: 15px;
+    background: #e4e7ec;
+}
+
+QSlider::sub-page:horizontal {
+    background: #1fb558;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+QSlider::handle:horizontal {
+    background: #fff;
+    width: 20px;
+    border: 5px solid #1fb558;
+    border-radius: 15px;
+}
+
+QListView {
+   border-bottom: 1px solid #a4a4a4;
+}
+
+QListView::item {
+    height: 58px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+    color: #565656;
+}
+
+QListView::item:hover, QListView::item:checked {
+    border: 2px solid #025bc7;
+    color: #565656;
+    padding-left: 8px;
+}
+
+*[buttons="btn_cal"] {
+    border-radius: 6px;
+    background-color: #fff;
+    color: #565656;
+    border-image: none;
+}
+
+*[buttons="btn_cal"]:pressed {
+	border-radius: 6px;
+    background-color: #fa9016;
+    color: #fff;
+    border-image: none;
+}
+
+*[buttons="btn_selected"] {
+    border-radius: 6px;
+    background-color: #fa9016;
+    color: #fff;
+    border: 0;
+}
+
+#result_label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#result_label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+*[bks="result_normal"] {
+    border-radius: 4px;
+    background: #e4e7ec;
+    border: 0;
+}
+
+*[bks="result_highest"] {
+    border-radius: 4px;
+    background: #ffeeed;
+    border: 0;
+}
+
+*[bks="result_higher"] {
+    border-radius: 4px;
+    background: #e4e7ec;
+    border: 0;
+}
+
+*[bks="result_lowest"] {
+    border-radius: 4px;
+    background: #e5f2ff;
+    border: 0;
+}
+
+*[bks="result_lower"] {
+    border-radius: 4px;
+    background: #e4e7ec;
+    border: 0;
+}
+ 
+*[colors="result_normal"] {
+    color: #565656;
+}
+
+*[colors="result_highest"], *[colors="result_higher"] {
+    color: #f33;
+}
+
+*[colors="result_lowest"], *[colors="result_lower"] {
+    color: #459fff;
+}
+
+#QAssayResultView QGroupBox QLabel {
+    font-size: 16px;
+}
+
+#QAssayResultView #label {
+    font-size: 14px;
+}
+
+#result_show {
+    font-size: 14px;
+}
+
+*[buttons="btn_recheck"]  {
+    color:#fff;
+    font-size:18px;
+    text-align: center;
+    color:#333;
+    background: #fff;
+    border: 1px solid #adadad;
+    border-radius: 6px;
+}
+
+*[buttons="btn_recheck"]:hover   {
+    color:#fff;
+    background: #025bc7;
+    border: 0;
+}
+
+*[buttons="btn_recheck"]:checked  {
+    color:#fff;
+    background: #025bc7;
+    border: 0;
+}
+
+#assay_view QComboBox {
+    border: 0;
+    background: transparent;
+}
+
+QGroupBox[borders="group"] {
+    border: 1px solid #a4a4a4;
+    font-size:14px;
+    border-radius: 4px;
+}
+
+QGroupBox[borders="group"]::title {
+    border-bottom-right-radius: 4px;
+    background: #e4e7ec;
+    min-width: 60px;
+    min-height: 30px;
+    border-top: 1px solid #a4a4a4;
+    border-left: 1px solid #a4a4a4;
+    padding-left: 15px; 
+    padding-right: 15px;
+    border-top-left-radius: 4px;
+}
+
+QGroupBox[borders="group-select"] {
+    border: 2px solid #025bc7;
+    font-size:14px;
+    border-radius: 4px;
+}
+
+QGroupBox[borders="group-select"]::title {
+    border-bottom-right-radius: 4px;
+    background: #e4e7ec;
+    min-width: 59px;
+    min-height: 29px;
+    border-top: 2px solid #025bc7;
+    border-left: 2px solid #025bc7;
+    padding-left: 14px; 
+    padding-right: 15px;
+    border-top-left-radius: 4px;
+}
+
+QGroupBox[borders="group_right_angle"] {
+    border: 1px solid #a4a4a4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QGroupBox[borders="group_right_angle"]::title {
+    border-bottom-right-radius: 4px;
+    background: #e4e7ec;
+    min-width: 60px;
+    min-height: 30px;
+    border-top: 1px solid #a4a4a4;
+    border-left: 1px solid #a4a4a4;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+QGroupBox[borders="group_tit"] {
+    border: 1px solid #a4a4a4;
+    font-size: 18px;
+    margin-top: 42px;
+}
+
+QGroupBox[borders="group_tit"]::title {
+    background: #e4e7ec;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 9999px;
+    margin-bottom: 1px;
+    margin-top: -42px;
+}
+
+QGroupBox[borders="group_tit_check"] {
+    border: 1px solid #a4a4a4;
+    font-size: 18px;
+    margin-top: 42px;
+}
+
+QGroupBox[borders="group_tit_check"]::title {
+    background: #e4e7ec;
+    height: 40px;
+    margin-bottom: 1px;
+    margin-top: -42px;
+    padding-right: 9999px;
+}
+
+QGroupBox[borders="group_tit_check"]::indicator {
+    width: 40px;
+    height: 20px;
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+QGroupBox[borders="group_tit_check"]::indicator:checked {
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+}
+
+QGroupBox[borders="group_tit_check"]::indicator:unchecked {
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+}
+
+QGroupBox[borders="group_tit_check"]::indicator:disabled {
+    background: url(:/Leonis/resource/image/icon-push-dis.png) no-repeat;
+}
+
+QGroupBox[borders="group_tit_check"]::indicator:checked:disabled {
+    background: url(:/Leonis/resource/image/icon-push-on-dis.png) no-repeat;
+}
+
+QGroupBox[borders="noborder_tit_check"] {
+    border: 0;
+    font-size: 18px;
+    margin-top: 42px;
+}
+
+QGroupBox[borders="noborder_tit_check"]::title {
+    background: #fff;
+    height: 40px;
+    margin-bottom: 1px;
+    margin-top: -42px;
+    padding-right: 9999px;
+}
+
+QGroupBox[borders="noborder_tit_check"]::indicator {
+    width: 40px;
+    height: 20px;
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+QGroupBox[borders="noborder_tit_check"]::indicator:checked {
+    background: url(:/Leonis/resource/image/icon-push-on.png) no-repeat;
+}
+
+QGroupBox[borders="noborder_tit_check"]::indicator:unchecked {
+    background: url(:/Leonis/resource/image/icon-push-off.png) no-repeat;
+}
+
+QGroupBox[borders="noborder_tit_check"]::indicator:disabled {
+    background: url(:/Leonis/resource/image/icon-push-dis.png) no-repeat;
+}
+
+QGroupBox[borders="noborder_tit_check"]::indicator:checked:disabled {
+    background: url(:/Leonis/resource/image/icon-push-dis-on.png) no-repeat;
+}
+
+#AnalysisParam_info::title {
+    min-width: 1000px;  
+}
+
+#AnalysisParam_range::title {
+    min-width: 1000px;  
+}
+
+#AnalysisParam_sample::title {
+    min-width: 540px;  
+}
+
+#AnalysisParam_reagent::title {
+    min-width: 540px;  
+}
+
+#CalSetting_sample::title {
+    min-width: 400px;  
+}
+
+#CalSetting_caliVols::title {
+    min-width: 635px;  
+}
+
+#CalSetting_range::title {
+    min-width: 636px;  
+}
+
+#range_info::title {
+    min-width: 767px;  
+}
+
+#GenDiaGrpBox::title {
+    min-width: 773px;  
+}
+
+#AccDiaGrpBox::title {
+    min-width: 1544px;  
+}
+
+#page_up_btn {
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    background-image: url(:/Leonis/resource/image/icon-page-pre.png);
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+#page_up_btn:hover {
+    background-image: url(:/Leonis/resource/image/icon-page-pre-hover.png);
+}
+
+#page_up_btn:disabled {
+    border: 1px solid #d1d1d1;
+    background-image: url(:/Leonis/resource/image/icon-page-pre-dis.png);
+}
+
+#page_down_btn {
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    background-image: url(:/Leonis/resource/image/icon-page-next.png);
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+#page_down_btn:hover {
+    background-image: url(:/Leonis/resource/image/icon-page-next-hover.png);
+}
+
+#page_down_btn:disabled {
+    border: 1px solid #d1d1d1;
+    background-image: url(:/Leonis/resource/image/icon-page-next-dis.png);
+    background-color: #f6f6f6;
+}
+
+*[paddings="set_left"] {
+    padding-left: 6px;
+}
+
+*[buttons="set_close"] QPushButton {
+    background-color: transparent;
+    background-image: url(:/Leonis/resource/image/bk-default-set-close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+*[labels="default_set"]  QLabel  {
+    border-width:12px 10px 8px 4px;	
+    border-image: url(:/Leonis/resource/image/bk-default-set.png) 12 10 8 4 fill repeat;
+}
+
+*[buttons="set_add"] {
+    image: url(:/Leonis/resource/image/bk-default-set-add.png);
+    border-width: 0;
+    margin-top: 7px;
+}
+
+QLabel#Qc1IconLab
+{
+	border:none;
+	border-radius:6px;
+	background-color:#1b7df5;
+}
+
+QLabel#Qc2IconLab
+{
+	border:none;
+	border-radius:6px;
+	background-color:#1fb558;
+}
+
+QLabel#Qc3IconLab
+{
+	border:none;
+	border-radius:6px;
+	background-color:#9f65e6;
+}
+
+QLabel#Qc4IconLab
+{
+	border:none;
+	border-radius:6px;
+	background-color:#ff1493;
+}
+
+QLabel#NoCalcQcIconLab
+{
+	border:none;
+	border-radius:6px;
+	background-color:#808080;
+}
+
+QLabel#WarnQcIconLab
+{
+	border:none;
+	background: url(:/Leonis/resource/image/icon-qc-warn.png) center no-repeat;
+}
+
+QLabel#OutCtrlIconLab
+{
+	border:none;
+	background: url(:/Leonis/resource/image/icon-qc-outctrl.png) center no-repeat;
+}
+
+#QcInfoTable QHeaderView::section::horizontal, #QcInfoTable QTableView  {
+    font-size: 16px;
+}
+
+#bk_light_gray {
+    background: #f5f7fb;
+}
+
+#PopBtn {
+    background: #fff;
+    border: 1px solid #a4a4a4;
+	color:#1265ca;
+}
+
+#QcInfoTable QComboBox, #tableView_rules QComboBox, #tableViewAlarmRetestSettings QComboBox, #RgntParamTbl QComboBox, #RgntParamTbl_2 QComboBox {
+    border: 0;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+}
+
+#micro_Button {
+    text-align: left;
+    padding-left: 45px;
+    background: url(:/Leonis/resource/image/icon-micro-cup.png) left center no-repeat;
+}
+
+#micro_Button:hover, #micro_Button:checked {
+    padding-left: 45px;
+    background-image: url(:/Leonis/resource/image/icon-micro-cup-hv.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #e5f5ff;
+}
+
+#normal_Button {
+    text-align: left;
+    padding-left: 45px;
+    background: url(:/Leonis/resource/image/icon-normal-cup.png) left center no-repeat;
+}
+
+#normal_Button:hover, #normal_Button:checked {
+    padding-left: 45px;
+    background-image: url(:/Leonis/resource/image/icon-normal-cup-hv.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #e5f5ff;
+}
+
+#ori_Button {
+    text-align: left;
+    padding-left: 45px;
+    background: url(:/Leonis/resource/image/icon-ori.png) left center no-repeat;
+}
+
+#ori_Button:hover, #ori_Button:checked {
+    padding-left: 45px;
+    background-image: url(:/Leonis/resource/image/icon-ori-hv.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #e5f5ff;
+}
+
+#store_Button {
+    text-align: left;
+    padding-left: 45px;
+    background: url(:/Leonis/resource/image/icon-store.png) left center no-repeat;
+}
+
+#store_Button:hover, #store_Button:checked {
+    padding-left: 45px;
+    background-image: url(:/Leonis/resource/image/icon-store-hv.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #e5f5ff;
+}
+
+#detect_btn {
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-detect.png) center no-repeat;
+}
+
+#detect_btn:hover {
+    background: url(:/Leonis/resource/image/icon-detect-hv.png) center no-repeat;
+}
+
+#detecte_Volumn {
+    border: 0;
+    background: url(:/Leonis/resource/image/ise/icon-detect.png) center no-repeat;
+}
+
+#detecte_Volumn:hover {
+    background: url(:/Leonis/resource/image/icon-detect-hv.png) center no-repeat;
+}
+
+QTableView#selected_View，QTableView#tableView_right  {
+	border-bottom: 0;
+    background: transparent;
+}
+
+QTableView#selected_View QHeaderView::section, QTableView#tableView_right QHeaderView::section, QTableView#tableView_left QHeaderView::section  {
+	height: 48px;
+}
+
+QTableView#selected_View::item, QTableView#tableView_right::item {
+    min-height: 55px;
+    border: 0;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #565656;
+    border-radius: 4px;
+    background-color: rgba(0, 49, 110, 9%);
+}
+
+QTableView#tableView_group_cfg::item {
+    min-height: 55px;
+    border: 0;
+    padding-left: 35px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #565656;
+    border-radius: 4px;
+    background-color: rgba(0, 49, 110, 9%);
+}
+
+QTableView#selected_View::item:hover, QTableView#selected_View::item:selected {
+    padding-left: 19px;
+    border: 1px solid #459fff;
+    background-color: rgba(69, 198, 255, 15%);
+}
+
+QTableView#tableView_group_cfg::item:hover, QTableView#tableView_group_cfg::item:selected {
+    border: 1px solid #459fff;
+    background-color: rgba(69, 198, 255, 15%);
+    padding-left: 34px;
+    padding-right: 29px;
+}
+
+QTableView#tableView_right::item:hover, QTableView#tableView_right::item:selected {
+    padding-left: 19px;
+    border: 1px solid #459fff;
+    background-color: rgba(69, 198, 255, 15%);
+}
+
+#beSelect_View QCheckBox  {
+    margin-left: 9px;
+}
+
+/*维护界面*/
+MaintainStatusBtn QLabel#DevClassLab[classify="classify_none"]
+{
+	border-top-right-radius:4px;
+	border-bottom-left-radius:5px;
+	font-size:14px;
+	color:transparent;
+	background:transparent;
+}
+MaintainStatusBtn QLabel#DevClassLab[classify="classify_im"]
+{
+	border-top-right-radius:4px;
+	border-bottom-left-radius:5px;
+	font-size:14px;
+	color:#ffffff;
+	background:#13bfbf;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+MaintainStatusBtn QLabel#DevClassLab[classify="classify_ch"]
+{
+	border-top-right-radius:4px;
+	border-bottom-left-radius:5px;
+	font-size:14px;
+	color:#ffffff;
+	background:#1b7df5;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*维护界面->设备维护状态控件组->翻页按钮*/
+DevMaintainStatusGrp QPushButton#PrevBtnOfDevMtStatus
+{
+	background-color:transparent;
+	background-image:url(:/Leonis/resource/image/bk-circle-prev-btn-enable.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusGrp QPushButton#PrevBtnOfDevMtStatus:disabled
+{
+	background-color:transparent;
+	background-image:url(:/Leonis/resource/image/bk-circle-prev-btn-disable.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusGrp QPushButton#NextBtnOfDevMtStatus
+{
+	background-color:transparent;
+	background-image:url(:/Leonis/resource/image/bk-circle-next-btn-enable.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusGrp QPushButton#NextBtnOfDevMtStatus:disabled
+{
+	background-color:transparent;
+	background-image:url(:/Leonis/resource/image/bk-circle-next-btn-disable.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+
+/*维护界面->设备维护状态控件->进度文本*/
+DevMaintainStatusWgt QLabel#ProgressLab[status="maintaining"]
+{
+	color:#05b30d;
+}
+DevMaintainStatusWgt QLabel#ProgressLab[status="maintain_failed"]
+{
+	color:#e41313;
+}
+DevMaintainStatusWgt QLabel#ProgressLab[status="maintain_succ"]
+{
+	color:#05b30d;
+}
+
+/*维护界面->设备维护状态控件->状态文本*/
+DevMaintainStatusWgt QLabel#MaintainStatusLab[status="not_maintain"]
+{
+	font-size:24px;
+	font-weight:bold;
+	color:#565656;
+}
+DevMaintainStatusWgt QLabel#MaintainStatusLab[status="maintaining"]
+{
+	font-size:24px;
+	font-weight:bold;
+	color:#05b30d;
+}
+DevMaintainStatusWgt QLabel#MaintainStatusLab[status="maintain_failed"]
+{
+	font-size:24px;
+	font-weight:bold;
+	color:#e41313;
+}
+DevMaintainStatusWgt QLabel#MaintainStatusLab[status="maintain_succ"]
+{
+	font-size:24px;
+	font-weight:bold;
+	color:#05b30d;
+}
+
+/*维护界面->设备维护状态控件->详情按钮*/
+DevMaintainStatusWgt QPushButton#DetailBtn[status="not_maintain"]
+{
+	background:transparent;
+	color:rgba(86,86,86,0.5);
+}
+DevMaintainStatusWgt QPushButton#DetailBtn[status="maintaining"]
+{
+	background:transparent;
+	color:#05b30d;
+}
+DevMaintainStatusWgt QPushButton#DetailBtn[status="maintain_failed"]
+{
+	background:transparent;
+	color:#e41313;
+}
+DevMaintainStatusWgt QPushButton#DetailBtn[status="maintain_succ"]
+{
+	background:transparent;
+	color:#05b30d;
+}
+
+/*维护界面->设备维护状态控件->设备文本*/
+DevMaintainStatusWgt QLabel#DevNameLab[status="not_maintain"]
+{
+	font-size:24px;
+	font-weight:medium;
+	color:#cfd1d8;
+}
+DevMaintainStatusWgt QLabel#DevNameLab[status="maintaining"]
+{
+	font-size:24px;
+	font-weight:medium;
+	color:#8fe593;
+}
+DevMaintainStatusWgt QLabel#DevNameLab[status="maintain_failed"]
+{
+	font-size:24px;
+	font-weight:medium;
+	color:#ffc4be;
+}
+DevMaintainStatusWgt QLabel#DevNameLab[status="maintain_succ"]
+{
+	font-size:24px;
+	font-weight:medium;
+	color:#8fe593;
+}
+
+/*维护界面->设备维护状态控件->背景(上)*/
+DevMaintainStatusWgt QFrame#TopFrame[status="empty"]
+{
+	background:#fbfcfe;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="i6000"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-i6000-maintain-wai.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="c1000"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c1000-maintain-wait.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="c2000a"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000a-maintain-wait.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="c2000b"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000b-maintain-wait.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="ise"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-ise-maintain-wait.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="not_maintain"][devType="iom"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-iom-maintain-wait.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="i6000"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-i6000-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="c1000"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-c1000-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="c2000a"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000a-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="c2000b"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000b-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="ise"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-ise-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintaining"][devType="iom"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-iom-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="i6000"]
+{
+	background-color:#fff7f7;
+	background-image:url(:/Leonis/resource/image/bk-i6000-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="c1000"]
+{
+	background-color:#fff7f7;
+	background-image:url(:/Leonis/resource/image/bk-c1000-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="c2000a"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000a-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="c2000b"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000b-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="ise"]
+{
+	background-color:#fff7f7;
+	background-image:url(:/Leonis/resource/image/bk-ise-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_failed"][devType="iom"]
+{
+	background-color:#fff7f7;
+	background-image:url(:/Leonis/resource/image/bk-iom-maintain-failed.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="i6000"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-i6000-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="c1000"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-c1000-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="c2000a"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000a-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="c2000b"]
+{
+	background-color:#fbfcfe;
+	background-image:url(:/Leonis/resource/image/bk-c2000b-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="ise"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-ise-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+DevMaintainStatusWgt QFrame#TopFrame[status="maintain_succ"][devType="iom"]
+{
+	background-color:#edfcee;
+	background-image:url(:/Leonis/resource/image/bk-iom-maintain-succ.png);
+	background-repeat:no-repeat;
+    background-position:center;
+}
+
+/*维护界面->设备维护状态控件->背景(下)*/
+DevMaintainStatusWgt QFrame#BottomFrame[status="empty"]
+{
+	background:#eaecf2;
+}
+DevMaintainStatusWgt QFrame#BottomFrame[status="not_maintain"]
+{
+	background:#eaecf2;
+}
+DevMaintainStatusWgt QFrame#BottomFrame[status="maintaining"]                              
+{
+	background:#dcf7dd;
+}
+DevMaintainStatusWgt QFrame#BottomFrame[status="maintain_failed"]
+{
+	background:#ffdad6;
+}
+DevMaintainStatusWgt QFrame#BottomFrame[status="maintain_succ"]
+{
+	background:#dcf7dd;
+}
+
+DevMaintainStatusWgt QFrame#BkFrame[status="maintain_normal"]
+{
+	border-image:url(:/Leonis/resource/image/bk-dev-maintain-normal.png);
+	background:transparent;
+}
+
+DevMaintainStatusWgt QFrame#BkFrame[status="maintain_failed"]
+{
+	border-image:url(:/Leonis/resource/image/bk-dev-maintain-failed.png);
+	background:transparent;
+}
+
+/*维护界面->维护操作对话框->设备按钮*/
+QDialog QPushButton[status="unmaintain"]
+{
+	border:1px solid #a4a4a4;
+	border-radius:4px;
+	background:#ffffff;
+}
+QDialog QPushButton[status="unmaintain"]:checked
+{
+	border-width:30px;
+	border-radius:0px;
+	border-color:transparent;
+	background:transparent;
+	border-image:url(:/Leonis/resource/image/bk-dev-btn-unmaintain-checked.png) 30 30 30 30 fill repeat;
+}
+QDialog QPushButton[status="maintaining"]
+{
+	border-width:30px;
+	border-color:transparent;
+	background:transparent;
+	border-image:url(:/Leonis/resource/image/bk-dev-btn-maintain-unchecked.png) 30 30 30 30 fill repeat;
+}
+QDialog QPushButton[status="maintaining"]:checked
+{
+	border-width:30px;
+	border-color:transparent;
+	background:transparent;
+	border-image:url(:/Leonis/resource/image/bk-dev-btn-maintain-checked.png) 30 30 30 30 fill repeat;
+}
+QDialog QPushButton[status="maintain_disabled"]
+{
+	border:1px solid #a4a4a4;
+	border-radius:4px;
+	border-color:#bebebe;
+	color:#bebebe;
+}
+
+/*维护界面->维护操作对话框->维护详情*/
+MaintainGrpDetail QLabel#WaitIconLab
+{
+	border-radius:5px;
+	background:#565656;
+}
+MaintainGrpDetail QLabel#SuccIconLab
+{
+	border-radius:5px;
+	background:#05b30d;
+}
+MaintainGrpDetail QLabel#FailedIconLab
+{
+	border-radius:5px;
+	background:#e41313;
+}
+MaintainGrpDetail QLabel#WaitLab
+{
+	color:#565656;
+}
+MaintainGrpDetail QLabel#SuccLab
+{
+	color:#05b30d;
+}
+MaintainGrpDetail QLabel#FailedLab
+{
+	color:#e41313;
+}
+
+/*维护界面->维护按钮*/
+MaintainStatusBtn QPushButton {
+    background:red;
+}
+MaintainStatusBtn QLabel#MaintainProgressLab
+{
+	font-size:14px;
+	color:#1b7df5;
+}
+
+QTextEdit#textEdit_maintain_result, QTextEdit#textEdit_maintain_result:hover, QTextEdit#textEdit_maintain_result:focus, QTextEdit#textEdit_maintain_result:disabled {
+    border: 1px solid #a4a4a4;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 0;
+    border-top: 1px solid #c5c5c5;
+}
+
+*[buttons="maintain"] {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border :1px solid #a4a4a4;
+    border-bottom: 0;
+	padding-left:30px;
+	padding-right:30px;
+    background: #e4e7ec;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+*[buttons="maintain"]:hover, *[buttons="maintain"]:checked {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border :0;
+    background: #025bc7;
+    color: #fff;
+}
+
+*[buttons="maintain_status"] {
+    border-width: 10px;
+    border-image: url(:/Leonis/resource/image/bk-flat-shadow.png) 10 fill repeat;
+}
+
+*[buttons="maintain_status"]:hover {
+    border-width: 10px;
+    border-image: url(:/Leonis/resource/image/bk-flat-shadow-hv.png) 10 fill repeat;
+}
+
+*[buttons="bottle_select"]  {
+    background: transparent; 
+    border: 0;
+    border-radius: 4px;
+}
+
+*[buttons="bottle_select"]:hover  {
+    border: 2px solid #459fff;
+}
+
+*[buttons="bottle_select"]:checked  {
+    border: 2px solid #459fff;
+}
+
+*[scrolls="small_size"] QScrollBar:horizontal  {
+    height: 45px;
+    background: #e4e7ec;
+    padding-left: 44px;
+    padding-right: 44px;
+    border-right: 1px solid #9fa4aa;
+    border-top: 1px solid #9fa4aa;
+    border-bottom: 1px solid #9fa4aa;
+}
+
+*[scrolls="small_size"] QScrollBar::handle:horizontal  {
+    height: 43px;
+    min-width: 30px;
+    background: #fff;
+    margin: 2px 2px 2px 3px;
+    border: 1px solid #9fa4aa;
+}
+
+*[scrolls="small_size"] QScrollBar::sub-line:horizontal  {
+    width: 43px;
+    background: transparent;
+    background-image: url(:/Leonis/resource/image/icon-h-pre.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    subcontrol-position: left;
+    border-right: 1px solid #9fa4aa;
+    border-left: 1px solid #9fa4aa;
+}
+
+*[scrolls="small_size"] QScrollBar::sub-line:horizontal:pressed  {
+    background-image: url(:/Leonis/resource/image/icon-h-pre-hover.png);
+}
+
+*[scrolls="small_size"] QScrollBar::add-line:horizontal  {
+    width: 43px;
+    background: transparent;
+    background-image: url(:/Leonis/resource/image/icon-h-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    subcontrol-position: right;
+    border-left: 1px solid #9fa4aa;
+    border-right: 1px solid #9fa4aa;
+}
+
+*[scrolls="small_size"] QScrollBar::add-line:horizontal:pressed  {
+    background-image: url(:/Leonis/resource/image/icon-h-next-hover.png);
+}
+
+*[scrolls="small_size"] QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal  {
+    background: transparent;
+}
+
+#scrollArea1 QScrollBar:horizontal  {
+    height: 14px;
+    min-height: 20px;
+    max-height: 20px;
+    background: red;
+    margin-left: 144px;
+    margin-right: 144px;
+    border-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 5px;
+}
+
+#scrollArea QScrollBar:horizontal  {
+    height: 34px;
+    background-color: transparent;
+    background-image: url(:/Leonis/resource/image/bk-scroll-area.png);
+    margin-left: 120px;
+    margin-right: 120px;
+    border-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 5px;
+}
+
+#scrollArea QScrollBar::handle:horizontal  {
+    height: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    min-width: 30px;
+    background: #1a84f9;
+    margin: 13px 14px 15px 12px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#scrollArea QScrollBar::sub-line:horizontal  {
+    width: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#scrollArea QScrollBar::add-line:horizontal  {
+    width: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+*[scrolls="layout"] QScrollBar::handle:vertical  {
+    background:#fff;
+    width:56px;
+    min-height:30px;
+    margin: 4px 2px 4px 2px;
+    border:1px solid #9fa4aa;
+}
+
+*[scrolls="layout_noborder"] QScrollBar::handle:vertical  {
+    background:#fff;
+    width:56px;
+    min-height:30px;
+    margin: 4px 2px 3px 2px;
+    border:1px solid #9fa4aa;
+}
+
+*[scrolls="layout_noborder"] QScrollBar::add-line:vertical  {
+    border-bottom:0;
+}
+
+*[scrolls="layout_noborder_right"] QScrollBar::handle:vertical  {
+    background:#fff;
+    width:56px;
+    min-height:30px;
+    margin: 4px 2px 3px 2px;
+    border:1px solid #9fa4aa;
+}
+
+#icon_expand {
+    color: #1265ca;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-bottom: 2px;
+    background: url(:/Leonis/resource/image/icon-expand.png) left no-repeat;
+}
+
+QCheckBox#subDeviceGroup {
+    font-size: 18px;
+}
+
+QTabWidget::pane[pane_border="border_left"]  {
+    border-left: 1px solid #a4a4a4;
+    border-right: 1px solid #a4a4a4;
+}
+
+QTabWidget::pane[pane_border="border_all"]  {
+    border: 1px solid #a4a4a4;
+}
+
+QTabWidget::pane[pane_border="border_top_right"]  {
+    border-top: 1px solid #a4a4a4;
+    border-right: 1px solid #a4a4a4;
+}
+
+[pane_border="border_left"] QScrollBar:vertical  {
+    border-right: 0px solid #a4a4a4;
+}
+
+#expand_btn[isHide="false"] {
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-expand.png);
+}
+
+#expand_btn[isHide="true"] {
+    border: 0;
+    background: url(:/Leonis/resource/image/icon-contract.png);
+}
+
+#tooltip_btn, #tooltip_item_btn {
+    border: 0;
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    background: url(:/Leonis/resource/image/icon-tooltip.png) center no-repeat;
+}
+
+#tooltip_btn:hover, #tooltip_item_btn:hover {
+    background: url(:/Leonis/resource/image/icon-tooltip-hv.png) center no-repeat;
+}
+
+QToolTip {
+    opacity: 173;
+    font-size: 16px;
+    color: #fff;
+	padding-right: 0;
+	border-width: 9px 9px 9px 9px;
+    border-image: url(:/Leonis/resource/image/bk-main-tooltip.png) 9 9 9 9 repeat;     
+}
+
+/*#sample_list QToolTip, #show_assay_list QToolTip, #SampleList QToolTip  {
+	color: #fff;
+	padding-right: 0;
+	border-width: 9px 9px 9px 9px;
+    border-image: url(:/Leonis/resource/image/bk-main-tooltip.png) 9 9 9 9 repeat;
+	min-width: 125px;
+}*/
+
+#device_status_widget > QLabel {
+    border: 1px solid #646464; 
+    border-radius: 5px; 
+    padding-top: 12px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    font-size: 16px;
+	color: #ffffff;
+}
+
+#device_status_widget > QLabel:disabled {
+    border: 1px solid #646464; 
+    border-radius: 5px; 
+    padding-top: 12px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    font-size: 16px;
+    color: #424242;
+}
+
+#stacked_assay_table QTabBar::tab:last  {
+	margin-right: 15px;
+}
+
+#stacked_assay_table QTabBar::tab  {
+    width: 32px;
+    height: 32px;
+    padding-left: 0; 
+    padding-right: 0;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+[colors="mark_normal"] {
+    color: #565656;
+}
+
+[colors="mark_emergency"] {
+    color: #f33;
+}
+
+QLineEdit[inputs="noborder"], QLineEdit[inputs="noborder"]:hover, QLineEdit[inputs="noborder"]:disabled  {
+    border: 0;
+    background: transparent;
+}
+
+QTextEdit[inputs="noborder"], QTextEdit[inputs="noborder"]:hover, QTextEdit[inputs="noborder"]:disabled  {
+    border: 0;
+    padding-left: 0;
+}
+
+QDoubleSpinBox[inputs="noborder"], QTextEdit[inputs="noborder"]:hover, QTextEdit[inputs="noborder"]:disabled  {
+    border: 0;
+    padding-left: 0;
+}
+
+#label_symbol {
+    image: url(:/Leonis/resource/image/icon-distinguish.png);
+}
+
+#bk_start_label {
+    background:url(:/Leonis/resource/image/bk-start.png) center;
+}
+
+#QTimeEdit {
+    background:url(:/Leonis/resource/image/icon-down-arrow.png) center right;
+}
+
+*[bks="sys_show"] {
+    background: #32383e;
+    border-radius: 18px;
+}
+
+*[bks="sys_state"] {
+    border-width: 17px;
+    border-image: url(:/Leonis/resource/image/bk-sys-state.png) 17 fill repeat;
+    font-size: 20px;
+    padding-left: 11px;
+}
+
+#label_print{
+    border: 1px solid #646464; 
+    border-radius: 6px;
+    background-color: #252525;
+}
+
+#label_LIS{
+    border: 1px solid #646464; 
+    border-radius: 6px;
+    background-color: #252525;
+}
+
+#btn_back, #btn_reset {
+    background: url(:/Leonis/resource/image/bk-sys-return.png) center no-repeat;
+    background-color: transparent;
+    font-size: 24px;
+}
+
+*[bks="sys_device_model"] {
+    color: #fff;
+    font-size: 16px;
+    background: #f30;
+    border-radius: 4px;
+}
+
+*[bks="btn_start"] {
+    background-color: #32383e;
+    color: #fff;
+    border-radius: 18px;
+    font-size: 24px;
+    background-image: url(:/Leonis/resource/image/bk-sys-operate-start.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 84px;
+}
+
+*[bks="btn_pause"] {
+    background-color: #32383e;
+    color: #fff;
+    border-radius: 18px;
+    font-size: 24px;
+    background-image: url(:/Leonis/resource/image/bk-sys-operate-pause.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 84px;
+}
+
+*[bks="btn_stop"] {
+    background-color: #32383e;
+    color: #fff;
+    border-radius: 18px;
+    font-size: 24px;
+    background-image: url(:/Leonis/resource/image/bk-sys-operate-stop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 84px;
+}
+
+#btn_warnSet {
+    background-color: transparent;
+    background-image: url(:/Leonis/resource/image/icon-sys-setting.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn_warnSet:hover {
+    background-image: url(:/Leonis/resource/image/icon-sys-setting-hv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+*[types="ch_im"] QHeaderView::section::vertical  {
+    background-color: #fff;
+    border: 0;
+    min-width: 120px;
+	padding-left: 5px;
+	border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+}
+
+*[types="ise"] QHeaderView::section::vertical  {
+    background-color: #fff;
+    border: 0;
+    min-width: 165px;
+	padding-left: 5px;
+	border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+}
+
+#CalRltTbl QHeaderView::section::vertical, #CalRltTbl_fail QHeaderView::section::vertical, #CalRltTbl__fail QHeaderView::section::vertical  {
+    background-color: #fff;
+    border: 0;
+    min-width: 130px;
+	padding-left: 5px;
+	border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+}
+
+#CalRltTbl QHeaderView::section::horizontal, #CalRltTbl_fail QHeaderView::section::horizontal, #CalRltTbl__fail QHeaderView::section::horizontal  {
+    font-size: 14px;
+}
+
+*[bks="print_connect"] {
+    background: url(:/Leonis/resource/image/icon-control-print.png);
+}
+
+*[bks="print_error"] {
+    background: url(:/Leonis/resource/image/icon-controlDeviceStatusWidget-print-error.png);
+}
+
+*[bks="print_connect_dis"] {
+    background: url(:/Leonis/resource/image/icon-control-print-dis.png) center no-repeat;
+}
+
+*[bks="lis_connect"] {
+    background: url(:/Leonis/resource/image/icon-control-lis.png) center no-repeat;
+}
+
+*[bks="lis_error"] {
+    background: url(:/Leonis/resource/image/icon-control-lis-error.png) center no-repeat;
+}
+
+*[bks="lis_connect_dis"] {
+    background: url(:/Leonis/resource/image/icon-control-lis-dis.png) center no-repeat;
+}
+
+#calibrate_result QHeaderView::section::vertical  {
+    background-color: #fff;
+    min-width: 90px;
+}
+
+#calibrate_result QHeaderView::section::horizontal,
+#calibrate_parameter QHeaderView::section::horizontal  {
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+QTableView::item[table_fonts="font_14"]  {
+    font-size: 10px;
+}
+
+*[shapes="legend_dot_green"]  {
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    border-radius: 5px;
+    background: #1fb558;
+}
+
+*[shapes="legend_dot_blue"]  {
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    border-radius: 5px;
+    background: #459fff;
+}
+
+*[shapes="legend_dot_orange"]  {
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    border-radius: 5px;
+    background: #fa9016;
+}
+
+*[shapes="legend_circle_green"]  {
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    border-radius: 5px;
+    border: 2px solid #1fb558;
+}
+
+*[shapes="legend_circle_blue"]  {
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    border-radius: 5px;
+    border: 2px solid #459fff;
+}
+
+*[shapes="legend_circle_gray"]  {
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    border-radius: 5px;
+    border: 2px solid #a4a4a4;
+}
+
+#pushButton_sub {
+    font-size: 30px;
+    background: #e4e7ec;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #a4a4a4;
+    padding-bottom: 7px;
+}
+
+#pushButton_sub:hover {
+    background: #e8ebee;
+}
+
+#pushButton_add {
+    font-size: 24px;
+    background: #e4e7ec;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #a4a4a4;
+}
+
+#pushButton_add:hover {
+    background: #e8ebee;
+}
+
+#label_order_num {
+    font-size: 36px;
+    padding-top: 30px;
+}
+
+#label_orderNum_text  {
+    padding-bottom: 25px;
+}
+
+#graphic QScrollBar:horizontal  {
+    height: 13px;
+    background: #e4e7ec;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 70px;
+    border-top: 0;
+    border-right: 1px solid #a4a4a4;
+}
+
+#graphic QScrollBar::handle:horizontal  {
+    height: 10px;
+    min-height: 12px;
+    min-width: 30px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 2px;
+    border: 0;
+}
+
+#graphic QScrollBar::sub-line:horizontal  {
+    width: 0;
+}
+
+#graphic QScrollBar::add-line:horizontal  {
+    width: 0;
+    border-right: 0;
+}
+
+QTableView::item#tableRackView {
+    color: #8a97ad;
+}
+
+QTableView::item:selected#tableRackView {
+    color: #8a97ad;
+}
+
+*[bks="bk_tableRackView_single"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-single-outer.png) center no-repeat;
+}
+
+*[bks="tableRackView_single"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-single.png) center no-repeat;
+}
+
+*[headers_h="tableRackView_single_h"] QHeaderView::section::horizontal  {
+    border: 0;
+    min-height: 0;
+    border-bottom: 0;
+    font-size: 18px;
+    color: #8a97ad;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+QTableView[items="tableRackView_single"]::item  {
+    padding-left: 0;
+	padding-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+QTableView[items="tableRackView_single"]::item:selected  {
+    border-top: 0;
+    border-bottom: 0;
+    background: url(:/Leonis/resource/image/bk-monitor-single-middle.png) center repeat-x;
+}
+
+QTableView[items="table_rack_view_single_abnormal"]::item {
+    border-top: 0;
+    border-bottom: 0;
+    background: url(:/Leonis/resource/image/bk-monitor-single-middle-abnormal.png) center repeat-x;
+}
+
+*[pixmaps_left="left_single"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-single-left.png) center repeat-x;
+}
+
+*[pixmaps_left="right_single"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-single-right.png) center repeat-x;
+}
+
+*[bks="bk_tableRackView_online"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-online-outer.png) center no-repeat;
+}
+
+*[bks="tableRackView_online"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-online.png) center no-repeat;
+}
+
+*[headers_h="tableRackView_online_h"] QHeaderView::section::horizontal  {
+    border: 0;
+    min-height: 0;
+    border-bottom: 0;
+    font-size: 18px;
+    color: #8a97ad;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+*[headers_v="tableRackView_online_v"] QHeaderView::section::vertical  {
+    border: 0;
+    min-width: 0px;
+    border-bottom: 0;
+    font-size: 18px;
+    color: #8a97ad;
+    padding: 0;
+}
+
+QTableView[items="tableRackView_online"]::item  {
+    padding-left: 0;
+	padding-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+
+QTableView[items="tableRackView_online"]::item:selected  {
+    border-top: 0;
+    border-bottom: 0;
+    background: url(:/Leonis/resource/image/bk-monitor-online-middle.png) center repeat-x;
+}
+
+QTableView[items="table_rack_view_online_abnormal"]::item {
+    border-top: 0;
+    border-bottom: 0;
+    background: url(:/Leonis/resource/image/bk-monitor-online-middle-abnormal.png) center repeat-x;
+}
+
+*[pixmaps_left="left_online"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-online-left.png) center repeat-x;
+}
+
+*[pixmaps_left="right_online"]  {
+    background: url(:/Leonis/resource/image/bk-monitor-online-right.png) center repeat-x;
+}
+
+#bk_result_range_card {
+    background: #f5f7fb;
+    border-radius: 4px; 
+}
+
+#label_normal_range {
+    border: 1px solid #3b8ff6;
+    color: #3b8ff6;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#label_recheck_range {
+    border: 1px solid #fa9016;
+    color: #fa9016;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+*[bks="legend_sample_empty"] {
+    background: url(:/Leonis/resource/image/legend-sample-empty.png);
+}
+
+*[bks="legend_sample_empty_muti"] {
+    background: url(:/Leonis/resource/image/legend-sample-empty-muti.png);
+
+}
+
+#legend_sample_finished {
+    background: url(:/Leonis/resource/image/legend-sample-finished.png);
+}
+
+#legend_sample_to_be_tested {
+    background: url(:/Leonis/resource/image/legend-sample-to-be-tested.png);
+}
+
+#legend_sample_testing {
+    background: url(:/Leonis/resource/image/legend-sample-testing.png);
+}
+
+#legend_sample_abnormal {
+    background: url(:/Leonis/resource/image/legend-sample-abnormal.png);
+}
+
+#legend_rack_abnormal {
+    background: url(:/Leonis/resource/image/legend-rack-abnormal.png);
+}
+
+#sample_detail_view QHeaderView::section::horizontal  {
+    min-height: 55px;
+}
+
+QTableView#sample_detail_view QScrollBar::handle:vertical  {
+    margin: 58px 3px 3px 2px;
+}
+
+QTableView#sample_detail_view QScrollBar::sub-line:vertical  {
+    height: 55px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#BucketSetDlg QHeaderView::section::horizontal::last,
+#RecheckConditionsDlg QHeaderView::section::horizontal::last  {
+    color: #025bc7;
+}
+
+ *[bks="flashDiglog_success"] {
+    min-width: 83px;
+    min-height: 58px;
+    border-width: 19px 35px 21px 70px;
+    border-image: url(:/Leonis/resource/image/bk-flashDiglog-success.png) 19 35 21 70 fill repeat;
+    color: #11b93e;
+}
+ 
+*[bks="flashDiglog_fail"] {
+    min-width: 83px;
+    min-height: 58px;
+    border-width: 19px 35px 21px 70px;
+    border-image: url(:/Leonis/resource/image/bk-flashDiglog-fail.png) 19 35 21 70 fill repeat;
+    color: #ff565f;
+}
+
+QTableView#tableViewAutoMaint::item  {  
+    padding: 10px;
+}
+
+#SoftwareVersionDlg QHeaderView::section::horizontal {
+    height: 35px;
+}
+
+#SoftwareVersionDlg QTableView::item  {
+    padding-left: 5px;
+	padding-right: 5px;
+	border-left: 0;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+#CupHistoryWidget ReactionDiskWidget {
+    qproperty-centerX:400;							/* 圆环中心点X坐标 */
+    qproperty-centerY:400;							/* 圆环中心点Y坐标 */
+    qproperty-sectorCount:17;						/* 扇区个数 */
+    qproperty-sectorSpacingAngle:1;					/* 扇区的间隔角度 */
+    qproperty-sectorClickedWidth:75;				/* 扇区按钮的宽度 */
+	qproperty-sectorWidth:98;						/* 扇区的宽度 */
+	qproperty-sectorHeight:123;						/* 扇区的高度 */
+    qproperty-startAngle:196;						/* 1号扇区的起始角度（三点钟方向为0度,逆时针为正） */
+    qproperty-outR:350;								/* 最大圆半径 */
+    qproperty-cupToSectorMargins:0.75;				/* 反应杯距离扇区的边距的度数 */
+	qproperty-cupNumInItem:13;						/* 单个扇区中的反应杯个数 */
+	qproperty-cupToOutRoundMargins:5;				/* 杯子到外圈的距离 */
+    qproperty-cupAngle:0.65;						/* 一个杯子所占大圆的角度 */
+    qproperty-cupNumMargins:40;						/* 杯号显示区域到外圆的距离 */
+    qproperty-cupNumRectWidth:30;					/* 杯号显示区域矩形的宽度 */
+	qproperty-cupNumFontFamily: "Source Han Sans CN Regular";	/* 杯号的字体 */
+	qproperty-cupNumFontSize: 12;					/* 杯号的字体大小 */
+	qproperty-cupNumColor: rgb(107,108,109);		/* 杯号未选中的字体颜色 */
+	qproperty-cupNumSelectColor: rgb(0,0,0);		/* 杯号选中的字体颜色 */
+}
+
+#bk_reactionDiskWidget {
+    background: url(:/Leonis/resource/image/ch/c1005/bk-reaction-disk.png) center no-repeat; 
+}
+
+#QCupBlankTestResultDlg ReactionDiskWidget {
+    qproperty-centerX:401;							/* 圆环中心点X坐标 */
+    qproperty-centerY:325;							/* 圆环中心点Y坐标 */
+    qproperty-sectorCount:17;						/* 扇区个数 */
+    qproperty-sectorSpacingAngle:1;					/* 扇区的间隔角度 */
+    qproperty-sectorClickedWidth:60;				/* 扇区按钮的宽度 */
+	qproperty-sectorWidth:85;						/* 扇区的宽度 */
+	qproperty-sectorHeight:110;						/* 扇区的高度 */
+    qproperty-startAngle:196;						/* 1号扇区的起始角度（三点钟方向为0度,逆时针为正） */
+    qproperty-outR:295;								/* 最大圆半径 */
+    qproperty-cupToSectorMargins:0.75;				/* 反应杯距离扇区的边距的度数 */
+	qproperty-cupNumInItem:13;						/* 单个扇区中的反应杯个数 */
+	qproperty-cupToOutRoundMargins:5;				/* 杯子到外圈的距离 */
+    qproperty-cupAngle:0.55;						/* 一个杯子所占大圆的角度 */
+    qproperty-cupNumMargins:32;						/* 杯号显示区域到外圆的距离 */
+    qproperty-cupNumRectWidth:20;					/* 杯号显示区域矩形的宽度 */
+	qproperty-cupNumFontFamily: "Source Han Sans CN Regular";	/* 杯号的字体 */
+	qproperty-cupNumFontSize: 10;					/* 杯号的字体大小 */
+	qproperty-cupNumColor: rgb(107,108,109);		/* 杯号未选中的字体颜色 */
+	qproperty-cupNumSelectColor: rgb(0,0,0);		/* 杯号选中的字体颜色 */
+}
+
+QTableView#tableView_result QHeaderView::section {
+	height: 45px;
+	font-size: 15px;
+}
+
+QTableView#tableView_result QScrollBar::handle:vertical  {
+    margin: 48px 3px 3px 2px;
+}
+
+QTableView#tableView_result QScrollBar::sub-line:vertical  {
+    height: 31px; 
+    border-bottom: 1px solid #a4a4a4;
+}
+
+#tableView_result{
+	font-size: 15px;
+}
+
+QHeaderView::up-arrow {
+    subcontrol-position: center right; 
+    image:url(:/Leonis/resource/image/icon-sort-up.png);
+    padding-right: 8px;
+}
+
+QHeaderView::down-arrow {
+    subcontrol-position: center right; 
+    image:url(:/Leonis/resource/image/icon-sort-down.png);
+    padding-right: 8px;
+}
+
+#prePageButton {
+    border: 0;
+    width: 48px;
+    height: 48px;
+    background: url(:/Leonis/resource/image/btn-tab-pre.png);
+}
+
+#prePageButton:hover {
+    background: url(:/Leonis/resource/image/btn-tab-pre-hv.png);
+}
+
+#prePageButton:disabled {
+    background: url(:/Leonis/resource/image/btn-tab-pre-dis.png);
+}
+
+#nextPageButton {
+    border: 0;
+    width: 48px;
+    height: 48px;
+    background: url(:/Leonis/resource/image/btn-tab-next.png);
+}
+
+#nextPageButton:hover {
+    background: url(:/Leonis/resource/image/btn-tab-next-hv.png);
+}
+
+#nextPageButton:disabled {
+    background: url(:/Leonis/resource/image/btn-tab-next-dis.png);
+}
+
+*[bks="device_status"] {
+    border-radius: 2px;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+#btn_left {
+    border: 0;
+    background: url(:/Leonis/resource/image/btn-left.png) center no-repeat;
+}
+
+#btn_left:hover {
+    background: url(:/Leonis/resource/image/btn-left-hv.png) center no-repeat;
+}
+
+#btn_left:disabled {
+    background: url(:/Leonis/resource/image/btn-left-dis.png) center no-repeat;
+}
+
+#btn_right {
+    border: 0;
+    background: url(:/Leonis/resource/image/btn-right.png) center no-repeat;
+}
+
+#btn_right:hover {
+    background: url(:/Leonis/resource/image/btn-right-hv.png) center no-repeat;
+}
+
+#btn_right:disabled {
+    background: url(:/Leonis/resource/image/btn-right-dis.png) center no-repeat;
+}
+
+#label_new_warn_left {
+    border-width: 5px 6px 6px 15px;
+    border-image: url(:/Leonis/resource/image/bk-new-warn-left-red.png) 5 6 6 15 fill repeat;
+    color: #fff;
+}
+
+#label_new_warn_right {
+    border-width: 5px 15px 6px 6px;
+    border-image: url(:/Leonis/resource/image/bk-new-warn-right-red.png) 5 15 6 6 fill repeat;
+    color: #fff;
+}
+
+#WarningSetWgt QCheckBox {
+    min-width: 340px;
+    max-width: 340px;
+}
+
+#permitBtn, #leonisBtn, #qtBtn {
+    background-color: transparent;
+    background-image: url(:/Leonis/resource/image/btn-copyright-permit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#frontSrcBtn, #leonisSrcBtn, #qtSrcBtn {
+    background-color: transparent;
+    background-image: url(:/Leonis/resource/image/btn-copyright-src.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*应用界面->用户手册->按钮*/
+UserManualWidget QPushButton#ZoomInBtn{
+    background-image: url(:/Leonis/resource/image/btn_ZoomIn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#ZoomOutBtn{
+    background-image: url(:/Leonis/resource/image/btn_ZoomOut.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#RecoverBtn{
+    background-image: url(:/Leonis/resource/image/btn_Recover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#FirstPageBtn{
+    background-image: url(:/Leonis/resource/image/btn_FirstPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#PrePageBtn{
+    background-image: url(:/Leonis/resource/image/btn_PrePage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#NextPageBtn{
+    background-image: url(:/Leonis/resource/image/btn_NextPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#LastPageBtn{
+    background-image: url(:/Leonis/resource/image/btn_LastPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+UserManualWidget QPushButton#flat_return{
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    background-image: url("");
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg.png) 9 9 9 9 fill repeat;
+	font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+UserManualWidget QPushButton#flat_return:hover{
+    background-image: url();
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg-hv.png) 9 9 9 9 fill repeat;
+}
+
+UserManualWidget QPushButton#flat_return:pressed{
+	background-image: url();
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	
+}
+
+UserManualWidget QPushButton#flat_return:disabled{
+    background-image: url();
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+UserManualWidget QHeaderView::section::horizontal  {
+    background-color: #fff;
+    border: 0;
+    min-height: 23px;
+    border-bottom: 0px;
+    font-size: 18px;
+}
+
+UserManualWidget QTreeView::branch:has-children:!has-siblings:closed,
+UserManualWidget QTreeView::branch:closed:has-children:has-siblings{
+	border-image: none;
+	image:url(:/Leonis/resource/image/TreeManual_Close.png);
+}
+
+UserManualWidget QTreeView::branch:open:has-children:!has-siblings,
+UserManualWidget QTreeView::branch:open:has-children:has-siblings{
+	border-image: none;
+	image:url(:/Leonis/resource/image/TreeManual_Open.png);
+}
+
+#optionItem_set_btn {
+    padding: 0;
+}
+
+#QMaintainSetPage QCheckBox  {
+	margin-left: 6px;
+}
+
+#QSampleDataBrowse QCheckBox {
+    margin-left: -3px;
+}
+
+#QHistory QCheckBox {
+    margin-top: -4px;
+    margin-left: -4px;
+}
+
+#QFilterSample QCheckBox {
+    margin-left: 3px;
+} 
+
+#QHistoryFilterSampleImp QCheckBox {
+    margin-left: 3px;
+} 
+
+QCheckBox#transfer_set, QCheckBox#FirstCheckCBox, QCheckBox#ReviewCBox {
+    margin-left: 0;
+}
+
+

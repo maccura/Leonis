@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDisplayTableSet</class>
+ <widget class="QWidget" name="QDisplayTableSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QDisplayTableSet</string>
+  </property>
+  <widget class="QTableView" name="beSelect_View">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>880</width>
+     <height>743</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>85</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>19</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>44</number>
+   </attribute>
+  </widget>
+  <widget class="QTableView" name="selected_View">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>1</y>
+     <width>550</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>100</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>53</number>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="beSelect_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>备选（？）</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">gray</string>
+   </property>
+   <property name="bordersB" stdset="0">
+    <string notr="true">bottom</string>
+   </property>
+   <property name="paddings_left" stdset="0">
+    <string notr="true">l_20</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearAll_Button">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>16</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清空全部</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string>transparent</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string>none</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string>blue</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="selected_label">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>3</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_Button">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>812</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>619</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>879</x>
+     <y>0</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_5">
+   <property name="geometry">
+    <rect>
+     <x>1429</x>
+     <y>0</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1618</x>
+     <y>210</y>
+     <width>106</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>106</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>24</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="top_Button">
+      <property name="minimumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>置顶</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pre_Button">
+      <property name="minimumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>向上</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="next_Button">
+      <property name="minimumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>向下</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bottom_Button">
+      <property name="minimumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>置底</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="reset_Button">
+      <property name="minimumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>106</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>重置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>50</y>
+     <width>1</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>light_solid</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>selected_View</zorder>
+  <zorder>beSelect_View</zorder>
+  <zorder>beSelect_label</zorder>
+  <zorder>selected_label</zorder>
+  <zorder>save_Button</zorder>
+  <zorder>line_v_1</zorder>
+  <zorder>line_h_1</zorder>
+  <zorder>line_v_4</zorder>
+  <zorder>clearAll_Button</zorder>
+  <zorder>line_v_5</zorder>
+  <zorder>line_v_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

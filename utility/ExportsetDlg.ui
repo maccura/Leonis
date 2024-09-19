@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExportSetDlg</class>
+ <widget class="BaseDlg" name="ExportSetDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1730</width>
+    <height>937</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExportSetDlg</string>
+  </property>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>1437</x>
+     <y>840</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel_btn">
+   <property name="geometry">
+    <rect>
+     <x>1567</x>
+     <y>840</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>1670</width>
+     <height>726</height>
+    </rect>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="tabs" stdset="0">
+    <string>sub</string>
+   </property>
+   <widget class="QFrame" name="tab_ch">
+    <property name="styleSheet">
+     <string notr="true">QFrame#tab_ch
+{
+	border:1px solid #a4a4a4;
+}</string>
+    </property>
+    <attribute name="title">
+     <string>生化</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="minimumSize">
+        <size>
+         <width>917</width>
+         <height>638</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1671</width>
+         <height>701</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="page_iseSamAndQc">
+        <property name="minimumSize">
+         <size>
+          <width>917</width>
+          <height>638</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1671</width>
+          <height>701</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QWidget" name="page_iseCali">
+        <property name="minimumSize">
+         <size>
+          <width>917</width>
+          <height>638</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1671</width>
+          <height>701</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QWidget" name="page_normalAndQc">
+        <property name="minimumSize">
+         <size>
+          <width>917</width>
+          <height>638</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1671</width>
+          <height>701</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QWidget" name="page_cali">
+        <property name="minimumSize">
+         <size>
+          <width>917</width>
+          <height>638</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1671</width>
+          <height>701</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="tab_im">
+    <property name="styleSheet">
+     <string notr="true">QFrame#tab_im
+{
+	border:1px solid #a4a4a4;
+}</string>
+    </property>
+    <attribute name="title">
+     <string>免疫</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="rabtn_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>80</y>
+     <width>1171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rabtn_iseSamAndQc">
+      <property name="text">
+       <string>ISE样本&amp;&amp;质控</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rabtn_iseCali">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>ISE校准</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rabtn_normalAndQc">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>常规&amp;&amp;质控</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rbtn_cali">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>校准</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

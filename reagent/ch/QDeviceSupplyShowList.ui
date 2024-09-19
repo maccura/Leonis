@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDeviceSupplyShowList</class>
+ <widget class="QWidget" name="QDeviceSupplyShowList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>879</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QDeviceSupplyShowList</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>851</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QDeviceSupplyStatus" name="Device_Widgets1" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDeviceSupplyStatus" name="Device_Widgets2" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDeviceSupplyStatus" name="Device_Widgets3" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QDeviceSupplyStatus</class>
+   <extends>QWidget</extends>
+   <header>src/leonis/reagent/ch/QDeviceSupplyStatus.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

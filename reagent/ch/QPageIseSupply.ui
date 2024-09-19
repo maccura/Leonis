@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPageIseSupply</class>
+ <widget class="QWidget" name="QPageIseSupply">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPageIseSupply</string>
+  </property>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1912</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1911</x>
+     <y>0</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>792</y>
+     <width>1912</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1921</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
+    <property name="spacing">
+     <number>4</number>
+    </property>
+    <property name="leftMargin">
+     <number>11</number>
+    </property>
+    <property name="topMargin">
+     <number>11</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>19</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="ise1">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="titles" stdset="0">
+         <string>tit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QIseCard" name="ise1_is" native="true"/>
+         </item>
+         <item>
+          <widget class="QIseCard" name="ise1_buf" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="ise2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="titles" stdset="0">
+         <string>tit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QIseCard" name="ise2_is" native="true"/>
+         </item>
+         <item>
+          <widget class="QIseCard" name="ise2_buf" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_33">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="desk">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="titles" stdset="0">
+         <string>tit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QIseCard" name="desk_cln1" native="true"/>
+         </item>
+         <item>
+          <widget class="QIseCard" name="desk_cln2" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget1">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>812</y>
+     <width>1577</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>70</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="supplyLoad_btn">
+      <property name="minimumSize">
+       <size>
+        <width>105</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>耗材加载</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="perfusion_btn">
+      <property name="minimumSize">
+       <size>
+        <width>105</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>ISE管路填充</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="BkLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>853</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>BkLab</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget1</zorder>
+  <zorder>line_h_1</zorder>
+  <zorder>line_v_1</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>line_h_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QIseCard</class>
+   <extends>QWidget</extends>
+   <header>QIseCard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

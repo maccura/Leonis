@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QResultActionCurve</class>
+ <widget class="BaseDlg" name="QResultActionCurve">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QResultActionCurve</string>
+  </property>
+  <widget class="QLineEdit" name="assay_edit">
+   <property name="geometry">
+    <rect>
+     <x>369</x>
+     <y>130</y>
+     <width>160</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="assay_result">
+   <property name="geometry">
+    <rect>
+     <x>655</x>
+     <y>130</y>
+     <width>160</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>1757</x>
+     <y>817</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QAssayResultShowCurve" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>1880</width>
+     <height>594</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="regular_btn">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>130</y>
+     <width>89</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>常规</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="recheck_btn">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>130</y>
+     <width>89</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>复查</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>316</x>
+     <y>130</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>项目</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>130</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>结果</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="borders">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>1820</width>
+     <height>540</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>all</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>105</y>
+     <width>1810</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="bks" stdset="0">
+    <string>gray</string>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>borders</zorder>
+  <zorder>assay_edit</zorder>
+  <zorder>assay_result</zorder>
+  <zorder>close_btn</zorder>
+  <zorder>widget</zorder>
+  <zorder>regular_btn</zorder>
+  <zorder>recheck_btn</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QAssayResultShowCurve</class>
+   <extends>QWidget</extends>
+   <header location="global">shared/QAssayResultShowCurve.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

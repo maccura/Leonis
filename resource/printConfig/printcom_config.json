@@ -1,0 +1,13 @@
+{
+    "print_settings": {
+        "printer": "printer name",
+        "print_copy": 1,
+        "color_mode": 0,
+        "print_mode": 0,
+        "print_range": 0,
+        "duplex_mode": 0
+    },
+	"default_templates": {
+
+    }
+}

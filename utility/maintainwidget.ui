@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintainWidget</class>
+ <widget class="QWidget" name="MaintainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MaintainWidget</string>
+  </property>
+  <widget class="QStackedWidget" name="MaintainStkWgt">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>370</y>
+     <width>1890</width>
+     <height>475</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">MaintainStkWgt {padding-left: 80px;}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="bordersL" stdset="0">
+    <string notr="true">left</string>
+   </property>
+   <property name="bordersT" stdset="0">
+    <string notr="true">top</string>
+   </property>
+   <widget class="MaintainStatusBtnGrp" name="MtGrpSubWgt">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="bks" stdset="0">
+     <string>white</string>
+    </property>
+   </widget>
+   <widget class="MaintainStatusBtnGrp" name="MtItemSubWgt">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="bks" stdset="0">
+     <string>white</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="DevMaintainStatusGrp" name="DevMtStatusGrpWgt" native="true">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>1890</width>
+     <height>302</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="borde_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1912</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>all</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>844</y>
+     <width>1890</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>1900</x>
+     <y>370</y>
+     <width>1</width>
+     <height>475</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>865</y>
+     <width>1850</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0,1,0">
+    <property name="spacing">
+     <number>70</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="ProfileCfgBtn">
+      <property name="text">
+       <string>组合设置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MaintainLogBtn">
+      <property name="text">
+       <string>维护日志</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="AutoMaintainCfgBtn">
+      <property name="text">
+       <string>自动维护设置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="StopMaintainBtn">
+      <property name="text">
+       <string>停止维护</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DisplayInfoCfg">
+      <property name="text">
+       <string>显示信息设置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ElectrodeCleanSetBtn">
+      <property name="text">
+       <string>电极清洗设置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DetectDebugBtn">
+      <property name="text">
+       <string>发光剂流程</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_return">
+      <property name="text">
+       <string>返回</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>flat</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="MaintainTypeBtnFrame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>321</y>
+     <width>1880</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1880</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1880</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,1">
+    <property name="spacing">
+     <number>4</number>
+    </property>
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="GrpMaintainBtn">
+      <property name="minimumSize">
+       <size>
+        <width>132</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="text">
+       <string notr="true">组合维护</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="bks" stdset="0">
+       <string>white</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">maintain</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ItemMaintainBtn">
+      <property name="minimumSize">
+       <size>
+        <width>132</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="text">
+       <string notr="true">单项维护</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">maintain</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>1611</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <zorder>borde_label</zorder>
+  <zorder>MaintainTypeBtnFrame</zorder>
+  <zorder>DevMtStatusGrpWgt</zorder>
+  <zorder>MaintainStkWgt</zorder>
+  <zorder>line_h</zorder>
+  <zorder>line_v</zorder>
+  <zorder>widget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DevMaintainStatusGrp</class>
+   <extends>QWidget</extends>
+   <header>devmaintainstatusgrp.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MaintainStatusBtnGrp</class>
+   <extends>QWidget</extends>
+   <header>maintainstatusbtngrp.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

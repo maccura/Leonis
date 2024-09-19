@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImPumpModuleWgt</class>
+ <widget class="QWidget" name="ImPumpModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ImPumpModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QCheckBox" name="MembraneCB">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第一试剂洗内壁隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="GearRackCB">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">样本洗针齿轮泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CurWaterPressureLab">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>当前水压</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AddressWaterPressureLab">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>60</y>
+     <width>391</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>建议水压：80-85</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="CurWaterPressureSp">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>999999</number>
+   </property>
+   <property name="value">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>160</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第一试剂洗外壁隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>240</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第二试剂洗内壁隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>280</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第二试剂洗外壁隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_5">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>400</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">在线配置纯水隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_6">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>440</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">在线配置转存隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_7">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>480</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">检测系统抽废液隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MembraneCBLab">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>600</y>
+     <width>1031</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>试剂存储系统冷凝水隔膜泵(检查方法:打开仪器总电源后该泵会持续工作30秒后关闭，在此期间可通过触摸，听声音等方式进行检查确认该泵是否在正常运行。)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_8">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>200</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第一试剂针隔膜气泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_9">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>320</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">第二试剂针隔膜气泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_10">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>360</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">试剂存储系统冷凝水隔膜泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_11">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>520</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">加样针隔膜气泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MembraneCB_12">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>560</y>
+     <width>600</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">样本洗针齿轮泵</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

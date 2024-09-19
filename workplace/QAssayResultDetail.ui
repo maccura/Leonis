@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QAssayResultDetail</class>
+ <widget class="BaseDlg" name="QAssayResultDetail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1630</width>
+    <height>898</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QAssayResultDetail</string>
+  </property>
+  <widget class="QWidget" name="patientDetial" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>763</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="bks" stdset="0">
+    <string>gray</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string>all</string>
+   </property>
+   <widget class="QLabel" name="medical_record_label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gender_label">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>20</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="department_label">
+    <property name="geometry">
+     <rect>
+      <x>419</x>
+      <y>20</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bed_no_label">
+    <property name="geometry">
+     <rect>
+      <x>609</x>
+      <y>20</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_label">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>50</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="age_label">
+    <property name="geometry">
+     <rect>
+      <x>237</x>
+      <y>50</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="doctor_label">
+    <property name="geometry">
+     <rect>
+      <x>419</x>
+      <y>50</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>817</x>
+     <y>100</y>
+     <width>763</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="bks" stdset="0">
+    <string>gray</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string>all</string>
+   </property>
+   <widget class="QLabel" name="sample_id_label">
+    <property name="geometry">
+     <rect>
+      <x>77</x>
+      <y>20</y>
+      <width>100</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tube_no_label">
+    <property name="geometry">
+     <rect>
+      <x>291</x>
+      <y>20</y>
+      <width>100</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="register_time_label">
+    <property name="geometry">
+     <rect>
+      <x>563</x>
+      <y>20</y>
+      <width>180</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sample_barcode_label">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>50</y>
+      <width>100</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="same_reaction_assay_label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>50</y>
+      <width>100</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="finished_time_label">
+    <property name="geometry">
+     <rect>
+      <x>563</x>
+      <y>50</y>
+      <width>100</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>255</width>
+     <height>584</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>45</number>
+   </attribute>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>190</y>
+     <width>1270</width>
+     <height>585</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="tabs" stdset="0">
+    <string>sub</string>
+   </property>
+   <widget class="QResultDataShowWidget" name="regular_page">
+    <attribute name="title">
+     <string>常规</string>
+    </attribute>
+   </widget>
+   <widget class="QResultDataShowWidget" name="recheck_page">
+    <attribute name="title">
+     <string>复查</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonN">
+   <property name="geometry">
+    <rect>
+     <x>687</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>817</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>947</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>1077</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1337</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reaction_curve_btn">
+   <property name="geometry">
+    <rect>
+     <x>1207</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>反应曲线</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>1467</x>
+     <y>801</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>120</y>
+     <width>65</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>病历号：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>150</y>
+     <width>54</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>姓名：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>120</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>性别：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>年龄：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>120</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>科室：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>150</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>医生：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>120</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>床号：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>832</x>
+     <y>120</y>
+     <width>70</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>样本ID:</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>832</x>
+     <y>150</y>
+     <width>70</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>样本编号：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>120</y>
+     <width>60</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>杯号：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>150</y>
+     <width>100</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>同杯前反应：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>120</y>
+     <width>70</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登记时间：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>150</y>
+     <width>70</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>完成时间：</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>16</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>255</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>773</y>
+     <width>255</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>1</width>
+     <height>584</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>190</y>
+     <width>1</width>
+     <height>584</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_3">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>237</y>
+     <width>1270</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_4">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>773</y>
+     <width>1270</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>237</y>
+     <width>1</width>
+     <height>537</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>1579</x>
+     <y>237</y>
+     <width>1</width>
+     <height>537</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QResultDataShowWidget</class>
+   <extends>QWidget</extends>
+   <header>workplace/QResultDataShowWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

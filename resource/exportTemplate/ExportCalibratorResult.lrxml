@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF8"?>
+<Report>
+  <object Type="Object" ClassName="ReportDesign::report_manager">
+    <objectName Type="QString"></objectName>
+    <pages Type="Collection">
+      <item Type="Object" ClassName="ReportDesign::page_scene">
+        <objectName Type="QString">page1</objectName>
+        <sceneRect Type="QRect" height="3075" x="-50" y="-50" width="2200"/>
+        <bspTreeDepth Type="int" Value="5"/>
+        <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+        <sortCacheEnabled Type="bool" Value="0"/>
+        <stickyFocus Type="bool" Value="0"/>
+        <minimumRenderSize Type="qreal" Value="0"/>
+        <pageItem Type="Object" ClassName="PageItem">
+          <objectName Type="QString">Reportpage1</objectName>
+          <geometry Type="QRect" height="2970" x="0" y="0" width="2100"/>
+          <children Type="Collection">
+            <item Type="Object" ClassName="TextItem">
+              <objectName Type="QString">TextItem1</objectName>
+              <geometry Type="QRect" height="100" x="50" y="52" width="1998"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="16"/>
+              <masterMask Type="int" Value="1"/>
+              <masterMaskItemID Type="int" Value="591"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <alignment Type="enumAndFlags" Value="132"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="15"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="strTitle" VariantType="ST" Name="校准结果"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="GroupTextItem">
+              <objectName Type="QString">table_base_item1</objectName>
+              <geometry Type="QRect" height="128" x="52" y="161" width="1996"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="17"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <dataRowCount Type="int" Value="1"/>
+              <rowHeight Type="int" Value="50"/>
+              <dataColumnCount Type="int" Value="10"/>
+              <columnWidth Type="int" Value="150"/>
+              <showGrid Type="bool" Value="0"/>
+              <showHeader Type="bool" Value="0"/>
+              <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <alignment Type="enumAndFlags" Value="33"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="0" timeCount="0" width="76">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="76" timeCount="13" width="188">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="264" timeCount="15" width="182">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="446" timeCount="17" width="182">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="628" timeCount="19" width="186">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="814" timeCount="21" width="194">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1008" timeCount="23" width="244">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1252" timeCount="25" width="190">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1442" timeCount="27" width="232">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1674" timeCount="31" width="188">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1862" timeCount="35" width="210">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode rowPosx="0" alignment="33" isNull="1" timeCount="0" width="44">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="44" alignment="129" isNull="0" timeCount="36" width="128">
+                  <font family="宋体" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty Type="ReportDesign::content_property" alignment="33">
+                <font family="宋体" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                <fontColor Type="QColor" Value="#000000"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>"/>
+              <propertyTimeCount Type="uint" Value="36"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant NameChange="0" ID="strReagentName" rowIndex="1" VariantType="ST" Name="项目名称:" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strDeviceNum" rowIndex="1" VariantType="ST" Name="仪器编号:" columnIndex="3"/>
+                <CellVariant NameChange="0" ID="strSoftVersion" rowIndex="1" VariantType="ST" Name="软件版本号:" columnIndex="5"/>
+                <CellVariant NameChange="0" ID="strCalibrateDate" rowIndex="1" VariantType="ST" Name="校准时间:" columnIndex="7"/>
+                <CellVariant NameChange="0" ID="strModelName" rowIndex="1" VariantType="ST" Name="模块:" columnIndex="9"/>
+              </tableVariant>
+              <borders Type="enumAndFlags" Value="3"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="TableItem">
+              <objectName Type="QString">table_item12</objectName>
+              <geometry Type="QRect" height="162" x="49" y="583" width="2004"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="20"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <dataRowCount Type="int" Value="3"/>
+              <rowHeight Type="int" Value="50"/>
+              <dataColumnCount Type="int" Value="9"/>
+              <columnWidth Type="int" Value="200"/>
+              <showGrid Type="bool" Value="0"/>
+              <showHeader Type="bool" Value="0"/>
+              <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <alignment Type="enumAndFlags" Value="33"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="0" timeCount="0" width="63">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="63" timeCount="10" width="223">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="286" timeCount="11" width="226">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="512" timeCount="12" width="226">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="738" timeCount="13" width="200">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="938" timeCount="14" width="204">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="1142" timeCount="15" width="202">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="1344" timeCount="16" width="202">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="1546" timeCount="17" width="200">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="129" isNull="0" columnPosx="1746" timeCount="18" width="321">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode rowPosx="0" alignment="33" isNull="1" timeCount="0" width="47">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="47" alignment="33" isNull="1" timeCount="0" width="50">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="97" alignment="33" isNull="1" timeCount="0" width="50">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="147" alignment="33" isNull="1" timeCount="0" width="62">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty Type="ReportDesign::content_property" alignment="33">
+                <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                <fontColor Type="QColor" Value="#000000"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>"/>
+              <propertyTimeCount Type="uint" Value="18"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant NameChange="0" ID="strCalibrator" rowIndex="1" VariantType="ST" Name="校准品" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strConc" rowIndex="1" VariantType="ST" Name="浓度" columnIndex="2"/>
+                <CellVariant NameChange="0" ID="strRLU1" rowIndex="1" VariantType="ST" Name="RLU1" columnIndex="3"/>
+                <CellVariant NameChange="0" ID="strRLU2" rowIndex="1" VariantType="ST" Name="RLU2" columnIndex="4"/>
+                <CellVariant NameChange="0" ID="strRLU" rowIndex="1" VariantType="ST" Name="RLU" columnIndex="5"/>
+                <CellVariant NameChange="0" ID="strCV" rowIndex="1" VariantType="ST" Name="CV" columnIndex="6"/>
+                <CellVariant NameChange="0" ID="strK1" rowIndex="1" VariantType="ST" Name="K1" columnIndex="7"/>
+                <CellVariant NameChange="0" ID="strK2" rowIndex="1" VariantType="ST" Name="K2" columnIndex="8"/>
+                <CellVariant NameChange="0" ID="strK" rowIndex="1" VariantType="ST" Name="K" columnIndex="9"/>
+              </tableVariant>
+              <borders Type="enumAndFlags" Value="3"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+              <autoFill Type="bool" Value="0"/>
+              <underLine Type="bool" Value="0"/>
+              <tableVariantID NameChange="0" Type="ReportDesign::variant_info" ID="vecCaliRLUInfo" VariantType="TB" Name="校准结果"/>
+              <tableItemID Type="int" Value="1"/>
+              <connectTableItemID Type="int" Value="-1"/>
+              <designHeaderColor Type="QColor" Value="#edeef0"/>
+            </item>
+            <item Type="Object" ClassName="TextItem">
+              <objectName Type="QString">TextItem13</objectName>
+              <geometry Type="QRect" height="75" x="49" y="753" width="1997"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="24"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <alignment Type="enumAndFlags" Value="129"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="strCaliCurve" VariantType="ST" Name="校准曲线"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="TableItem">
+              <objectName Type="QString">table_item13</objectName>
+              <geometry Type="QRect" height="890" x="58" y="1706" width="1010"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="25"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <dataRowCount Type="int" Value="2"/>
+              <rowHeight Type="int" Value="55"/>
+              <dataColumnCount Type="int" Value="3"/>
+              <columnWidth Type="int" Value="150"/>
+              <showGrid Type="bool" Value="0"/>
+              <showHeader Type="bool" Value="0"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <alignment Type="enumAndFlags" Value="33"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="0" timeCount="0" width="59">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="59" timeCount="4" width="322">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="381" timeCount="5" width="287">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="668" timeCount="6" width="401">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode rowPosx="0" alignment="33" isNull="1" timeCount="0" width="55">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="55" alignment="33" isNull="1" timeCount="0" width="55">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="110" alignment="33" isNull="1" timeCount="0" width="835">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty Type="ReportDesign::content_property" alignment="33">
+                <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                <fontColor Type="QColor" Value="#000000"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>"/>
+              <propertyTimeCount Type="uint" Value="6"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant NameChange="0" ID="strLevel" rowIndex="1" VariantType="ST" Name="校准品水平" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strConc" rowIndex="1" VariantType="ST" Name="浓度" columnIndex="2"/>
+                <CellVariant NameChange="0" ID="strSign" rowIndex="1" VariantType="ST" Name="信号值" columnIndex="3"/>
+              </tableVariant>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+              <autoFill Type="bool" Value="1"/>
+              <underLine Type="bool" Value="0"/>
+              <tableVariantID NameChange="0" Type="ReportDesign::variant_info" ID="vecCaliResultData" VariantType="TB" Name="校准水平"/>
+              <tableItemID Type="int" Value="2"/>
+              <connectTableItemID Type="int" Value="-1"/>
+              <designHeaderColor Type="QColor" Value="#edeef0"/>
+            </item>
+            <item Type="Object" ClassName="SVGItem">
+              <objectName Type="QString">variable_image_item13</objectName>
+              <geometry Type="QRect" height="840" x="196" y="838" width="1708"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="26"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <keepAspectRatio Type="bool" Value="1"/>
+              <borders Type="enumAndFlags" Value="15"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="strCaliCurveImage" VariantType="BS" Name="校准曲线(图片)"/>
+            </item>
+            <item Type="Object" ClassName="GroupTextItem">
+              <objectName Type="QString">table_base_item2</objectName>
+              <geometry Type="QRect" height="128" x="50" y="2612" width="2002"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="18"/>
+              <masterMask Type="int" Value="2"/>
+              <masterMaskItemID Type="int" Value="5"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <dataRowCount Type="int" Value="1"/>
+              <rowHeight Type="int" Value="50"/>
+              <dataColumnCount Type="int" Value="6"/>
+              <columnWidth Type="int" Value="150"/>
+              <showGrid Type="bool" Value="0"/>
+              <showHeader Type="bool" Value="0"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <alignment Type="enumAndFlags" Value="132"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="0" timeCount="0" width="46">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="46" timeCount="0" width="214">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="260" timeCount="0" width="368">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="628" timeCount="0" width="180">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="808" timeCount="0" width="494">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="1302" timeCount="0" width="248">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="1550" timeCount="0" width="498">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode rowPosx="0" alignment="33" isNull="1" timeCount="0" width="50">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="50" alignment="33" isNull="1" timeCount="0" width="128">
+                  <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty Type="ReportDesign::content_property" alignment="33">
+                <font family="SimSun" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+                <fontColor Type="QColor" Value="#000000"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>">
+                <CellProperty alignment="132" rowIndex="1" columnIndex="1">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+                <CellProperty alignment="132" rowIndex="1" columnIndex="2">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+                <CellProperty alignment="132" rowIndex="1" columnIndex="3">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+                <CellProperty alignment="132" rowIndex="1" columnIndex="4">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+                <CellProperty alignment="132" rowIndex="1" columnIndex="5">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+                <CellProperty alignment="132" rowIndex="1" columnIndex="6">
+                  <fontColor Type="QColor" Value="#000000"/>
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                </CellProperty>
+              </TableCellContentProperty>
+              <propertyTimeCount Type="uint" Value="0"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant NameChange="0" ID="strCaliResult" rowIndex="1" VariantType="ST" Name="校准结果:" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strAlarm" rowIndex="1" VariantType="ST" Name="数据报警:" columnIndex="3"/>
+                <CellVariant NameChange="0" ID="strCutoff" rowIndex="1" VariantType="ST" Name="cutoff值:" columnIndex="5"/>
+              </tableVariant>
+              <borders Type="enumAndFlags" Value="3"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="PageNumber">
+              <objectName Type="QString">TextItem14</objectName>
+              <geometry Type="QRect" height="70" x="1640" y="2848" width="406"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="19"/>
+              <masterMask Type="int" Value="2"/>
+              <masterMaskItemID Type="int" Value="593"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <alignment Type="enumAndFlags" Value="130"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="9"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name="1/1"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="TextItem">
+              <objectName Type="QString">TextItem15</objectName>
+              <geometry Type="QRect" height="88" x="56" y="2758" width="802"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="20"/>
+              <masterMask Type="int" Value="2"/>
+              <masterMaskItemID Type="int" Value="4"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <alignment Type="enumAndFlags" Value="129"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="strOperater" VariantType="ST" Name="检测者:"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="TextItem">
+              <objectName Type="QString">TextItem16</objectName>
+              <geometry Type="QRect" height="88" x="938" y="2758" width="1110"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="20"/>
+              <masterMask Type="int" Value="2"/>
+              <masterMaskItemID Type="int" Value="592"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <alignment Type="enumAndFlags" Value="130"/>
+              <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <variant NameChange="0" Type="ReportDesign::variant_info" ID="strExportTime" VariantType="ST" Name="导出时间:"/>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+            <item Type="Object" ClassName="GroupTextItem">
+              <objectName Type="QString">table_base_item3</objectName>
+              <geometry Type="QRect" height="254" x="52" y="306" width="1978"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Type="int" Value="22"/>
+              <masterMask Type="int" Value="0"/>
+              <masterMaskItemID Type="int" Value="0"/>
+              <itemAlignment Type="int" Value="0"/>
+              <geometryLocked Type="bool" Value="0"/>
+              <groupID Type="int" Value="-1"/>
+              <groupPageBreak Type="bool" Value="0"/>
+              <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+              <dataRowCount Type="int" Value="3"/>
+              <rowHeight Type="int" Value="50"/>
+              <dataColumnCount Type="int" Value="8"/>
+              <columnWidth Type="int" Value="150"/>
+              <showGrid Type="bool" Value="0"/>
+              <showHeader Type="bool" Value="0"/>
+              <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+              <fontColor Type="QColor" Value="#000000"/>
+              <alignment Type="enumAndFlags" Value="33"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode alignment="33" isNull="1" columnPosx="0" timeCount="0" width="68">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="68" timeCount="19" width="224">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="292" timeCount="20" width="230">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="522" timeCount="21" width="250">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="772" timeCount="22" width="234">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1006" timeCount="23" width="286">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1292" timeCount="24" width="232">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1524" timeCount="25" width="220">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode alignment="33" isNull="0" columnPosx="1744" timeCount="26" width="302">
+                  <font family="思源黑体 Normal" Type="QFont" underline="0" italic="0" weight="50" pointSize="8"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode rowPosx="0" alignment="33" isNull="1" timeCount="0" width="46">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="46" alignment="33" isNull="1" timeCount="0" width="80">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="126" alignment="33" isNull="1" timeCount="0" width="84">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+                <RowPropertyNode rowPosx="210" alignment="33" isNull="1" timeCount="0" width="90">
+                  <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                  <fontColor Type="QColor" Value="#000000"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty Type="ReportDesign::content_property" alignment="33">
+                <font family="Arial" Type="QFont" underline="0" italic="0" weight="50" pointSize="10"/>
+                <fontColor Type="QColor" Value="#000000"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>"/>
+              <propertyTimeCount Type="uint" Value="26"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant NameChange="0" ID="strReagentLot" rowIndex="1" VariantType="ST" Name="试剂批号:" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strSubstrateLot" rowIndex="1" VariantType="ST" Name="底物液批号:" columnIndex="3"/>
+                <CellVariant NameChange="0" ID="strCleanFluidLot" rowIndex="1" VariantType="ST" Name="清洗缓冲液批号:" columnIndex="5"/>
+                <CellVariant NameChange="0" ID="strCupLot" rowIndex="1" VariantType="ST" Name="反应杯批号:" columnIndex="7"/>
+                <CellVariant NameChange="0" ID="strReagentSN" rowIndex="2" VariantType="ST" Name="试剂瓶号:" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strSubstrateSN" rowIndex="2" VariantType="ST" Name="底物液瓶号:" columnIndex="3"/>
+                <CellVariant NameChange="0" ID="strCleanFluidSN" rowIndex="2" VariantType="ST" Name="清洗缓冲液瓶号:" columnIndex="5"/>
+                <CellVariant NameChange="0" ID="strCupSN" rowIndex="2" VariantType="ST" Name="反应杯序列号:" columnIndex="7"/>
+                <CellVariant NameChange="0" ID="strCalibratorLot" rowIndex="3" VariantType="ST" Name="校准品批号:" columnIndex="1"/>
+                <CellVariant NameChange="0" ID="strCalibratorPos" rowIndex="3" VariantType="ST" Name="校准品位置:" columnIndex="3"/>
+              </tableVariant>
+              <borders Type="enumAndFlags" Value="0"/>
+              <borderLineSize Type="qreal" Value="1"/>
+              <borderColor Type="QColor" Value="#000000"/>
+            </item>
+          </children>
+          <parentName Type="QString"></parentName>
+          <itemZValue Type="int" Value="15"/>
+          <masterMask Type="int" Value="0"/>
+          <masterMaskItemID Type="int" Value="0"/>
+          <itemAlignment Type="int" Value="0"/>
+          <geometryLocked Type="bool" Value="0"/>
+          <groupID Type="int" Value="-1"/>
+          <groupPageBreak Type="bool" Value="0"/>
+          <groupVariant NameChange="0" Type="ReportDesign::variant_info" ID="" VariantType="" Name=""/>
+          <topMargin Type="int" Value="5"/>
+          <bottomMargin Type="int" Value="5"/>
+          <rightMargin Type="int" Value="5"/>
+          <leftMargin Type="int" Value="5"/>
+          <module Type="QString">struct CaliResultInfo</module>
+          <pageOrientation Type="enumAndFlags" Value="0"/>
+          <pageSize Type="enumAndFlags" Value="0"/>
+        </pageItem>
+      </item>
+    </pages>
+    <module Type="QString">struct CaliResultInfo</module>
+    <moduleName Type="QString">校准结果</moduleName>
+    <translate Type="bool" Value="1"/>
+    <deviceID Type="QString">leonis</deviceID>
+    <reportVesion Type="QString">1.0</reportVesion>
+    <printDataVesion Type="QString">1.0</printDataVesion>
+    <printDataManager Type="Object" ClassName="ReportDesign::print_data_manager">
+      <objectName Type="QString"></objectName>
+      <connectTableMap Type="QMap&lt;int,ReportDesign::ConnectTableInfo>"/>
+    </printDataManager>
+  </object>
+</Report>

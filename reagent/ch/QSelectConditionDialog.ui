@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QSelectConditionDialog</class>
+ <widget class="BaseDlg" name="QSelectConditionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QSelectConditionDialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>620</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>15</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>20</number>
+    </property>
+    <item row="5" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pushButtonEmpty">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>空</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButtonNoPleace">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>未放置</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="status_reagentmask">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>试剂屏蔽</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="status_calimask">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>校准屏蔽</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="status_current">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>在用</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="calistatus_succeed">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>校准成功</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="status_backup">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>备用</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="pushButtonCaliing">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>正在校准</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="pushButtonNotyetCali">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>未校准</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="type_open">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>开放</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="calistatus_failed">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>校准失败</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="calistatus_none">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>空</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="type_close">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>封闭</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="pushButtonScanFailed">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>扫描失败</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="calistatus_edit">
+      <property name="minimumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>117</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>编辑</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat_button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>试剂类型</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>使用状态</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>校准状态</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widgetCtr" native="true">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>457</y>
+     <width>626</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="ResetBtn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>重置</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="okButton">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelBtn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

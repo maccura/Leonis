@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHistoryFilterSampleImp</class>
+ <widget class="QWidget" name="QHistoryFilterSampleImp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1305</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>754</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>754</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QHistoryFilterSampleImp</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1304</width>
+     <height>749</height>
+    </rect>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_fillname" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>81</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>81</height>
+       </size>
+      </property>
+      <property name="bordersB" stdset="0">
+       <string notr="true">bottom</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_105">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_name">
+         <property name="text">
+          <string>名称设置</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_name">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_filter_enable">
+         <property name="text">
+          <string>启用筛选</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="320,540,304">
+      <property name="spacing">
+       <number>50</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget51" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_53">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_35">
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="text">
+              <string>检测日期</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_62">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QBaseDateEdit" name="test_start_time">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="fonts" stdset="0">
+                <string>12</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QBaseDateEdit" name="test_stop_time">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_34">
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="text">
+              <string>样本号</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_63">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLineEdit" name="sample_no_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="fonts" stdset="0">
+                <string notr="true">12</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="sample_no_edit_2">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_33">
+           <item>
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>样本条码</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_64">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLineEdit" name="sample_bar_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_49">
+               <property name="text">
+                <string>—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="fonts" stdset="0">
+                <string>12</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="sample_bar_edit_2">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>模块</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_65">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QComboBox" name="comboBoxDevType">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>—</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="fonts" stdset="0">
+                <string notr="true">12</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxDevName">
+               <property name="minimumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_39">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>患者ID</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="patient_record_edit">
+             <property name="minimumSize">
+              <size>
+               <width>350</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>337</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_38">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>患者姓名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="patient_name_edit">
+             <property name="minimumSize">
+              <size>
+               <width>350</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>335</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_37">
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>试剂批号</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditReagentLot">
+             <property name="minimumSize">
+              <size>
+               <width>350</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>335</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_17">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget71" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_51">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_ordertype">
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>订单类型</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_ordertype">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_normal">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>常规</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_urg">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>急诊</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_qc">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>质控</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_cali">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>校准</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_samplytype">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>样本类型</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_samplytype">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton_xqxj">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>血清/血浆</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_qx">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>全血</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_ny">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>尿液</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_jmqjy">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>浆膜腔积液</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_njy">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>脑脊液</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="pushButton_qt">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>其他</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_dilutestat">
+           <item>
+            <widget class="QLabel" name="label_dilutestat">
+             <property name="text">
+              <string>稀释状态</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_dilutestat">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_notdilute">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>无</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_innerdilute">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>机内稀释</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_innerincrease">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>机内增量</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_manualdilute">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>手工稀释</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_trans">
+           <item>
+            <widget class="QLabel" name="label_trans">
+             <property name="text">
+              <string>传输</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_trans">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_trans">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>已传输</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_nottrans">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>未传输</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_airecognition">
+           <item>
+            <widget class="QLabel" name="label_airecognition">
+             <property name="text">
+              <string>视觉识别</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_airecognition">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_except">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>有异常</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_noexcept">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>无异常</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget61" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_52">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_retest">
+           <item>
+            <widget class="QLabel" name="label_retest">
+             <property name="text">
+              <string>复查</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_retest">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_haveretest">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>有复查</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_noretest">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>无复查</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_verify">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_verify">
+             <property name="text">
+              <string>审核</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_verify">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_verified">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>已审核</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_notverify">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>未审核</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_selectprint">
+           <item>
+            <widget class="QLabel" name="label_selectprint">
+             <property name="text">
+              <string>打印</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_selectprint">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_alreadyprint">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>已打印</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_notprint">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>未打印</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_dataalarm">
+           <item>
+            <widget class="QLabel" name="label_dataalarm">
+             <property name="text">
+              <string>数据报警</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_dataalarm">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_havealarm">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>有报警</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_noalarm">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>无报警</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_determine">
+           <item>
+            <widget class="QLabel" name="label_determine">
+             <property name="text">
+              <string>定性结果</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_determine">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_positive">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>阳性</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_negtive">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>46</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>阴性</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>false</bool>
+               </property>
+               <property name="buttons" stdset="0">
+                <string notr="true">flat_button</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_36">
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_42">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>项目名</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>7</number>
+             </property>
+             <item>
+              <widget class="QTextEdit" name="assay_edit"/>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_66">
+               <item>
+                <widget class="QPushButton" name="assay_select_btn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>110</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>项目选择</string>
+                 </property>
+                 <property name="buttons" stdset="0">
+                  <string notr="true">flat_button</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_60">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="rightMargin">
+       <number>17</number>
+      </property>
+      <property name="bottomMargin">
+       <number>16</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_1">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+        <property name="buttons" stdset="0">
+         <string notr="true">btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QBaseDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>shared/QComDelegate.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

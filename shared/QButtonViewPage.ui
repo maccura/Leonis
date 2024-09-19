@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QButtonViewPage</class>
+ <widget class="QWidget" name="QButtonViewPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCaliBratePostionEdit</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QButtonBasicView" name="singleAssay" native="true"/>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>组合项目</string>
+       </property>
+       <property name="paddings_left" stdset="0">
+        <string notr="true">l_10</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QButtonBasicView" name="combinAssay" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QButtonBasicView</class>
+   <extends>QWidget</extends>
+   <header>shared/QButtonView.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

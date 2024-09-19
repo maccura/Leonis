@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QResultDataShowWidget</class>
+ <widget class="QWidget" name="QResultDataShowWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1487</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QResultDataShowWidget</string>
+  </property>
+  <widget class="QWidget" name="result_widget_0" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>4</y>
+     <width>280</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="result_label_0">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>54</y>
+      <width>120</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">36</string>
+    </property>
+    <property name="colors" stdset="0">
+     <string notr="true">red</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前结果</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="item_widget_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>168</y>
+     <width>280</width>
+     <height>363</height>
+    </rect>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="suckvol_type_0">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>68</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dilutionFactor_1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>103</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sample_postion_2">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>138</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="current_result_4">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>208</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="origin_result_3">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>173</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="finished_time_5">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>243</y>
+      <width>170</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="device_module_7">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>313</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temperature_6">
+    <property name="geometry">
+     <rect>
+      <x>129</x>
+      <y>278</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="suckvol">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>68</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>样本量： </string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dilutionFactor">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>103</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>稀释倍数：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sample">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>138</y>
+      <width>45</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>位置：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="origin">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>173</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>原始结果：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="current">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>208</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前结果：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="finished">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>243</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>完成时间：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temperature">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>278</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>反应体系温度：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="device">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>313</y>
+      <width>45</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>模块：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="item">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>项目信息</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="reagent_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>4</y>
+     <width>280</width>
+     <height>273</height>
+    </rect>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="expire_day_2">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>140</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagent_expired_date_3">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>175</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagent_lot_1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>105</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagent_sn_0">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>70</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagentSn">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>70</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂瓶号：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagentlot">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>105</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂批号：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="expireDay">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>140</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开瓶有效期：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagentExpired">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>175</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>有效期：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reagent">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="cali_widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>281</y>
+     <width>280</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="cali_curve_days_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>140</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cali_expired_day_3">
+    <property name="geometry">
+     <rect>
+      <x>129</x>
+      <y>175</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cali_type_1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>105</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cali_lot_0">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>70</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caliLot">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>70</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准品批号：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caliType">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>105</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准类型：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caliCurveDays">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准曲线有效期：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caliExpiredDay">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>175</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准品有效期：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cali">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="qualify_widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>4</y>
+     <width>280</width>
+     <height>527</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="qualify_result_4">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>210</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_time_7">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>315</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_status_2">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>140</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_sd_3">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>175</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_sn_1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>105</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_name_0">
+    <property name="geometry">
+     <rect>
+      <x>113</x>
+      <y>70</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_operator_6">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>280</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify_target_5">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>245</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyName">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>70</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>质控品名称：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifySn">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>105</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>质控瓶号：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyStatus">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>140</y>
+      <width>45</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifySd">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>175</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SD：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyResult">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>210</y>
+      <width>45</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyTarget">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>245</y>
+      <width>45</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>靶值：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyOperator">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>280</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>操作者：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualifyTime">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>315</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>质控时间：</string>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qualify">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>质控</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="status" native="true">
+   <property name="geometry">
+    <rect>
+     <x>857</x>
+     <y>4</y>
+     <width>409</width>
+     <height>527</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="result_label_1">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>70</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXXX</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusTit">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>105</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>结果状态</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="titles" stdset="0">
+     <string notr="true">sub_tit_right_angle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>74</y>
+     <width>54</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>U/L</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">16</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

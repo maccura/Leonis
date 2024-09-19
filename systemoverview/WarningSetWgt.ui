@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WarningSetWgt</class>
+ <widget class="QWidget" name="WarningSetWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WarningSetWgt</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>780</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>true</bool>
+   </property>
+   <property name="tabs" stdset="0">
+    <string>sub</string>
+   </property>
+   <property name="tab_borders" stdset="0">
+    <string>all_border</string>
+   </property>
+   <property name="pane_border" stdset="0">
+    <string>border_all</string>
+   </property>
+   <widget class="QWidget" name="ISE">
+    <attribute name="title">
+     <string>ISE</string>
+    </attribute>
+    <widget class="QWidget" name="widgetISE" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>57</y>
+       <width>720</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="gridWidget" native="true">
+        <layout class="QGridLayout" name="gridLayout_ISE">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>20</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>17</y>
+       <width>500</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>耗材</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="CH">
+    <attribute name="title">
+     <string>生化</string>
+    </attribute>
+    <widget class="QWidget" name="widgetCH" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>17</y>
+       <width>720</width>
+       <height>590</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>500</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>试剂</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>257</y>
+        <width>500</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>耗材</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_chWaste">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>394</y>
+        <width>500</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>废液</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalWidget_chWaste" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>440</y>
+        <width>720</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_CH_L">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridWidget_31" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>45</y>
+        <width>720</width>
+        <height>190</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_CH_R">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridWidget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>302</y>
+        <width>720</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_CH_S">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="IM">
+    <attribute name="title">
+     <string>免疫</string>
+    </attribute>
+    <widget class="QWidget" name="widgetIM" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>17</y>
+       <width>720</width>
+       <height>530</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>600</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>试剂</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>257</y>
+        <width>600</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>耗材</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridWidget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>45</y>
+        <width>720</width>
+        <height>190</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_IM_R">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridWidget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>302</y>
+        <width>720</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_IM_S">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>394</y>
+        <width>720</width>
+        <height>116</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_imWaste">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>废液</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="verticalWidget_imWaste" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>70</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_IM_L">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>废料</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="verticalWidget_2" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>70</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_IM_T">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>738</y>
+     <width>621</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_sure">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_cancel">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

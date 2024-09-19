@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QcPrintSetDlg</class>
+ <widget class="BaseDlg" name="QcPrintSetDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QcPrintSetDlg</string>
+  </property>
+  <widget class="QRadioButton" name="QcLJ">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>94</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>质控LJ图</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="QcSingleDay">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>100</y>
+     <width>211</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单日质控</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>250</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OkBtn">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>250</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>140</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日期</string>
+   </property>
+  </widget>
+  <widget class="QBaseDateEdit" name="QcDate">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>170</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="displayFormat">
+    <string>yyyy/M/d</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QBaseDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>shared/QComDelegate.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

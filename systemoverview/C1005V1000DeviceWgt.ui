@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C1005V1000DeviceWgt</class>
+ <widget class="QWidget" name="C1005V1000DeviceWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>190</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">C1005V1000DeviceWgt</string>
+  </property>
+  <widget class="QLabel" name="label_devPicture">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>94</y>
+     <width>190</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>178</y>
+     <width>40</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">12</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string notr="true">white</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_time">
+   <property name="geometry">
+    <rect>
+     <x>109</x>
+     <y>396</y>
+     <width>70</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">00:00:00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">16</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string notr="true">white</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_light">
+   <property name="geometry">
+    <rect>
+     <x>37</x>
+     <y>72</y>
+     <width>116</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_status">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>396</y>
+     <width>186</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #535c66;</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">device_status</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>13</y>
+     <width>190</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,1,1,0">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_reagent">
+      <property name="minimumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_supply">
+      <property name="minimumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_liquid_waste">
+      <property name="minimumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>54</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_light</zorder>
+  <zorder>label_status</zorder>
+  <zorder>label_time</zorder>
+  <zorder>widget</zorder>
+  <zorder>label_devPicture</zorder>
+  <zorder>label_name</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

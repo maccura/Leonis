@@ -1,0 +1,471 @@
+/* 窗口包装类 */
+/* 窗口边框 */
+widget--common_scaling_window QWidget#container_widget
+{
+	background-color: #ffffff;
+	border-radius: 6px;
+}
+
+/* PC端 */
+/* 字体 */
+widget--printcom_settings_window QWidget,
+widget--printcom_integration_window QWidget,
+widget--printer_settings_window QWidget,
+widget--default_templates_overview_window QWidget,
+widget--preview_default_template_window QWidget,
+widget--confirm_window QWidget,
+widget--prompt_window QWidget
+{
+    font-family: "HarmonyOS Sans SC";
+}
+
+/* 窗口边框 */
+widget--printcom_settings_window QWidget#container_widget,
+widget--printcom_integration_window QWidget#container_widget,
+widget--printer_settings_window QWidget#container_widget,
+widget--default_templates_overview_window QWidget#container_widget,
+widget--confirm_window QWidget#container_widget,
+widget--prompt_window QWidget#container_widget
+{
+	background-color: #ffffff;
+	border-radius: 6px;
+	border:1px solid transparent;
+}
+
+/* 标题栏 */
+widget--printcom_settings_window QWidget#title_widget,
+widget--printcom_integration_window QWidget#title_widget,
+widget--printer_settings_window QWidget#title_widget,
+widget--default_templates_overview_window QWidget#title_widget,
+widget--confirm_window QWidget#title_widget,
+widget--prompt_window QWidget#title_widget {
+	background-color: #025bc7;
+	border-top-left-radius:6px;
+	border-bottom-right-radius:0px;
+	border-top-right-radius:6px;
+	border-bottom-left-radius:0px; 
+}
+
+widget--printcom_settings_window QLabel#printcom_title_label,
+widget--printcom_integration_window QLabel#printcom_title_label,
+widget--printer_settings_window QLabel#printcom_title_label,
+widget--default_templates_overview_window QLabel#printcom_title_label,
+widget--confirm_window QLabel#printcom_title_label,
+widget--prompt_window QLabel#printcom_title_label {
+	color: #ffffff;
+}
+
+widget--confirm_window QLabel#hint_label,
+widget--prompt_window QLabel#hint_label {
+	font-size: 18px;
+	color: #565656;
+}
+
+/* 按钮操作 */
+widget--printcom_settings_window QPushButton,
+widget--printcom_integration_window QPushButton,
+widget--printer_settings_window QPushButton,
+widget--default_templates_overview_window QPushButton,
+widget--confirm_window QPushButton,
+widget--prompt_window QPushButton
+{
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                      stop: 0 #f9f9f9, stop: 1 #c4c5c8);
+	border-radius: 6px;
+	border: 1px solid #a4a4a4;
+	font-size: 18px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #565656;
+}
+
+widget--printcom_settings_window QPushButton:hover,
+widget--printcom_integration_window QPushButton:hover,
+widget--printer_settings_window QPushButton:hover,
+widget--default_templates_overview_window QPushButton:hover,
+widget--confirm_window QPushButton:hover,
+widget--prompt_window QPushButton:hover {
+	border: 1px solid #1b7df5;
+}
+
+widget--printcom_settings_window QPushButton:pressed,
+widget--printcom_integration_window QPushButton:pressed,
+widget--printer_settings_window QPushButton:pressed,
+widget--default_templates_overview_window QPushButton:pressed,
+widget--confirm_window QPushButton:pressed,
+widget--prompt_window QPushButton:pressed {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                      stop: 0 #316fb9, stop: 1 #0468e0);
+	color: #ffffff;
+}
+
+widget--printcom_settings_window QPushButton:focus,
+widget--printcom_integration_window QPushButton:focus,
+widget--printer_settings_window QPushButton:focus,
+widget--default_templates_overview_window QPushButton:focus,
+widget--confirm_window QPushButton:focus,
+widget--prompt_window QPushButton:focus {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                      stop: 0 #316fb9, stop: 1 #0468e0);
+	color: #ffffff;
+}
+
+widget--printcom_settings_window QPushButton:disabled,
+widget--printcom_integration_window QPushButton:disabled {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                      stop: 0 #80c4c5c8, stop: 1 #80f9f9f9);
+	border: 1px solid  #80a4a4a4;
+	color: #80565656;
+}
+
+widget--printcom_settings_window QPushButton#zoom_out_btn,
+widget--printcom_settings_window QPushButton#zoom_in_btn,
+widget--printcom_settings_window QPushButton#reset_btn,
+widget--printcom_integration_window QPushButton#zoom_out_btn,
+widget--printcom_integration_window QPushButton#zoom_in_btn,
+widget--printcom_integration_window QPushButton#reset_btn,
+widget--preview_default_template_window QPushButton#zoom_out_btn,
+widget--preview_default_template_window QPushButton#zoom_in_btn,
+widget--preview_default_template_window QPushButton#reset_btn,
+widget--preview_default_template_window QPushButton#return_btn {
+	background-color: transparent;
+	border: none;
+}
+
+/* 文本 */
+widget--printcom_settings_window QLabel {
+	font-size: 18px;
+}
+
+widget--printcom_settings_window QLabel#percent_label,
+widget--printcom_integration_window QLabel#percent_label,
+widget--preview_default_template_window QLabel#percent_label {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+widget--printcom_settings_window QLabel#reset_tip,
+widget--printcom_integration_window QLabel#reset_tip,
+widget--preview_default_template_window QLabel#reset_tip {
+	background-image: url(:/reset_hint);
+	font-size: 16px;
+	color: #ffffff;
+}
+
+widget--printcom_settings_window QLabel#zoom_in_tip,
+widget--printcom_settings_window QLabel#zoom_out_tip,
+widget--printcom_integration_window QLabel#zoom_in_tip,
+widget--printcom_integration_window QLabel#zoom_out_tip,
+widget--preview_default_template_window QLabel#zoom_in_tip,
+widget--preview_default_template_window QLabel#zoom_out_tip {
+	background-image: url(":/zoom_hint");
+	font-size: 16px;
+	color: #ffffff;
+}
+
+widget--printcom_settings_window QLabel#serial_label,
+widget--printcom_settings_window QLabel#template_name_label {
+	color: #565656;
+}
+
+widget--printcom_settings_window QLabel#default_label {
+	color: #025bc7;
+}
+
+/* 模块列表 */
+widget--printcom_settings_window QComboBox#module_list {
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #a4a4a4;	
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 24px;
+	color: #565656;
+}
+
+widget--printcom_settings_window QComboBox#module_list:on {
+	border: 1px solid #1b7df5;	
+}
+
+widget--printcom_settings_window QComboBox#module_list:hover {
+	/*border: 1px solid #025bc7;*/
+	border: 1px solid #1b7df5;	
+}
+
+/* 下拉后,整个下拉窗体样式 */
+widget--printcom_settings_window QComboBox#module_list QAbstractItemView {
+    outline: 0px solid #459fff;   /* 选定项的虚框 */
+    border: 1px solid #a4a4a4;   /* 整个下拉窗体的边框 */
+    background-color: #ffffff;   /* 整个下拉窗体的背景色 */
+	selection-background-color: #e5f5ff;   /* 整个下拉窗体被选中项的背景色 */
+    selection-color: #565656;  
+	font-size: 18px;
+	color: #565656;
+}
+
+/* 下拉后,整个下拉窗体每项的样式 */
+widget--printcom_settings_window QComboBox#module_list QAbstractItemView::item {
+    height: 56px;   /* 项的高度（设置pComboBox->setView(new QListView());后,该项才起作用） */
+}
+
+/* 下拉后,整个下拉窗体越过每项的样式 */
+widget--printcom_settings_window QComboBox#module_list QAbstractItemView::item:hover {
+	color: #565656;
+	border: 1px solid #025bc7;
+}
+
+widget--printcom_settings_window QComboBox#module_list:drop-down {
+	border-left-width: 0px;
+}
+
+widget--printcom_settings_window QComboBox#module_list:down-arrow {
+	width: 12px;
+	height: 10px;
+	margin-right: 10px;
+	image: url(":/drop_down");
+}
+
+widget--printcom_settings_window QComboBox#module_list:down-arrow:on {
+	image: url(":/drop_down");
+}
+
+/* 模板列表 */
+widget--printcom_settings_window QWidget#template_manager {
+	border: 1px solid #a4a4a4;
+	background-color: #ffffff;
+}
+
+widget--printcom_settings_window QWidget#list_header {
+	background-color: #e4e7ec;
+	border: 1px solid  #a4a4a4;
+}
+
+widget--printcom_settings_window QListWidget#template_list {
+	background-color: #ffffff;
+	border: 1px solid #a4a4a4;
+	font-size: 18px;
+	color: #565656;
+}
+
+widget--printcom_settings_window QListWidget#template_list::item {
+    height: 45px;
+	border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+	border-left: 0px solid #a3a3a3;
+    border-right: 0px solid #a3a3a3;
+}
+
+widget--printcom_settings_window QListWidget#template_list::item:hover {
+	background-color: #e5f5ff;
+	border: 0px solid #a4a4a4;
+}
+
+widget--printcom_settings_window QListWidget#template_list::item:selected {
+	background-color: #e5f5ff;
+	border:1px solid #459fff;
+}
+
+widget--printcom_settings_window QListWidget#template_list:focus
+{
+    outline: 0px;
+}
+
+/*设置垂直滚动的全局属性值*/
+widget--printcom_settings_window QListWidget#template_list QScrollBar:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar:vertical,
+widget--printcom_integration_window QComboBox#printer_box QScrollBar:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar:vertical
+{
+    width:13px;
+    /*height: 629px;*/
+	border: none;
+    background-color:#e4e7ec;
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+/* 滑块区域样式 */
+widget--printcom_settings_window QListWidget#template_list QScrollBar::handle:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::handle:vertical,
+widget--printcom_integration_window QComboBox#printer_box QScrollBar::handle:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar::handle:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar::handle:vertical {
+	width: 9px;
+	/*height: 150px;*/
+	background-color: #ffffff;
+	border: 0px solid  #a4a4a4;
+	border-radius: 5px;
+  	margin:0 1px 0 1px;
+}
+/* 向上区域样式 */
+widget--printcom_settings_window QListWidget#template_list QScrollBar::sub-line:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::sub-line:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::sub-line:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar::sub-line:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar::sub-line:vertical {
+	width: 0px;
+	height:0px;
+	background-color: #e4e7ec;
+  	subcontrol-position: top;
+ 	subcontrol-origin: margin;
+}
+
+/* 向下区域样式 */
+widget--printcom_settings_window QListWidget#template_list QScrollBar::add-line:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::add-line:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::add-line:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar::add-line:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar::add-line:vertical {
+	width:0px;
+	height:0px;
+	background-color: #e4e7ec;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+/* 滚动时上下区域样式 */
+widget--printcom_settings_window QListWidget#template_list QScrollBar::add-page:vertical,
+widget--printcom_settings_window QListWidget#template_list QScrollBar::sub-page:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::add-page:vertical,
+widget--printcom_settings_window QComboBox#module_list QScrollBar::sub-page:vertical,
+widget--printcom_integration_window QComboBox#printer_box QScrollBar::add-page:vertical,
+widget--printcom_integration_window QComboBox#printer_box QScrollBar::sub-page:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar::add-page:vertical,
+widget--default_templates_overview_window QTableWidget#template_table QScrollBar::sub-page:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar::add-page:vertical,
+widget--printer_settings_window QComboBox#printer_box QScrollBar::sub-page:vertical {
+	background-color: #e4e7ec;
+}
+
+/* 模板预览 */
+widget--printcom_settings_window QWidget#template_preview,
+widget--printcom_integration_window QWidget#template_preview {
+	border: 1px solid #a4a4a4;
+	background-color: #c6ccd7;
+}
+
+widget--preview_default_template_window QWidget#template_preview {
+	border: 1px solid #a4a4a4;
+	background-color: rgba(0, 0, 0, 0.43);
+}
+
+widget--printcom_settings_window QWidget#preview_widget,
+widget--printcom_integration_window QWidget#preview_widget,
+widget--preview_default_template_window QWidget#preview_widget {
+	border: 0px solid #a4a4a4;
+	background-color: transparent;
+}
+
+/* 打印参数 */
+widget--printcom_integration_window QWidget#printer_settings {
+	background-color: #ffffff;
+	border: 1px solid #a4a4a4;
+}
+
+widget--printcom_integration_window QLabel,
+widget--printer_settings_window QLabel,
+widget--default_templates_overview_window QLabel,
+widget--confirm_window QLabel,
+widget--prompt_window QLabel {
+	font-size: 18px;
+	color: #565656;
+}
+
+widget--printcom_integration_window QComboBox,
+widget--printer_settings_window QComboBox {
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #a4a4a4;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #565656;
+}
+
+widget--printcom_integration_window QComboBox:hover,
+widget--printer_settings_window QComboBox:hover {
+	background-color: #ffffff;
+	/*border: 1px solid #025bc7;*/
+	border: 1px solid #1b7df5;
+}
+
+widget--printcom_integration_window QComboBox:on,
+widget--printer_settings_window QComboBox:on {
+	background-color: #ffffff;
+	border: 1px solid #1b7df5;
+}
+
+/* 下拉后,整个下拉窗体样式 */
+widget--printcom_integration_window QComboBox QAbstractItemView,
+widget--printer_settings_window QComboBox QAbstractItemView {
+    outline: 0px solid #459fff;   /* 选定项的虚框 */
+    border: 1px solid #a4a4a4;   /* 整个下拉窗体的边框 */
+    color: #565656;;
+    background-color: #ffffff;   /* 整个下拉窗体的背景色 */
+	selection-background-color: #e5f5ff;   /* 整个下拉窗体被选中项的背景色 */
+    selection-color: #565656;    
+}
+
+/* 下拉后,整个下拉窗体每项的样式 */
+widget--printcom_integration_window QComboBox QAbstractItemView::item,
+widget--printer_settings_window QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后,该项才起作用） */
+}
+
+/* 下拉后,整个下拉窗体越过每项的样式 */
+widget--printcom_integration_window QComboBox QAbstractItemView::item:hover,
+widget--printer_settings_window QComboBox QAbstractItemView::item:hover {
+	color: #565656;
+	border: 1px solid #025bc7;
+}
+
+widget--printcom_integration_window QComboBox:drop-down,
+widget--printer_settings_window QComboBox:drop-down {
+	border-left-width: 0px;
+}
+
+widget--printcom_integration_window QComboBox:down-arrow,
+widget--printer_settings_window QComboBox:down-arrow {
+	width: 12px;
+	height: 10px;
+	margin-right: 10px;
+	image: url(":/drop_down");
+}
+
+widget--printcom_integration_window QComboBox:down-arrow:on,
+widget--printer_settings_window QComboBox:down-arrow:on {
+	image: url(":/drop_down");
+}
+
+widget--printcom_integration_window QLineEdit,
+widget--printer_settings_window QLineEdit {
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #a4a4a4;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #565656;
+}
+
+widget--printcom_integration_window QLineEdit:hover,
+widget--printer_settings_window QLineEdit:hover {
+	background-color: #ffffff;
+	/*border: 1px solid #025bc7;*/
+	border: 1px solid #1b7df5;
+}
+
+widget--printcom_integration_window QLineEdit:on,
+widget--printer_settings_window QLineEdit:on {
+	background-color: #ffffff;
+	border: 1px solid #1b7df5;
+}
+
+widget--default_templates_overview_window QTableWidget#template_table,
+widget--default_templates_overview_window QTableWidget#template_table::item,
+widget--default_templates_overview_window QTableWidget#template_table::item:hover,
+widget--default_templates_overview_window QTableWidget#template_table::item:selected
+{
+	outline: none;
+	border: none;
+	background-color: transparent;
+}

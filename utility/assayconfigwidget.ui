@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AssayConfigWidget</class>
+ <widget class="QWidget" name="AssayConfigWidget">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">AssayParamWidget</string>
+  </property>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>855</y>
+     <width>359</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1911</x>
+     <y>63</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="flat_return">
+   <property name="geometry">
+    <rect>
+     <x>1823</x>
+     <y>874</y>
+     <width>75</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">flat</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>870</y>
+     <width>1781</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>70</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="flat_new_add">
+      <property name="text">
+       <string>新增</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_parameter_download">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>参数下载</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_alternative_unit">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>备选单位</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="del_Button">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_assayCodeMag">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>通道管理</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_save">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="export_btn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>导出</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1912</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="359,1553">
+    <property name="spacing">
+     <number>4</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>359</width>
+        <height>860</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
+      </property>
+      <property name="pane_border" stdset="0">
+       <string notr="true">border_left</string>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>生化</string>
+       </attribute>
+       <widget class="QTableView" name="AssayTable">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>0</y>
+          <width>359</width>
+          <height>793</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string/>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>75</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>45</number>
+        </attribute>
+       </widget>
+       <widget class="QFrame" name="line_h_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>358</width>
+          <height>1</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lines" stdset="0">
+         <string notr="true">solid</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="line_v_5">
+        <property name="geometry">
+         <rect>
+          <x>357</x>
+          <y>0</y>
+          <width>1</width>
+          <height>801</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lines" stdset="0">
+         <string notr="true">solid</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>免疫</string>
+       </attribute>
+       <widget class="QTableView" name="AssayTable_2">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>0</y>
+          <width>359</width>
+          <height>793</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>75</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>45</number>
+        </attribute>
+       </widget>
+       <widget class="QFrame" name="line_h_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>358</width>
+          <height>1</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lines" stdset="0">
+         <string notr="true">solid</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="line_v_7">
+        <property name="geometry">
+         <rect>
+          <x>358</x>
+          <y>6</y>
+          <width>1</width>
+          <height>801</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lines" stdset="0">
+         <string notr="true">solid</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="AssayParamTabWidget" name="AssayParamTabWgt">
+      <property name="minimumSize">
+       <size>
+        <width>1553</width>
+        <height>860</height>
+       </size>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="show_label">
+   <property name="geometry">
+    <rect>
+     <x>363</x>
+     <y>0</y>
+     <width>1549</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>widget_1</zorder>
+  <zorder>line_h_2</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>flat_return</zorder>
+  <zorder>show_label</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AssayParamTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header location="global">utility/assayparamtabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

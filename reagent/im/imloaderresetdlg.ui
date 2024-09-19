@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImLoaderResetDlg</class>
+ <widget class="BaseDlg" name="ImLoaderResetDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImLoaderResetDlg</string>
+  </property>
+  <widget class="QPushButton" name="OkBtn">
+   <property name="geometry">
+    <rect>
+     <x>406</x>
+     <y>273</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>273</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="ContentFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>591</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>591</width>
+     <height>121</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>591</width>
+     <height>121</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1" columnstretch="0,1,1,1">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>20</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>30</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="ModuleLab">
+      <property name="text">
+       <string>模块</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QCheckBox" name="AllCB">
+      <property name="text">
+       <string>全部</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QCheckBox" name="Module1CB">
+      <property name="text">
+       <string>I1                                                           1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QCheckBox" name="Module2CB">
+      <property name="text">
+       <string>I2                                                           1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QCheckBox" name="Module4CB">
+      <property name="text">
+       <string>I4                                                           1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCheckBox" name="Module3CB">
+      <property name="text">
+       <string>I3                                                           1</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>ContentFrame</zorder>
+  <zorder>OkBtn</zorder>
+  <zorder>CancelBtn</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

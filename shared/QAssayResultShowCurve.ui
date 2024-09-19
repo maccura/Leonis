@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QAssayResultShowCurve</class>
+ <widget class="QWidget" name="QAssayResultShowCurve">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1301</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">QAssayResultShowCurve</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="CScatterPlotClass" name="reaction_curve" native="true">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>49</y>
+     <width>1215</width>
+     <height>560</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1860</x>
+     <y>450</y>
+     <width>1</width>
+     <height>143</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>942</x>
+     <y>14</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>主波长</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1059</x>
+     <y>14</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>次波长</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1179</x>
+     <y>14</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>主-次波长</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>924</x>
+     <y>19</y>
+     <width>9</width>
+     <height>9</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="legends" stdset="0">
+    <string>wave_main</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1041</x>
+     <y>19</y>
+     <width>9</width>
+     <height>9</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="legends" stdset="0">
+    <string>wave_sub</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1161</x>
+     <y>19</y>
+     <width>9</width>
+     <height>9</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="legends" stdset="0">
+    <string>wave_main_sub</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>10</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>吸光度</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">14</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>600</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>测光点</string>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">14</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>0</y>
+     <width>1181</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="bks" stdset="0">
+    <string>gray</string>
+   </property>
+   <property name="bordersB" stdset="0">
+    <string>bottom</string>
+   </property>
+   <property name="bordersL" stdset="0">
+    <string>left</string>
+   </property>
+  </widget>
+  <zorder>reaction_curve</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CScatterPlotClass</class>
+   <extends>QWidget</extends>
+   <header>src/leonis/curveDraw/ScatterPlotClass.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

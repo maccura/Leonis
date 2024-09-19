@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QQcLeveyJennPage</class>
+ <widget class="QWidget" name="QQcLeveyJennPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QQcLeveyJennPage</string>
+  </property>
+  <widget class="QTabWidget" name="QcResultTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>1218</x>
+     <y>9</y>
+     <width>693</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="QcResultTbl1Widget">
+    <attribute name="title">
+     <string>图表1</string>
+    </attribute>
+    <widget class="QTableView" name="QcResultTbl1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>687</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>48</number>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="QcResultTbl2Widget">
+    <attribute name="title">
+     <string>图表2</string>
+    </attribute>
+    <widget class="QTableView" name="QcResultTbl2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>687</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>48</number>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="QcResultTbl3Widget">
+    <attribute name="title">
+     <string>图表3</string>
+    </attribute>
+    <widget class="QTableView" name="QcResultTbl3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>687</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>48</number>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="DetailBtn">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>结果详情</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PrintBtn">
+   <property name="geometry">
+    <rect>
+     <x>551</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>打印</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OutCtrlBtn">
+   <property name="geometry">
+    <rect>
+     <x>201</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>失控处理</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TargetValUpdateBtn">
+   <property name="geometry">
+    <rect>
+     <x>376</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>更新靶值SD</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="QcEndDateEdit">
+   <property name="geometry">
+    <rect>
+     <x>567</x>
+     <y>10</y>
+     <width>140</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>140</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="AssayCombo">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>10</y>
+     <width>140</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AssayLab">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>10</y>
+     <width>61</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>74</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>项目</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="QcDateLab">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>10</y>
+     <width>98</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>98</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>质控日期</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="QcStartDateEdit">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>140</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>140</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ExportBtn">
+   <property name="geometry">
+    <rect>
+     <x>726</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>导出</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>1211</width>
+     <height>725</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTableView" name="QcInfoTable">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>241</height>
+       </size>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>48</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>25</number>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Expend">
+      <property name="text">
+       <string>展开</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Minimum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>6</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="LeveyJennPlot" name="LjGraphic" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>453</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>LeveyJennPlot</class>
+   <extends>QWidget</extends>
+   <header>LeveyJennPlot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

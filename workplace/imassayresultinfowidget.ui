@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImAssayResultInfoWidget</class>
+ <widget class="QWidget" name="ImAssayResultInfoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1181</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImAssayResultInfoWidget</string>
+  </property>
+  <widget class="QGroupBox" name="ResultGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>570</width>
+     <height>349</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>当前结果</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_right_angle</string>
+   </property>
+   <widget class="QWidget" name="widget_result" native="true">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>30</y>
+      <width>531</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="fonts" stdset="0">
+     <string>16</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QFrame" name="ResValAndUnitFrame">
+       <property name="minimumSize">
+        <size>
+         <width>260</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>260</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="bks" stdset="0">
+        <string notr="true">gray</string>
+       </property>
+       <property name="radiuses" stdset="0">
+        <string>rds_4</string>
+       </property>
+       <widget class="QWidget" name="widget_6" native="true">
+        <property name="geometry">
+         <rect>
+          <x>17</x>
+          <y>0</y>
+          <width>221</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="0,0,0">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QDoubleSpinBox" name="ResSpinbox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <double>99999.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>88.599999999999994</double>
+           </property>
+           <property name="bks" stdset="0">
+            <string notr="true">transparent</string>
+           </property>
+           <property name="inputs" stdset="0">
+            <string notr="true">noborder</string>
+           </property>
+           <property name="fonts" stdset="0">
+            <string notr="true">20</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="ResUnitLab">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>umol/ml</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fonts" stdset="0">
+            <string notr="true">14</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_21">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widgetlayoutSignalValue_2" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="SigValNameLab">
+          <property name="text">
+           <string>信号值：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="SigValLab">
+          <property name="text">
+           <string notr="true">90.21</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_22">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="0,0,0">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="RawResNameLab">
+          <property name="text">
+           <string>原始结果：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RawResValLab">
+          <property name="text">
+           <string notr="true">80.02</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_23">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_oldSignal" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QLabel" name="SigValNameLab_3">
+            <property name="text">
+             <string>原始信号值：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="OldSigValLab">
+            <property name="text">
+             <string notr="true">90.21</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_25">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="result_status">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="undoRedoEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="fonts" stdset="0">
+        <string notr="true">16</string>
+       </property>
+       <property name="inputs" stdset="0">
+        <string notr="true">noborder</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="RgntInfoFrame">
+   <property name="geometry">
+    <rect>
+     <x>578</x>
+     <y>4</y>
+     <width>571</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>549</width>
+      <height>349</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>试剂/耗材信息</string>
+    </property>
+    <property name="borders" stdset="0">
+     <string notr="true">group_right_angle</string>
+    </property>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>45</y>
+       <width>521</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="fonts" stdset="0">
+      <string notr="true">16</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>11</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="RgntLotNameLab">
+          <property name="text">
+           <string>试剂批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RgntLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="RgntBnNameLab">
+          <property name="text">
+           <string>试剂瓶号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RgntBnValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="RgntValidDayNameLab">
+          <property name="text">
+           <string>失效日期：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RgntValidDayValLab">
+          <property name="text">
+           <string notr="true">2021/11/09</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="OpenValidDayNameLab">
+          <property name="text">
+           <string>开瓶效期(天)：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="OpenValidDayValLab">
+          <property name="text">
+           <string notr="true">25</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="BaseLiqLotNameLab">
+          <property name="text">
+           <string>底物液批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="BaseLiqLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="ReactionCupLotNameLab">
+          <property name="text">
+           <string>反应杯批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ReactionCupLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="WashBufLotNameLab">
+          <property name="text">
+           <string>清洗缓冲液批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="WashBufLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="DiltLotNameLab">
+          <property name="text">
+           <string>稀释液批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="DiltLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="TestItemInfoFrame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>357</y>
+     <width>591</width>
+     <height>332</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>570</width>
+      <height>322</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>项目信息</string>
+    </property>
+    <property name="borders" stdset="0">
+     <string notr="true">group_right_angle</string>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>40</y>
+       <width>531</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="fonts" stdset="0">
+      <string notr="true">16</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="ModuleNameLab">
+          <property name="text">
+           <string>模块：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ModuleValLab">
+          <property name="text">
+           <string notr="true">C2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="ManualDiltNameLab">
+          <property name="text">
+           <string>手工稀释倍数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ManualDiltValLab">
+          <property name="text">
+           <string>无</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="DiltRatioNameLab">
+          <property name="text">
+           <string>机内稀释倍数：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="DiltRatioValLab">
+          <property name="text">
+           <string notr="true">5200</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="CompleteTimeNameLab">
+          <property name="text">
+           <string>项目完成时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CompleteTimeValLab">
+          <property name="text">
+           <string notr="true">2021/09/09 10:55</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="CalInfoFrame">
+   <property name="geometry">
+    <rect>
+     <x>578</x>
+     <y>357</y>
+     <width>571</width>
+     <height>332</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QGroupBox" name="CalInfo_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>549</width>
+      <height>322</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>校准信息</string>
+    </property>
+    <property name="borders" stdset="0">
+     <string notr="true">group_right_angle</string>
+    </property>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>45</y>
+       <width>511</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="fonts" stdset="0">
+      <string notr="true">16</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>11</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="CalLotNameLab">
+          <property name="text">
+           <string>校准品批号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CalLotValLab">
+          <property name="text">
+           <string notr="true">0002</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QLabel" name="CalValidDayNameLab">
+          <property name="text">
+           <string>失效日期：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CalValidDayValLab">
+          <property name="text">
+           <string notr="true">2021/11/09</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="CurCurveValidDayNameLab">
+          <property name="text">
+           <string>当前曲线有效期：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CurCurveValidDayValLab">
+          <property name="text">
+           <string notr="true">25</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QLabel" name="CurCurveNameLab">
+          <property name="text">
+           <string>当前工作曲线：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="CurCurveValLab">
+          <property name="text">
+           <string notr="true">50</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

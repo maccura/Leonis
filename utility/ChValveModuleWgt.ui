@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChValveModuleWgt</class>
+ <widget class="QWidget" name="ChValveModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1185</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ChValveModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: transparent;</string>
+  </property>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>673</y>
+     <width>1177</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #a4a4a4;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>1</width>
+     <height>673</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #a4a4a4;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">gray</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>1177</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #a4a4a4;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1177</x>
+     <y>0</y>
+     <width>1</width>
+     <height>673</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #a4a4a4;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1179</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar:vertical  {
+    width: 14px;
+    background: #e4e7ec;
+    padding: 0;
+}</string>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1177</width>
+      <height>672</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <property name="bottomMargin">
+      <number>30</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>缓存瓶模块</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_1">
+         <property name="text">
+          <string>高浓度废液排除控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="text">
+          <string>低浓度废液排除控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="text">
+          <string>高浓度废液吸取阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="text">
+          <string>低浓度废液吸取阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="text">
+          <string>二级缓存罐废液排出阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>孵育加热组件</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="text">
+          <string>孵育盘供水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>排废组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_7">
+         <property name="text">
+          <string>孵育盘排水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>齿轮泵组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_8">
+         <property name="text">
+          <string>齿轮泵回水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>主水箱组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_9">
+         <property name="text">
+          <string>主水箱供水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>联机ISE分析模块</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_29">
+         <property name="text">
+          <string>ISE外壁清洗阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_30">
+         <property name="text">
+          <string>ISE内壁清洗阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>真空负压组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_31">
+         <property name="text">
+          <string>齿轮泵回水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_32">
+         <property name="text">
+          <string>真空控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>浓缩稀释注射器组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_10">
+         <property name="text">
+          <string>酸液稀释供水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_11">
+         <property name="text">
+          <string>碱液稀释供水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_12">
+         <property name="text">
+          <string>酸液吸取控制阀（真空阀）</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_13">
+         <property name="text">
+          <string>碱液吸取控制阀（真空阀）</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_14">
+         <property name="text">
+          <string>酸性原液在用瓶控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_15">
+         <property name="text">
+          <string>酸性原液备用瓶控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_16">
+         <property name="text">
+          <string>碱性原液在用瓶控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_17">
+         <property name="text">
+          <string>碱性原液备用瓶控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_18">
+         <property name="text">
+          <string>样本针内壁液清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_19">
+         <property name="text">
+          <string>试剂针1内壁清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_20">
+         <property name="text">
+          <string>试剂针2内壁清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>主循环组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_21">
+         <property name="text">
+          <string>试剂仓供水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>清洗组件</string>
+         </property>
+         <property name="weights" stdset="0">
+          <string notr="true">bold</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_22">
+         <property name="text">
+          <string>清洗水1控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_23">
+         <property name="text">
+          <string>清洗水2控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_24">
+         <property name="text">
+          <string>清洗水3控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_25">
+         <property name="text">
+          <string>空白水控制阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_26">
+         <property name="text">
+          <string>样本针外壁液清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_27">
+         <property name="text">
+          <string>试剂针1外壁清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_28">
+         <property name="text">
+          <string>试剂针2外壁清洗电磁阀</string>
+         </property>
+         <property name="checks" stdset="0">
+          <string notr="true">push</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>line_h_1</zorder>
+  <zorder>line_h_2</zorder>
+  <zorder>line_v_1</zorder>
+  <zorder>line_v_2</zorder>
+  <zorder>scrollArea</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

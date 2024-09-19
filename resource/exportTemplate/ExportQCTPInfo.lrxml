@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF8"?>
+<Report>
+  <object ClassName="ReportDesign::report_manager" Type="Object">
+    <objectName Type="QString"></objectName>
+    <pages Type="Collection">
+      <item ClassName="ReportDesign::page_scene" Type="Object">
+        <objectName Type="QString">page1</objectName>
+        <sceneRect height="3075" y="-50" width="2200" x="-50" Type="QRect"/>
+        <bspTreeDepth Value="5" Type="int"/>
+        <font italic="0" family="SimSun" weight="50" pointSize="9" underline="0" Type="QFont"/>
+        <sortCacheEnabled Value="0" Type="bool"/>
+        <stickyFocus Value="0" Type="bool"/>
+        <minimumRenderSize Value="0" Type="qreal"/>
+        <pageItem ClassName="PageItem" Type="Object">
+          <objectName Type="QString">Reportpage1</objectName>
+          <geometry height="2970" y="0" width="2100" x="0" Type="QRect"/>
+          <children Type="Collection">
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem1</objectName>
+              <geometry height="102" y="50" width="1998" x="54" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="17" Type="int"/>
+              <masterMask Value="1" Type="int"/>
+              <masterMaskItemID Value="19" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="132" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="15" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strTitle" VariantType="ST" NameChange="0" Name="项目质控信息" Type="ReportDesign::variant_info"/>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="SVGItem" Type="Object">
+              <objectName Type="QString">variable_image_item3</objectName>
+              <geometry height="994" y="342" width="1698" x="200" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="22" Type="int"/>
+              <masterMask Value="0" Type="int"/>
+              <masterMaskItemID Value="0" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <keepAspectRatio Value="1" Type="bool"/>
+              <borders Value="15" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+              <variant ID="strTPImage" VariantType="BS" NameChange="0" Name="T-P图片" Type="ReportDesign::variant_info"/>
+            </item>
+            <item ClassName="TableItem" Type="Object">
+              <objectName Type="QString">table_item3</objectName>
+              <geometry height="1210" y="1374" width="856" x="58" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="23" Type="int"/>
+              <masterMask Value="0" Type="int"/>
+              <masterMaskItemID Value="0" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <dataRowCount Value="2" Type="int"/>
+              <rowHeight Value="50" Type="int"/>
+              <dataColumnCount Value="3" Type="int"/>
+              <columnWidth Value="150" Type="int"/>
+              <showGrid Value="0" Type="bool"/>
+              <showHeader Value="0" Type="bool"/>
+              <font italic="0" family="Arial" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <alignment Value="33" Type="enumAndFlags"/>
+              <columnProperty Type="QList&lt;ReportDesign::column_property>">
+                <ColumnPropertyNode isNull="1" alignment="33" width="150" timeCount="0" columnPosx="0">
+                  <font italic="0" family="SimSun" weight="50" pointSize="9" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode isNull="0" alignment="129" width="132" timeCount="4" columnPosx="150">
+                  <font italic="0" family="思源黑体 Normal" weight="50" pointSize="9" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode isNull="0" alignment="129" width="348" timeCount="5" columnPosx="282">
+                  <font italic="0" family="思源黑体 Normal" weight="50" pointSize="9" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </ColumnPropertyNode>
+                <ColumnPropertyNode isNull="0" alignment="129" width="376" timeCount="6" columnPosx="630">
+                  <font italic="0" family="思源黑体 Normal" weight="50" pointSize="9" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </ColumnPropertyNode>
+              </columnProperty>
+              <rowProperty Type="QList&lt;ReportDesign::row_property>">
+                <RowPropertyNode isNull="1" alignment="33" rowPosx="0" width="50" timeCount="0">
+                  <font italic="0" family="Arial" weight="50" pointSize="10" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </RowPropertyNode>
+                <RowPropertyNode isNull="1" alignment="33" rowPosx="50" width="50" timeCount="0">
+                  <font italic="0" family="Arial" weight="50" pointSize="10" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </RowPropertyNode>
+                <RowPropertyNode isNull="1" alignment="33" rowPosx="100" width="1160" timeCount="0">
+                  <font italic="0" family="Arial" weight="50" pointSize="10" underline="0" Type="QFont"/>
+                  <fontColor Value="#000000" Type="QColor"/>
+                </RowPropertyNode>
+              </rowProperty>
+              <tableContentProperty alignment="33" Type="ReportDesign::content_property">
+                <font italic="0" family="SimSun" weight="50" pointSize="9" underline="0" Type="QFont"/>
+                <fontColor Value="#000000" Type="QColor"/>
+              </tableContentProperty>
+              <TableCellContentProperty Type="QMap&lt;QPair&lt;int,int>,ReportDesign::content_property>"/>
+              <propertyTimeCount Value="6" Type="uint"/>
+              <tableVariant Type="QMap&lt;QPair&lt;int,int>,ReportDesign::variant_info>">
+                <CellVariant ID="strDisplayIndex" columnIndex="1" VariantType="ST" NameChange="0" rowIndex="1" Name="序号"/>
+                <CellVariant ID="strQCDate" columnIndex="2" VariantType="ST" NameChange="0" rowIndex="1" Name="质控时间"/>
+                <CellVariant ID="strResult" columnIndex="3" VariantType="ST" NameChange="0" rowIndex="1" Name="结果"/>
+              </tableVariant>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+              <autoFill Value="1" Type="bool"/>
+              <underLine Value="0" Type="bool"/>
+              <tableVariantID ID="vecResult" VariantType="TB" NameChange="0" Name="质控结果" Type="ReportDesign::variant_info"/>
+              <tableItemID Value="2" Type="int"/>
+              <connectTableItemID Value="-1" Type="int"/>
+              <designHeaderColor Value="#edeef0" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem4</objectName>
+              <geometry height="102" y="2624" width="1998" x="50" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="24" Type="int"/>
+              <masterMask Value="2" Type="int"/>
+              <masterMaskItemID Value="39" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="129" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strQCAnalysis" VariantType="ST" NameChange="0" Name="质控分析" Type="ReportDesign::variant_info"/>
+              <borders Value="3" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem5</objectName>
+              <geometry height="74" y="2756" width="550" x="50" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="27" Type="int"/>
+              <masterMask Value="2" Type="int"/>
+              <masterMaskItemID Value="42" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="129" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strExporter" VariantType="ST" NameChange="0" Name="导出人：" Type="ReportDesign::variant_info"/>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="PageNumber" Type="Object">
+              <objectName Type="QString">TextItem6</objectName>
+              <geometry height="68" y="2848" width="622" x="1426" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="28" Type="int"/>
+              <masterMask Value="2" Type="int"/>
+              <masterMaskItemID Value="21" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="130" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="" VariantType="" NameChange="0" Name="1/1" Type="ReportDesign::variant_info"/>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem7</objectName>
+              <geometry height="74" y="2756" width="1112" x="938" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="29" Type="int"/>
+              <masterMask Value="2" Type="int"/>
+              <masterMaskItemID Value="20" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="130" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strExportTime" VariantType="ST" NameChange="0" Name="导出时间:" Type="ReportDesign::variant_info"/>
+              <borders Value="0" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem2</objectName>
+              <geometry height="150" y="157" width="616" x="54" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="20" Type="int"/>
+              <masterMask Value="0" Type="int"/>
+              <masterMaskItemID Value="0" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="129" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strItemName" VariantType="ST" NameChange="0" Name="项目名称:" Type="ReportDesign::variant_info"/>
+              <borders Value="3" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem3</objectName>
+              <geometry height="150" y="157" width="760" x="672" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="20" Type="int"/>
+              <masterMask Value="0" Type="int"/>
+              <masterMaskItemID Value="0" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="129" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strTimeQuantum" VariantType="ST" NameChange="0" Name="质控日期:" Type="ReportDesign::variant_info"/>
+              <borders Value="3" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+            <item ClassName="TextItem" Type="Object">
+              <objectName Type="QString">TextItem8</objectName>
+              <geometry height="150" y="157" width="616" x="1434" Type="QRect"/>
+              <children Type="Collection"/>
+              <parentName Type="QString">Reportpage1</parentName>
+              <itemZValue Value="20" Type="int"/>
+              <masterMask Value="0" Type="int"/>
+              <masterMaskItemID Value="0" Type="int"/>
+              <itemAlignment Value="0" Type="int"/>
+              <geometryLocked Value="0" Type="bool"/>
+              <groupID Value="-1" Type="int"/>
+              <groupPageBreak Value="0" Type="bool"/>
+              <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+              <alignment Value="129" Type="enumAndFlags"/>
+              <font italic="0" family="思源黑体 Normal" weight="50" pointSize="10" underline="0" Type="QFont"/>
+              <fontColor Value="#000000" Type="QColor"/>
+              <variant ID="strModelName" VariantType="ST" NameChange="0" Name="模块:" Type="ReportDesign::variant_info"/>
+              <borders Value="3" Type="enumAndFlags"/>
+              <borderLineSize Value="1" Type="qreal"/>
+              <borderColor Value="#000000" Type="QColor"/>
+            </item>
+          </children>
+          <parentName Type="QString"></parentName>
+          <itemZValue Value="16" Type="int"/>
+          <masterMask Value="0" Type="int"/>
+          <masterMaskItemID Value="0" Type="int"/>
+          <itemAlignment Value="0" Type="int"/>
+          <geometryLocked Value="0" Type="bool"/>
+          <groupID Value="-1" Type="int"/>
+          <groupPageBreak Value="0" Type="bool"/>
+          <groupVariant ID="" VariantType="" NameChange="0" Name="" Type="ReportDesign::variant_info"/>
+          <topMargin Value="5" Type="int"/>
+          <bottomMargin Value="5" Type="int"/>
+          <rightMargin Value="5" Type="int"/>
+          <leftMargin Value="5" Type="int"/>
+          <module Type="QString">struct QCYDInfo</module>
+          <pageOrientation Value="0" Type="enumAndFlags"/>
+          <pageSize Value="0" Type="enumAndFlags"/>
+        </pageItem>
+      </item>
+    </pages>
+    <module Type="QString">struct QCYDInfo</module>
+    <moduleName Type="QString">质控T-P信息</moduleName>
+    <translate Value="1" Type="bool"/>
+    <deviceID Type="QString">leonis</deviceID>
+    <reportVesion Type="QString">1.0</reportVesion>
+    <printDataVesion Type="QString">1.0</printDataVesion>
+    <printDataManager ClassName="ReportDesign::print_data_manager" Type="Object">
+      <objectName Type="QString"></objectName>
+      <connectTableMap Type="QMap&lt;int,ReportDesign::ConnectTableInfo>"/>
+    </printDataManager>
+  </object>
+</Report>

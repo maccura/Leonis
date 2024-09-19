@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetectionSetDlg</class>
+ <widget class="BaseDlg" name="DetectionSetDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>689</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DetectionSetDlg</string>
+  </property>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>588</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel_btn">
+   <property name="geometry">
+    <rect>
+     <x>584</x>
+     <y>588</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>181</y>
+     <width>581</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>功能开关</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="scan_tube_barcode_ckbox">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>223</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>扫描样本管条码</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="rotate_tube_ckbox">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>263</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>旋转样本管</string>
+   </property>
+   <property name="checks" stdset="0">
+    <string>push</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>651</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>样本申请模式</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>651</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="barcode_rdbtn_0">
+       <property name="text">
+        <string>条码模式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="order_rdbtn_1">
+       <property name="text">
+        <string>样本号模式</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="rack_rdbtn_2">
+       <property name="text">
+        <string>样本架模式</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>307</y>
+     <width>581</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>检测模式</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="DetModeTbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>347</y>
+     <width>651</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>46</number>
+   </attribute>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>347</y>
+     <width>651</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>574</y>
+     <width>651</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>347</y>
+     <width>1</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>347</y>
+     <width>1</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancel_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>DetectionSetDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

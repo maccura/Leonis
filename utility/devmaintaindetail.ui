@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DevMaintainDetail</class>
+ <widget class="BaseDlg" name="DevMaintainDetail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1060</width>
+    <height>922</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DevMaintainDetail</string>
+  </property>
+  <widget class="MaintainItemDetailGrp" name="MaintainDetailWgt" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>960</width>
+     <height>698</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">transparent</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="BottomFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>825</y>
+     <width>963</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>963</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>963</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,1,0">
+    <property name="spacing">
+     <number>90</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="WaitLab">
+      <property name="text">
+       <string>等待：0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="SuccLab">
+      <property name="styleSheet">
+       <string notr="true">color:#05b30d;</string>
+      </property>
+      <property name="text">
+       <string>成功：0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="FailedLab">
+      <property name="styleSheet">
+       <string notr="true">color:#e41313;</string>
+      </property>
+      <property name="text">
+       <string>失败：0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>161</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CloseBtn">
+      <property name="minimumSize">
+       <size>
+        <width>116</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string>btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>BottomFrame</zorder>
+  <zorder>MaintainDetailWgt</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MaintainItemDetailGrp</class>
+   <extends>QWidget</extends>
+   <header>maintainitemdetailgrp.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

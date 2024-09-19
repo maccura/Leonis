@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalibrateSettingWidget</class>
+ <widget class="QWidget" name="CalibrateSettingWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>807</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1549</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>450</width>
+     <height>286</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>校准设置</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_tit</string>
+   </property>
+   <widget class="QWidget" name="widget1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>73</y>
+      <width>421</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="caliTypeCbBox">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>校准方法</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="caliPointsEdit">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>校准点</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCheckBox" name="auto_weight_coeff_ckbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>203</y>
+      <width>411</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>自动加权系数</string>
+    </property>
+    <property name="checks" stdset="0">
+     <string notr="true">push</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>295</y>
+     <width>450</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>校准曲线管理</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_tit</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>421</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_38">
+       <property name="text">
+        <string>批校准周期(天)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="cali_timeout_edit_lot">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="cali_timeout_edit_bottle">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>瓶校准周期(天)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCheckBox" name="lot_num_manager_ckbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>421</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>批号管理</string>
+    </property>
+    <property name="checks" stdset="0">
+     <string notr="true">push</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>61</y>
+      <width>421</width>
+      <height>102</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lot_base_time_edit">
+       <property name="minimumSize">
+        <size>
+         <width>88</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>88</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_22">
+       <property name="text">
+        <string>成为批曲线时间限(小时)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lot_valid_time_edit">
+       <property name="minimumSize">
+        <size>
+         <width>88</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>88</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>成为基准曲线时间限(小时)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="CalSetting_change_over">
+   <property name="geometry">
+    <rect>
+     <x>459</x>
+     <y>5</y>
+     <width>450</width>
+     <height>286</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>自动校准设置</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_tit</string>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>73</y>
+      <width>400</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂更换</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>129</y>
+      <width>390</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="change_over_bottle_cbox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="change_over_bottle_ckbox">
+       <property name="text">
+        <string>换瓶校准</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="change_over_lot_ckbox">
+       <property name="text">
+        <string>换批校准</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="change_over_lot_cbox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>459</x>
+     <y>295</y>
+     <width>450</width>
+     <height>244</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>31</y>
+      <width>400</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准曲线过期</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>84</y>
+      <width>390</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="cali_timeout_mode_cbox_lot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="bottl_timeout_ckbox">
+       <property name="text">
+        <string>瓶曲线过期</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="cali_timeout_mode_cbox_bottle">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="lot_timeout_ckbox">
+       <property name="text">
+        <string>批曲线过期</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="CalSetting_range">
+   <property name="geometry">
+    <rect>
+     <x>913</x>
+     <y>455</y>
+     <width>631</width>
+     <height>333</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>校准检查范围</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_tit</string>
+   </property>
+   <widget class="QWidget" name="widget2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>67</y>
+      <width>611</width>
+      <height>294</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_6">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>标准差限值检查</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>S1吸光度限值检查</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>重复性限制检查</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>灵敏度限值检查</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>K系数差别（%）</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="s1lbs_limit_lower_edit">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="s1lbs_limit_upper_edit">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="sensitive_limit_lower_edit">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="sensitive_limit_upper_edit">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLineEdit" name="offset_sd_limit_edit">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="dup_licate_limit_rate_edit">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>110</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>8</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>19</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="dup_licate_limit_abs_edit">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>8</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Abs</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLineEdit" name="caliConstEdit_K_5">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_7">
+   <property name="geometry">
+    <rect>
+     <x>459</x>
+     <y>545</y>
+     <width>450</width>
+     <height>243</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>31</y>
+      <width>400</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>质控失控</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>84</y>
+      <width>390</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>15</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>20</number>
+     </property>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="union_qc_cali_mode_cbox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="single_qc_cali_mode_ckbox">
+       <property name="text">
+        <string>单质控品失控</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="single_qc_cali_mode_cbox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="union_qc_cali_mode_ckbox">
+       <property name="text">
+        <string>联合质控品失控</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="CalSetting_caliVols">
+   <property name="geometry">
+    <rect>
+     <x>913</x>
+     <y>5</y>
+     <width>631</width>
+     <height>446</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>稀释浓度设置</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">group_tit</string>
+   </property>
+   <widget class="QFrame" name="line_v">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>42</y>
+      <width>1</width>
+      <height>404</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>42</y>
+      <width>1</width>
+      <height>404</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>445</y>
+      <width>636</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="caliVolsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>42</y>
+      <width>631</width>
+      <height>404</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>45</number>
+    </attribute>
+   </widget>
+   <widget class="QFrame" name="line_h_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>42</y>
+      <width>636</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <zorder>caliVolsView</zorder>
+   <zorder>line_h_4</zorder>
+   <zorder>line_v</zorder>
+   <zorder>line_h_3</zorder>
+   <zorder>line_v_2</zorder>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>792</y>
+     <width>1549</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>661</y>
+     <width>450</width>
+     <height>127</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+   <widget class="QCheckBox" name="cali_failed_ckbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准屏蔽</string>
+    </property>
+    <property name="checks" stdset="0">
+     <string notr="true">push</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>change_over_bottle_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>change_over_bottle_cbox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>750</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>change_over_lot_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>change_over_lot_cbox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bottl_timeout_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cali_timeout_mode_cbox_bottle</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>531</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>760</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lot_timeout_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cali_timeout_mode_cbox_lot</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>716</x>
+     <y>469</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>single_qc_cali_mode_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>single_qc_cali_mode_cbox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>551</x>
+     <y>655</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>654</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>union_qc_cali_mode_ckbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>union_qc_cali_mode_cbox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>708</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>746</x>
+     <y>699</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

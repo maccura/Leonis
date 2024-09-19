@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QcDocRegDlg</class>
+ <widget class="BaseDlg" name="QcDocRegDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1640</width>
+    <height>940</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QcDocRegDlg</string>
+  </property>
+  <widget class="QFrame" name="ContentFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>1640</width>
+     <height>870</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1640</width>
+     <height>870</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1640</width>
+     <height>870</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="TopFrame">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>1640</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1640</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1640</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>36</number>
+     </property>
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="RegWaysLab">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>登记方式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>68</number>
+       </property>
+       <item>
+        <widget class="QRadioButton" name="ScanRegRBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>扫描登记</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="ManualRegRBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>手工登记</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="DownloadRegRBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>下载登记</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>906</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_symbol">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_symbolName">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>不区分试剂批号</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="QcRegStkWgt">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>81</y>
+      <width>1640</width>
+      <height>790</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1640</width>
+      <height>790</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1640</width>
+      <height>16777215</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../leonis.qrc"/>
+ </resources>
+ <connections/>
+</ui>

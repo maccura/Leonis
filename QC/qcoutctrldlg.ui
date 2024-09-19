@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QcOutCtrlDlg</class>
+ <widget class="BaseDlg" name="QcOutCtrlDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QcOutCtrlDlg</string>
+  </property>
+  <widget class="QFrame" name="QcInfoFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>740</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>740</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>740</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#QcInfoFrame
+{
+	border:1px solid #a4a4a4;
+	background-color:#f5f7fb;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="3,0,8,0,8,0,3">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>58</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelResult">
+        <property name="text">
+         <string>结果：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CustomLabel" name="labelResultShow">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>158</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelRule">
+        <property name="text">
+         <string>失控规则：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CustomLabel" name="labelRuleShow">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>158</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelTime">
+        <property name="text">
+         <string>质控时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelTimeShow">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>170</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>58</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="OutCtrlReasonLab">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>208</y>
+     <width>740</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>失控原因</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="OutCtrlReasonEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>236</y>
+     <width>740</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SolutionLab">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>424</y>
+     <width>740</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>处理措施</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="SolutionEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>452</y>
+     <width>740</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ReasonLetterCntLab">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>356</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">0/200</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SlvLettertCntLab">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>572</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">0/200</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="BotomFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>638</y>
+     <width>741</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>741</width>
+     <height>52</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>741</width>
+     <height>52</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,0,0">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>496</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="OkBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CancelBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>BotomFrame</zorder>
+  <zorder>QcInfoFrame</zorder>
+  <zorder>OutCtrlReasonLab</zorder>
+  <zorder>OutCtrlReasonEdit</zorder>
+  <zorder>SolutionLab</zorder>
+  <zorder>SolutionEdit</zorder>
+  <zorder>ReasonLetterCntLab</zorder>
+  <zorder>SlvLettertCntLab</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CustomLabel</class>
+   <extends>QLabel</extends>
+   <header>shared/customlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

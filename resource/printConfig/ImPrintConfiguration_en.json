@@ -1,0 +1,441 @@
+{
+    "device": "leonis",
+    "print_module_ds_list": [
+        {
+            "struct CaliResultInfo": [
+                "Calibration Results",
+                [
+                    "strReagentName",
+                    "Item name:",
+                    "ST"
+                ],
+                [
+                    "strDeviceNum",
+                    "Instrument No.:",
+                    "ST"
+                ],
+                [
+                    "strSoftVersion",
+                    "Software version No.:",
+                    "ST"
+                ],
+                [
+                    "strCalibrateDate",
+                    "Calibration time:",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reag. lot No.:",
+                    "ST"
+                ],
+                [
+                    "strReagentSN",
+                    "Reag. btl No.:",
+                    "ST"
+                ],
+                [
+                    "strCalibratorLot",
+                    "Cal. lot No.:",
+                    "ST"
+                ],
+                [
+                    "strCalibratorPos",
+                    "Calibrator position:",
+                    "ST"
+                ],
+                [
+                    "strSubstrateLot",
+                    "Subs lot No.:",
+                    "ST"
+                ],
+                [
+                    "strSubstrateSN",
+                    "Subs btl No.:",
+                    "ST"
+                ],
+                [
+                    "strCleanFluidLot",
+                    "WB lot No.:",
+                    "ST"
+                ],
+                [
+                    "strCleanFluidSN",
+                    "WB lot No.:",
+                    "ST"
+                ],
+                [
+                    "strCupLot",
+                    "Cuvette lot No.:",
+                    "ST"
+                ],
+                [
+                    "strCupSN",
+                    "Cuvette SN:",
+                    "ST"
+                ],
+                [
+                    "strCutoff",
+                    "cutoff value:",
+                    "ST"
+                ],
+                [
+                    "strAlarm",
+                    "Data alarm:",
+                    "ST"
+                ],
+                [
+                    "strCaliResult",
+                    "Calibration result:",
+                    "ST"
+                ],
+                [
+                    "strOperater",
+                    "Tested by:",
+                    "ST"
+                ],
+                [
+                    "strCaliCurve",
+                    "Calibration curve",
+                    "ST"
+                ],
+                [
+                    "strCaliCurveImage",
+                    "Calibration curve (figure)",
+                    "BS"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Calibration Results",
+                    "ST"
+                ],
+                [
+                    "vecCaliResultData",
+                    "Calibration level",
+                    "TB",
+                    [
+                        [
+                            "strLevel",
+                            "Calibrator level",
+                            "ST"
+                        ],
+                        [
+                            "strSign",
+                            "Signal value",
+                            "ST"
+                        ],
+                        [
+                            "strConc",
+                            "Concentration",
+                            "ST"
+                        ]
+                    ]
+                ],
+                [
+                    "vecCaliRLUInfo",
+                    "Calibration Results",
+                    "TB",
+                    [
+                        [
+                            "strCalibrator",
+                            "Calibrator",
+                            "ST"
+                        ],
+                        [
+                            "strConc",
+                            "Concentration",
+                            "ST"
+                        ],
+                        [
+                            "strRLU1",
+                            "RLU1",
+                            "ST"
+                        ],
+                        [
+                            "strRLU2",
+                            "RLU2",
+                            "ST"
+                        ],
+                        [
+                            "strRLU",
+                            "RLU",
+                            "ST"
+                        ],
+                        [
+                            "strCV",
+                            "CV",
+                            "ST"
+                        ],
+                        [
+                            "strK1",
+                            "K1",
+                            "ST"
+                        ],
+                        [
+                            "strK2",
+                            "K2",
+                            "ST"
+                        ],
+                        [
+                            "strK",
+                            "K",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliHistoryInfo": [
+                "Calibration history",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Calibration history",
+                    "ST"
+                ],
+                [
+                    "strFailureReason",
+                    "Cause of calibration failure",
+                    "ST"
+                ],
+                [
+                    "strName",
+                    "Item name",
+                    "ST"
+                ],
+                [
+                    "strCalibrateDate",
+                    "Calibration time",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module",
+                    "ST"
+                ],
+                [
+                    "strCalibratorLot",
+                    "Cal. lot No.",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reag. lot No.",
+                    "ST"
+                ],
+                [
+                    "strReagentSN",
+                    "Reag. btl No.",
+                    "ST"
+                ],
+                [
+                    "strRegisterDate",
+                    "Reagent up-time",
+                    "ST"
+                ],
+                [
+                    "strSubstrateLot",
+                    "Subs lot No.",
+                    "ST"
+                ],
+                [
+                    "strSubstrateSN",
+                    "Subs btl No.",
+                    "ST"
+                ],
+                [
+                    "strCleanFluidLot",
+                    "WB lot No.",
+                    "ST"
+                ],
+                [
+                    "strCleanFluidSN",
+                    "WB lot No.",
+                    "ST"
+                ],
+                [
+                    "strCupLot",
+                    "Cuvette lot No.",
+                    "ST"
+                ],
+                [
+                    "strCupSN",
+                    "Cuvette SN",
+                    "ST"
+                ],
+                [
+                    "strCalibrator1",
+                    "Calibrator 1",
+                    "ST"
+                ],
+                [
+                    "strConc1",
+                    "Cal-1 concentration:",
+                    "ST"
+                ],
+                [
+                    "strSignalValue1",
+                    "Cal-1 main label signal value:",
+                    "ST"
+                ],
+                [
+                    "strC1_RUL1",
+                    "Cal-1 RLU1:",
+                    "ST"
+                ],
+                [
+                    "strC1_RUL2",
+                    "Cal-1 RLU2:",
+                    "ST"
+                ],
+                [
+                    "strC1_RUL",
+                    "Cal-1 RLU:",
+                    "ST"
+                ],
+                [
+                    "strCalibrator2",
+                    "Calibrator 2",
+                    "ST"
+                ],
+                [
+                    "strConc2",
+                    "Cal-2 concentration:",
+                    "ST"
+                ],
+                [
+                    "strSignalValue2",
+                    "Cal-2 main label signal value:",
+                    "ST"
+                ],
+                [
+                    "strC2_RUL1",
+                    "Cal-2 RLU1:",
+                    "ST"
+                ],
+                [
+                    "strC2_RUL2",
+                    "Cal-2 RLU2:",
+                    "ST"
+                ],
+                [
+                    "strC2_RUL",
+                    "Cal-2 RLU:",
+                    "ST"
+                ]
+            ]
+        },
+        {
+            "struct CaliRecordInfo": [
+                "Calibrator records",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Calibrator records",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Calibrator records",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strCaliName",
+                            "Cal. name",
+                            "ST"
+                        ],
+                        [
+                            "strCaliLot",
+                            "Cal. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strExpirationDate",
+                            "Expiry date",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator1",
+                            "Calibrator 1",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator2",
+                            "Calibrator 2",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator3",
+                            "Calibrator 3",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator4",
+                            "Calibrator 4",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator5",
+                            "Calibrator 5",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator6",
+                            "Calibrator 6",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ]
+}

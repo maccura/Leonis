@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C1005SingleDeviceWgt</class>
+ <widget class="QWidget" name="C1005SingleDeviceWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">C1005SingleDeviceWgt</string>
+  </property>
+  <widget class="QLabel" name="label_devPicture">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>35</y>
+     <width>406</width>
+     <height>323</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_light">
+   <property name="geometry">
+    <rect>
+     <x>157</x>
+     <y>36</y>
+     <width>116</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_status_ch">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>360</y>
+     <width>188</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>188</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>188</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #535c66;</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">device_status</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name_ch">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>142</y>
+     <width>54</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">12</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string notr="true">white</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>656</x>
+     <y>32</y>
+     <width>1220</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>50</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_reagent" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>395</width>
+        <height>360</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>577</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="bks" stdset="0">
+       <string notr="true">machine-state</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>16</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="horizontalWidget1" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>试剂盘</string>
+            </property>
+            <property name="fonts" stdset="0">
+             <string notr="true">24</string>
+            </property>
+            <property name="weights" stdset="0">
+             <string notr="true">bold</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_reagent">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_supply" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>395</width>
+        <height>360</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>577</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="bks" stdset="0">
+       <string notr="true">machine-state</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>16</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="horizontalWidget2" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>15</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>耗材</string>
+            </property>
+            <property name="fonts" stdset="0">
+             <string notr="true">24</string>
+            </property>
+            <property name="weights" stdset="0">
+             <string notr="true">bold</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_supply">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_liquid_waste" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>395</width>
+        <height>360</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>577</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="bks" stdset="0">
+       <string notr="true">machine-state</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>16</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="horizontalWidget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>15</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>废液桶</string>
+            </property>
+            <property name="fonts" stdset="0">
+             <string notr="true">24</string>
+            </property>
+            <property name="weights" stdset="0">
+             <string notr="true">bold</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_liquid_waste">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_status_iom">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>360</y>
+     <width>88</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #535c66;</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="bks" stdset="0">
+    <string notr="true">device_status</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name_iom">
+   <property name="geometry">
+    <rect>
+     <x>313</x>
+     <y>142</y>
+     <width>54</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="fonts" stdset="0">
+    <string notr="true">12</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string notr="true">white</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_iom">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>142</y>
+     <width>90</width>
+     <height>216</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label_light</zorder>
+  <zorder>label_status_ch</zorder>
+  <zorder>label_devPicture</zorder>
+  <zorder>label_name_ch</zorder>
+  <zorder>label_status_iom</zorder>
+  <zorder>label_name_iom</zorder>
+  <zorder>btn_iom</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

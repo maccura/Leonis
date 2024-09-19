@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHeadSortDisplay</class>
+ <widget class="QWidget" name="QHeadSortDisplay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>873</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QHeadSortDisplay</string>
+  </property>
+  <widget class="QPushButton" name="save_Button">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>812</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>flat</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="selected_label">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>6</y>
+     <width>261</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_4">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>780</y>
+     <width>390</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>5</y>
+     <width>1</width>
+     <height>619</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_3">
+   <property name="geometry">
+    <rect>
+     <x>434</x>
+     <y>54</y>
+     <width>580</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>434</x>
+     <y>5</y>
+     <width>1130</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>0</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="selected_View">
+   <property name="geometry">
+    <rect>
+     <x>1014</x>
+     <y>6</y>
+     <width>550</width>
+     <height>782</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>100</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>53</number>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="clearAll_Button">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清空全部</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string>transparent</string>
+   </property>
+   <property name="borders" stdset="0">
+    <string>none</string>
+   </property>
+   <property name="colors" stdset="0">
+    <string>blue</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pre_Button">
+   <property name="geometry">
+    <rect>
+     <x>1684</x>
+     <y>281</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>向上</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="top_Button">
+   <property name="geometry">
+    <rect>
+     <x>1684</x>
+     <y>207</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>置顶</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bottom_Button">
+   <property name="geometry">
+    <rect>
+     <x>1684</x>
+     <y>429</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>置底</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="beSelect_label">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>6</y>
+     <width>578</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-left: 20px;</string>
+   </property>
+   <property name="text">
+    <string>     备选（？）</string>
+   </property>
+   <property name="bks" stdset="0">
+    <string>gray</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="beSelect_View">
+   <property name="geometry">
+    <rect>
+     <x>434</x>
+     <y>55</y>
+     <width>580</width>
+     <height>733</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerPixel</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>270</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>19</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>43</number>
+   </attribute>
+  </widget>
+  <widget class="QFrame" name="line_v_7">
+   <property name="geometry">
+    <rect>
+     <x>1563</x>
+     <y>5</y>
+     <width>1</width>
+     <height>783</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_Button">
+   <property name="geometry">
+    <rect>
+     <x>1684</x>
+     <y>355</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>向下</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>1013</x>
+     <y>5</y>
+     <width>1</width>
+     <height>783</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="main_head_view">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>430</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerPixel</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>430</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>19</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>43</number>
+   </attribute>
+  </widget>
+  <widget class="QFrame" name="line_v_8">
+   <property name="geometry">
+    <rect>
+     <x>434</x>
+     <y>5</y>
+     <width>1</width>
+     <height>783</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_6">
+   <property name="geometry">
+    <rect>
+     <x>434</x>
+     <y>787</y>
+     <width>1130</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reset_btn">
+   <property name="geometry">
+    <rect>
+     <x>1684</x>
+     <y>503</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_9">
+   <property name="geometry">
+    <rect>
+     <x>519</x>
+     <y>54</y>
+     <width>1</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>light_solid</string>
+   </property>
+  </widget>
+  <zorder>save_Button</zorder>
+  <zorder>line_h_4</zorder>
+  <zorder>line_v_1</zorder>
+  <zorder>line_h_1</zorder>
+  <zorder>selected_View</zorder>
+  <zorder>pre_Button</zorder>
+  <zorder>top_Button</zorder>
+  <zorder>bottom_Button</zorder>
+  <zorder>beSelect_View</zorder>
+  <zorder>line_v_7</zorder>
+  <zorder>next_Button</zorder>
+  <zorder>line_v_4</zorder>
+  <zorder>main_head_view</zorder>
+  <zorder>beSelect_label</zorder>
+  <zorder>clearAll_Button</zorder>
+  <zorder>selected_label</zorder>
+  <zorder>line_v_8</zorder>
+  <zorder>line_v_3</zorder>
+  <zorder>line_h_3</zorder>
+  <zorder>line_h_6</zorder>
+  <zorder>reset_btn</zorder>
+  <zorder>line_v_9</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

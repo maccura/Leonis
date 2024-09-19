@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImStepModuleWgt</class>
+ <widget class="QWidget" name="ImStepModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ImStepModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget_pos" native="true">
+   <property name="geometry">
+    <rect>
+     <x>845</x>
+     <y>0</y>
+     <width>330</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#widget_pos
+{
+	border:1px solid #a4a4a4;
+}</string>
+   </property>
+   <widget class="QPushButton" name="btn_execute">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>570</y>
+      <width>160</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>执行</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>btn_dlg</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>330</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_add">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>130</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>正向</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>291</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>当前位置</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_save">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>80</y>
+       <width>80</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_pos">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>95</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_targetPos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>205</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_del">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>反向</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FirstDirLab">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>320</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding-left:15px;
+background: #e4e7ec;</string>
+     </property>
+     <property name="text">
+      <string>旋转方向</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>330</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_add_2">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>130</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>正向</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>301</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>当前位置</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_save_2">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>80</y>
+       <width>80</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_pos_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>95</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_targetPos_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>205</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_del_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>90</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>反向</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string>btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SecondDirLab">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>320</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding-left:15px;
+background: #e4e7ec;</string>
+     </property>
+     <property name="text">
+      <string>垂直方向</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>btn_execute</zorder>
+   <zorder>frame_2</zorder>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>845</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>46</number>
+   </attribute>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>845</x>
+     <y>0</y>
+     <width>1</width>
+     <height>674</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

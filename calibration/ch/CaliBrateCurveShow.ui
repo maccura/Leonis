@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CaliBrateCurveShow</class>
+ <widget class="QWidget" name="CaliBrateCurveShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1118</width>
+    <height>883</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CaliBrateCurveShow</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AssayName:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="assayname">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="methord">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>30</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>caliMethord:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="status">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>30</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>30</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>caliStatus</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>30</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>caliTime</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>30</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>310</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>S1abs</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="s1abs">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>310</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>440</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="A">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>440</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>370</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>K</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="K">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>370</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>490</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>B</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="B">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>490</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>550</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="H">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>680</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>610</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>L</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="L">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>610</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="C">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>550</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="I">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>730</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>680</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>H</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>730</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>90</y>
+     <width>261</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="CScatterPlotClass" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>691</width>
+     <height>661</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>820</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CScatterPlotClass</class>
+   <extends>QWidget</extends>
+   <header>src/leonis/curveDraw/ScatterPlotClass.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1933 @@
+{
+    "device": "leonis",
+    "print_module_ds_list": [
+        {
+            "struct SampleExportModule": [
+                "Original result records",
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Original result records",
+                    "ST"
+                ],
+                [
+                    "vecResults",
+                    "Original records",
+                    "TB",
+                    [
+                        [
+                            "strSampleNo",
+                            "Sample No.",
+                            "ST"
+                        ],
+                        [
+                            "strBarcode",
+                            "Sample ID",
+                            "ST"
+                        ],
+                        [
+                            "strSampleSourceType",
+                            "Type",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strTestResult",
+                            "Results",
+                            "ST"
+                        ],
+                        [
+                            "strUnit",
+                            "Unit",
+                            "ST"
+                        ],
+                        [
+                            "strRUL",
+                            "Signal value",
+                            "ST"
+                        ],
+                        [
+                            "strEndTestTime",
+                            "Test Compl. Tm",
+                            "ST"
+                        ],
+                        [
+                            "strPreDilutionFactor",
+                            "Manual dilution factor",
+                            "ST"
+                        ],
+                        [
+                            "strDilutionFactor",
+                            "In-machine dilution factor",
+                            "ST"
+                        ],
+                        [
+                            "strReagentBatchNo",
+                            "Reag. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strSubstrateBatchNo",
+                            "Subs lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strCleanFluidBatchNo",
+                            "WB lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strAssayCupBatchNo",
+                            "Cuvette lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strDiluentBatchNo",
+                            "Dilu lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strRgtRegisterT",
+                            "Reagent up-time",
+                            "ST"
+                        ],
+                        [
+                            "strReagentExpTime",
+                            "Reagent expiry date",
+                            "ST"
+                        ],
+                        [
+                            "strCaliLot",
+                            "Cal. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strFirstCurCaliTime",
+                            "Current working curve",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct SampleInfo": [
+                "Sample information",
+                [
+                    "strPatientName",
+                    "Name:",
+                    "ST"
+                ],
+                [
+                    "strGender",
+                    "Gender:",
+                    "ST"
+                ],
+                [
+                    "strAge",
+                    "Age:",
+                    "ST"
+                ],
+                [
+                    "strSourceType",
+                    "Sample type:",
+                    "ST"
+                ],
+                [
+                    "strSequenceNO",
+                    "Sample No.:",
+                    "ST"
+                ],
+                [
+                    "strSampleID",
+                    "Sample barcode:",
+                    "ST"
+                ],
+                [
+                    "strCaseNo",
+                    "Medical record number:",
+                    "ST"
+                ],
+                [
+                    "strDepartment",
+                    "Department:",
+                    "ST"
+                ],
+                [
+                    "strDoctor",
+                    "Attending doctor:",
+                    "ST"
+                ],
+                [
+                    "strBedNo",
+                    "Bed No.:",
+                    "ST"
+                ],
+                [
+                    "strCompTime",
+                    "Completion time of the detection:",
+                    "ST"
+                ],
+                [
+                    "strInpatientWard",
+                    "Inpatient ward:",
+                    "ST"
+                ],
+                [
+                    "strClinicalDiagnosis",
+                    "Clinical diagnosis:",
+                    "ST"
+                ],
+                [
+                    "strInspectionPersonnel",
+                    "Tested by:",
+                    "ST"
+                ],
+                [
+                    "strDateAudit",
+                    "Reviewed on:",
+                    "ST"
+                ],
+                [
+                    "strReviewers",
+                    "Reviewed by:",
+                    "ST"
+                ],
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Test report",
+                    "ST"
+                ],
+                [
+                    "strNotes",
+                    "Remarks",
+                    "ST"
+                ],
+                [
+                    "strStateMent",
+                    "This report is only responsible for this specimen, and the results are for reference by physicians. Please contact in time if there are any questions",
+                    "ST"
+                ],
+                [
+                    "vecItems",
+                    "Test item",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strShortName",
+                            "Abbr.",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Results",
+                            "ST"
+                        ],
+                        [
+                            "strUnit",
+                            "Unit",
+                            "ST"
+                        ],
+                        [
+                            "strResultState",
+                            "Data alarm",
+                            "ST"
+                        ],
+                        [
+                            "strRefRange",
+                            "Ref. range",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Testing module",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct SimpleSampleInfo": [
+                "Print by sample",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Sample results",
+                    "ST"
+                ],
+                [
+                    "vecItemResults",
+                    "Test Items",
+                    "TB",
+                    [
+                        [
+                            "strSequenceNO",
+                            "Sample No.",
+                            "ST"
+                        ],
+                        [
+                            "strSampleID",
+                            "Sample ID",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Results",
+                            "ST"
+                        ],
+                        [
+                            "strCompTime",
+                            "Test Compl. Tm",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Testing module",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ItemSampleInfo": [
+                "Print by item",
+                [
+                    "strFactory",
+                    "Reagent manufacturer",
+                    "ST"
+                ],
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strTemperature",
+                    "Laboratory temperature:",
+                    "ST"
+                ],
+                [
+                    "strHumidness",
+                    "Laboratory temperature:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Item results",
+                    "ST"
+                ],
+                [
+                    "vecResult",
+                    "Item results",
+                    "TB",
+                    [
+                        [
+                            "strSampleID",
+                            "Sample ID",
+                            "ST"
+                        ],
+                        [
+                            "strSampleNumber",
+                            "Sample No.",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Results",
+                            "ST"
+                        ],
+                        [
+                            "strUnit",
+                            "Unit",
+                            "ST"
+                        ],
+                        [
+                            "strRLU",
+                            "Signal value",
+                            "ST"
+                        ],
+                        [
+                            "strDetectionTime",
+                            "Test Compl. Tm",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ReagentInfo": [
+                "Reagent",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Reagent",
+                    "ST"
+                ],
+                [
+                    "vecReagent",
+                    "Reagent",
+                    "TB",
+                    [
+                        [
+                            "strReagentPos",
+                            "Reagent position",
+                            "ST"
+                        ],
+                        [
+                            "strReagentName",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strValidityTestNum",
+                            "Available Test Amount",
+                            "ST"
+                        ],
+                        [
+                            "strResidualTestNum",
+                            "Residual tests",
+                            "ST"
+                        ],
+                        [
+                            "strUseStatus",
+                            "Use status",
+                            "ST"
+                        ],
+                        [
+                            "strCaliStatus",
+                            "Calibration status",
+                            "ST"
+                        ],
+                        [
+                            "strReagentLot",
+                            "Reag. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strReagentSN",
+                            "Reag. btl No.",
+                            "ST"
+                        ],
+                        [
+                            "strCaliValidityDays",
+                            "Current curve validity",
+                            "ST"
+                        ],
+                        [
+                            "strBottleValidityDays",
+                            "Opening validity (D)",
+                            "ST"
+                        ],
+                        [
+                            "strRegisterDate",
+                            "Loading time",
+                            "ST"
+                        ],
+                        [
+                            "strReagentValidityDate",
+                            "Expiry date",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct RequireCalcInfo": [
+                "Requirements calculation",
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Requirements calculation",
+                    "ST"
+                ],
+                [
+                    "ItemVector",
+                    "Requirements calculation",
+                    "TB",
+                    [
+                        [
+                            "strName",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strModuleRemain",
+                            "Module margin distribution",
+                            "ST"
+                        ],
+                        [
+                            "strDynamicCalc",
+                            "Dynamic calculation",
+                            "ST"
+                        ],
+                        [
+                            "strReqVol",
+                            "Requirements quantity",
+                            "ST"
+                        ],
+                        [
+                            "strRemainVol",
+                            "Current margin",
+                            "ST"
+                        ],
+                        [
+                            "strReqLack",
+                            "Requirements gap",
+                            "ST"
+                        ],
+                        [
+                            "strBottleSpeciffic",
+                            "Bottle specification",
+                            "ST"
+                        ],
+                        [
+                            "strReqBottleCount",
+                            "Number of bottles to be loaded",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct SupplyInfo": [
+                "Consumables information",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Consumables information",
+                    "ST"
+                ],
+                [
+                    "vecSupply",
+                    "Consumables information",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strType",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strUsageStatus",
+                            "Use status",
+                            "ST"
+                        ],
+                        [
+                            "strRemainQuantity",
+                            "Margin",
+                            "ST"
+                        ],
+                        [
+                            "strLotNumber",
+                            "Consumables lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strSerialNumber",
+                            "Btl No./Serial No.",
+                            "ST"
+                        ],
+                        [
+                            "strOpenEffectDays",
+                            "Opening validity (D)",
+                            "ST"
+                        ],
+                        [
+                            "strLoadDate",
+                            "Loading time",
+                            "ST"
+                        ],
+                        [
+                            "strExpirationDate",
+                            "Expiry date",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliRackInfo": [
+                "Overview of calibration rack",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Overview of calibration rack",
+                    "ST"
+                ],
+                [
+                    "vecCaliRack",
+                    "Calibration Results",
+                    "TB",
+                    [
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strCaliName",
+                            "Cal. name",
+                            "ST"
+                        ],
+                        [
+                            "strCaliLot",
+                            "Cal. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strExpirationDate",
+                            "Expiry date",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator1",
+                            "Calibrator 1",
+                            "ST"
+                        ],
+                        [
+                            "strPos1",
+                            "Pos. 1",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator2",
+                            "Calibrator 2",
+                            "ST"
+                        ],
+                        [
+                            "strPos2",
+                            "Pos. 2",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator3",
+                            "Calibrator 3",
+                            "ST"
+                        ],
+                        [
+                            "strPos3",
+                            "Pos. 3",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator4",
+                            "Calibrator 4",
+                            "ST"
+                        ],
+                        [
+                            "strPos4",
+                            "Pos. 4",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator5",
+                            "Calibrator 5",
+                            "ST"
+                        ],
+                        [
+                            "strPos5",
+                            "Pos. 5",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator6",
+                            "Calibrator 6",
+                            "ST"
+                        ],
+                        [
+                            "strPos6",
+                            "Pos. 6",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct QCDailyInfo": [
+                "Daily QC report",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Quality control daily report",
+                    "ST"
+                ],
+                [
+                    "vecResult",
+                    "QC results",
+                    "TB",
+                    [
+                        [
+                            "strQCDate",
+                            "QC time",
+                            "ST"
+                        ],
+                        [
+                            "strQCID",
+                            "QC No.",
+                            "ST"
+                        ],
+                        [
+                            "strQCName",
+                            "QC name",
+                            "ST"
+                        ],
+                        [
+                            "strQCBriefName",
+                            "QC abbr",
+                            "ST"
+                        ],
+                        [
+                            "strQCSourceType",
+                            "QC type",
+                            "ST"
+                        ],
+                        [
+                            "strQCLevel",
+                            "QC level",
+                            "ST"
+                        ],
+                        [
+                            "strQCLot",
+                            "QC lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Result",
+                            "ST"
+                        ],
+                        [
+                            "strUnit",
+                            "Unit",
+                            "ST"
+                        ],
+                        [
+                            "strTargetMean",
+                            "Target",
+                            "ST"
+                        ],
+                        [
+                            "strMaxRange",
+                            "High value of reference range",
+                            "ST"
+                        ],
+                        [
+                            "strMinRange",
+                            "Low value of reference range",
+                            "ST"
+                        ],
+                        [
+                            "strBreakRule",
+                            "OOC rule",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct QCLJInfo": [
+                "QC L-J information",
+                [
+                    "strItemName",
+                    "Item name:",
+                    "ST"
+                ],
+                [
+                    "strQCID",
+                    "Control No.:",
+                    "ST"
+                ],
+                [
+                    "strQCName",
+                    "Name of quality control product:",
+                    "ST"
+                ],
+                [
+                    "strQcBriefName",
+                    "Abbreviation of control:",
+                    "ST"
+                ],
+                [
+                    "strQcSourceType",
+                    "Control type:",
+                    "ST"
+                ],
+                [
+                    "strQcLevel",
+                    "Control level:",
+                    "ST"
+                ],
+                [
+                    "strQCLot",
+                    "QC lot No.:",
+                    "ST"
+                ],
+                [
+                    "strTargetMean",
+                    "Target:",
+                    "ST"
+                ],
+                [
+                    "strTargetSD",
+                    "SD:",
+                    "ST"
+                ],
+                [
+                    "strTargetCV",
+                    "CV%:",
+                    "ST"
+                ],
+                [
+                    "strActualMean",
+                    "Calc.TGT:",
+                    "ST"
+                ],
+                [
+                    "strActualSD",
+                    "Calc.SD:",
+                    "ST"
+                ],
+                [
+                    "strActualCV",
+                    "Calc.CV%:",
+                    "ST"
+                ],
+                [
+                    "strQcRltCount",
+                    "Quantity:",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strLJ",
+                    "L-J chart:",
+                    "ST"
+                ],
+                [
+                    "strLJImage",
+                    "L-J chart",
+                    "BS"
+                ],
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Item QC Information",
+                    "ST"
+                ],
+                [
+                    "strQCAnalysis",
+                    "QC analysis",
+                    "ST"
+                ],
+                [
+                    "strPrinter",
+                    "Printed by:",
+                    "ST"
+                ],
+                [
+                    "strExporter",
+                    "Exporter:",
+                    "ST"
+                ],
+                [
+                    "vecResult",
+                    "QC results",
+                    "TB",
+                    [
+                        [
+                            "strDisplayIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strQCDate",
+                            "QC time",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Result",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct QCYDInfo": [
+                "QC T-P information",
+                [
+                    "strItemName",
+                    "Item name:",
+                    "ST"
+                ],
+                [
+                    "strTimeQuantum",
+                    "QC date:",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strTP",
+                    "T-P chart:",
+                    "ST"
+                ],
+                [
+                    "strTPImage",
+                    "T-P chart",
+                    "BS"
+                ],
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Item QC Information",
+                    "ST"
+                ],
+                [
+                    "strQCAnalysis",
+                    "QC analysis",
+                    "ST"
+                ],
+                [
+                    "strPrinter",
+                    "Printed by:",
+                    "ST"
+                ],
+                [
+                    "strExporter",
+                    "Exporter:",
+                    "ST"
+                ],
+                [
+                    "vecResult",
+                    "QC results",
+                    "TB",
+                    [
+                        [
+                            "strDisplayIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strQCDate",
+                            "QC time",
+                            "ST"
+                        ],
+                        [
+                            "strResult",
+                            "Result",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct QCItemRecord": [
+                "Control records",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Control records",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Control records",
+                    "TB",
+                    [
+                        [
+                            "strDocNo",
+                            "File No.",
+                            "ST"
+                        ],
+                        [
+                            "strQCID",
+                            "QC No.",
+                            "ST"
+                        ],
+                        [
+                            "strQCName",
+                            "QC name",
+                            "ST"
+                        ],
+                        [
+                            "strQcBriefName",
+                            "QC abbr",
+                            "ST"
+                        ],
+                        [
+                            "strQcSourceType",
+                            "QC type",
+                            "ST"
+                        ],
+                        [
+                            "strQcLevel",
+                            "QC level",
+                            "ST"
+                        ],
+                        [
+                            "strQCLot",
+                            "QC lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strExpirationDate",
+                            "Expiry date",
+                            "ST"
+                        ],
+                        [
+                            "strRegMethod",
+                            "REG. Meth.",
+                            "ST"
+                        ],
+                        [
+                            "strPos",
+                            "Pos./sample tube",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct OperationLog": [
+                "Operation Log",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Operation Log",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Operation Log",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strUserName",
+                            "User name",
+                            "ST"
+                        ],
+                        [
+                            "strOperationType",
+                            "Operation type",
+                            "ST"
+                        ],
+                        [
+                            "strRecord",
+                            "Operation record",
+                            "ST"
+                        ],
+                        [
+                            "strTime",
+                            "Operation time",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ReagentChangeLog": [
+                "Reagent/Consumables Replacement Log",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Reagent/Consumables Replacement Log",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Replacement records",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strName",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strOperationType",
+                            "Operation type",
+                            "ST"
+                        ],
+                        [
+                            "strState",
+                            "St.",
+                            "ST"
+                        ],
+                        [
+                            "strUserName",
+                            "User name",
+                            "ST"
+                        ],
+                        [
+                            "strLot",
+                            "Lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strReagentSN",
+                            "Btl No./Serial No.",
+                            "ST"
+                        ],
+                        [
+                            "strTime",
+                            "Change time",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct AlarmInfoLog": [
+                "Alarm log",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Alarm log",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Alarm information",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strAlarmCode",
+                            "Alarm code",
+                            "ST"
+                        ],
+                        [
+                            "strAlarmLevel",
+                            "Alarm level",
+                            "ST"
+                        ],
+                        [
+                            "strAlarmName",
+                            "Alarm name",
+                            "ST"
+                        ],
+                        [
+                            "strAlarmTime",
+                            "Alarm time",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct MaintenanceLog": [
+                "Maintenance Log",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Maintenance Log",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Maintenance",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strGroupMaint",
+                            "Combined maintenance",
+                            "ST"
+                        ],
+                        [
+                            "strSingleMaint",
+                            "Single maintenance",
+                            "ST"
+                        ],
+                        [
+                            "strMaintenanceStatus",
+                            "St.",
+                            "ST"
+                        ],
+                        [
+                            "strMaintenaceDate",
+                            "Maintenance completion time",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strUserName",
+                            "User name",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct LiquidInfo": [
+                "Liquid path state",
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Liquid path state",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strName",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strStatus",
+                            "St.",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct TemperatureLog": [
+                "Temperature information",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Temperature",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Temperature information",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strPartName",
+                            "Part name",
+                            "ST"
+                        ],
+                        [
+                            "strCurTem",
+                            "Current temperature",
+                            "ST"
+                        ],
+                        [
+                            "strTemControlRange",
+                            "Temperature control range",
+                            "ST"
+                        ],
+                        [
+                            "strTemControlStatu",
+                            "Temperature control state",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct StatisticalInfo": [
+                "Count",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Count",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Statistical information",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strUnitName",
+                            "Unit name",
+                            "ST"
+                        ],
+                        [
+                            "strPartName",
+                            "Part name",
+                            "ST"
+                        ],
+                        [
+                            "strSN",
+                            "Component SN",
+                            "ST"
+                        ],
+                        [
+                            "strCurUseNum",
+                            "Current usage",
+                            "ST"
+                        ],
+                        [
+                            "strAllUseNum",
+                            "Total usage",
+                            "ST"
+                        ],
+                        [
+                            "strUseUpperLimit",
+                            "Usage limit",
+                            "ST"
+                        ],
+                        [
+                            "strResetTime",
+                            "Reset time",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct LowerCpLog": [
+                "User computer unit",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "User computer unit",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Unit information",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strName",
+                            "Name",
+                            "ST"
+                        ],
+                        [
+                            "strState",
+                            "St.",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct SampleStatisticsInfo": [
+                "Sample volume statistics",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Sample volume statistics",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strDate",
+                    "Date:",
+                    "ST"
+                ],
+                [
+                    "strModule",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reag. lot No.:",
+                    "ST"
+                ],
+                [
+                    "vecRecordSum",
+                    "Total statistics",
+                    "TB",
+                    [
+                        [
+                            "strType",
+                            "Type",
+                            "ST"
+                        ],
+                        [
+                            "strTotalOrder",
+                            "Sample volume",
+                            "ST"
+                        ],
+                        [
+                            "strConvSample",
+                            "Normal",
+                            "ST"
+                        ],
+                        [
+                            "strEmSample",
+                            "STAT",
+                            "ST"
+                        ],
+                        [
+                            "strQc",
+                            "QC",
+                            "ST"
+                        ],
+                        [
+                            "strCali",
+                            "Calibration",
+                            "ST"
+                        ]
+                    ]
+                ],
+                [
+                    "vecRecord",
+                    "Statistical information",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strReagentLot",
+                            "Reag. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strTotal",
+                            "Sample volume",
+                            "ST"
+                        ],
+                        [
+                            "strConvSample",
+                            "Normal",
+                            "ST"
+                        ],
+                        [
+                            "strEmSample",
+                            "STAT",
+                            "ST"
+                        ],
+                        [
+                            "strQc",
+                            "QC",
+                            "ST"
+                        ],
+                        [
+                            "strCali",
+                            "Calibration",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ReagentStatisticsInfo": [
+                "Statistics of reagent consumables",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Reagent statistics",
+                    "ST"
+                ],
+                [
+                    "strModule",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strDate",
+                    "Date:",
+                    "ST"
+                ],
+                [
+                    "strReagentName",
+                    "Reagent name:",
+                    "ST"
+                ],
+                [
+                    "strImageTitle",
+                    "Line chart",
+                    "ST"
+                ],
+                [
+                    "strImage",
+                    "Line chart",
+                    "BS"
+                ],
+                [
+                    "vecRecord",
+                    "Statistical information",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "Date",
+                            "ST"
+                        ],
+                        [
+                            "strReagentCount",
+                            "Reag. workload",
+                            "ST"
+                        ],
+                        [
+                            "strSampleCount",
+                            "Sample workload",
+                            "ST"
+                        ],
+                        [
+                            "strRetestCount",
+                            "Retest workload",
+                            "ST"
+                        ],
+                        [
+                            "strQcCount",
+                            "QC workload",
+                            "ST"
+                        ],
+                        [
+                            "strCaliCount",
+                            "Cali. workload",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliStatisticsInfo": [
+                "Calibration statistics",
+                [
+                    "strInstrumentModel",
+                    "Analyzer model:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Calibration statistics",
+                    "ST"
+                ],
+                [
+                    "strModule",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strDate",
+                    "Date:",
+                    "ST"
+                ],
+                [
+                    "strItemName",
+                    "Item name:",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reag. lot No.:",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Statistical information",
+                    "TB",
+                    [
+                        [
+                            "strModule",
+                            "Module",
+                            "ST"
+                        ],
+                        [
+                            "strItemName",
+                            "Item name",
+                            "ST"
+                        ],
+                        [
+                            "strReagentLot",
+                            "Reag. lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strCaliNum",
+                            "Number of cali.",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ]
+}

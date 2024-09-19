@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProcessCheckDlg</class>
+ <widget class="BaseDlg" name="ProcessCheckDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1561</width>
+    <height>980</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ProcessCheckDlg</string>
+  </property>
+  <widget class="QFrame" name="BottomFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>870</y>
+     <width>1450</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1450</width>
+     <height>52</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1450</width>
+     <height>52</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,1,0">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="ExcuteBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>运行</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="StopBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>停止</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ExportDataBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>导出</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ClearBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>清除</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>567</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CloseBtn">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>关闭</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCheckBox" name="DectCB">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>检测模块</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="MagneticCB">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>150</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>磁分离模块</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="RefuelCB">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>150</y>
+     <width>401</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>加注模块</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="NoiseFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>461</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#NoiseFrame
+{
+	border:1px solid #a4a4a4;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="CheckProcessLab1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>检测流程</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CheckProcessCombo1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RepeatTimeLab1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重复次数</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="RepeatTimeCombo1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl11">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl12">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="MaxValEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>581</y>
+      <width>180</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MaxValLab">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>180</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>最大值</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="NoiseEdit">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>581</y>
+      <width>180</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NoiseLab">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>550</y>
+      <width>180</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>仪器噪声</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>523</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_7">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_10">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="SampNeedleFrame">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>200</y>
+     <width>461</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#SampNeedleFrame
+{
+	border:1px solid #a4a4a4;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="CheckProcessLab2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>检测流程</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CheckProcessCombo2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RepeatTimeLab2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重复次数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AddRgntVolLab1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加液量</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="RepeatTimeCombo2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AddRgntVolEdit1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RgntUnitLab1">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>120</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ul</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl21">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl22">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AvgValEdit1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AvgValLab1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>110</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测定均值</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CvLab1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>550</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>变异系数</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CvEdit1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PctLab1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>581</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PctLab2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>581</y>
+      <width>16</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RelativeSubValLab1">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>绝对极差</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="RelativeSubValEdit1">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MagneticNoLab">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>90</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>磁分离号</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="MagneticNoCombo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>523</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_8">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_11">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="RgntNeedleFrame">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>200</y>
+     <width>461</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#RgntNeedleFrame
+{
+	border:1px solid #a4a4a4;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="CheckProcessLab3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>检测流程</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CheckProcessCombo3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RepeatTimeLab3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重复次数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AddRgntVolLab2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加液量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RGntHandNoLab">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>90</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂臂号</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="RepeatTimeCombo3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="RGntHandNCombo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AddRgntVolEdit2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RgntUnitLab2">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>120</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ul</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl32">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="SigValTbl31">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>226</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AvgValLab2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>110</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测定均值</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PctLab3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>581</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CvLab2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>550</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>变异系数</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="RelativeSubValEdit2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AvgValEdit2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PctLab4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>581</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CvEdit2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>581</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RelativeSubValLab2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>绝对极差</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_h_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>523</y>
+      <width>461</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_9">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="line_v_12">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>180</y>
+      <width>1</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lines" stdset="0">
+     <string>solid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="TopFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>1440</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1440</width>
+     <height>44</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1440</width>
+     <height>44</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,0">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="DevListFrame">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="line_v_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_5">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_6">
+   <property name="geometry">
+    <rect>
+     <x>1490</x>
+     <y>200</y>
+     <width>1</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalcAssayDlg</class>
+ <widget class="QWidget" name="CalcAssayDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>909</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">CalcAssayDlg</string>
+  </property>
+  <widget class="QTableView" name="tableView_calc">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>360</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerPixel</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>44</number>
+   </attribute>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>0</y>
+     <width>1551</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>计算公式</string>
+    </attribute>
+    <widget class="QWidget" name="calc_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>171</y>
+       <width>1550</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="name_cal_label">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>28</y>
+        <width>241</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>计算公式</string>
+      </property>
+      <property name="colors" stdset="0">
+       <string notr="true">blue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bk_label">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>0</y>
+        <width>1539</width>
+        <height>617</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="bks" stdset="0">
+       <string notr="true">gray</string>
+      </property>
+      <property name="borders" stdset="0">
+       <string>all</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>20</y>
+        <width>1507</width>
+        <height>148</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #fff;
+border-radius: 6px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="attention_label">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>1221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="colors" stdset="0">
+       <string notr="true">red</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_up_btn">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>225</y>
+        <width>46</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_down_btn">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>329</y>
+        <width>46</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label0">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>180</y>
+        <width>460</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>运算符号</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>225</y>
+        <width>951</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="toolTipBtn" name="assay_btn_2">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="toolTipBtn" name="assay_btn_5">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="toolTipBtn" name="assay_btn_1">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="toolTipBtn" name="assay_btn_4">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="toolTipBtn" name="assay_btn_3">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="5">
+        <widget class="toolTipBtn" name="assay_btn_6">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="toolTipBtn" name="assay_btn_7">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="toolTipBtn" name="assay_btn_8">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="toolTipBtn" name="assay_btn_9">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="toolTipBtn" name="assay_btn_10">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="toolTipBtn" name="assay_btn_11">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="toolTipBtn" name="assay_btn_12">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="toolTipBtn" name="assay_btn_13">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="toolTipBtn" name="assay_btn_14">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="toolTipBtn" name="assay_btn_15">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="toolTipBtn" name="assay_btn_16">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="toolTipBtn" name="assay_btn_17">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="toolTipBtn" name="assay_btn_18">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="toolTipBtn" name="assay_btn_19">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="toolTipBtn" name="assay_btn_20">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="toolTipBtn" name="assay_btn_21">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="toolTipBtn" name="assay_btn_22">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="toolTipBtn" name="assay_btn_23">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="toolTipBtn" name="assay_btn_24">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="toolTipBtn" name="assay_btn_25">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="toolTipBtn" name="assay_btn_26">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="toolTipBtn" name="assay_btn_27">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="toolTipBtn" name="assay_btn_28">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="toolTipBtn" name="assay_btn_29">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="toolTipBtn" name="assay_btn_30">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="toolTipBtn" name="assay_btn_31">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="toolTipBtn" name="assay_btn_32">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="toolTipBtn" name="assay_btn_33">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="toolTipBtn" name="assay_btn_35">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="toolTipBtn" name="assay_btn_34">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="toolTipBtn" name="assay_btn_36">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>225</y>
+        <width>471</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="math_fun_exp_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">exp</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="math_fun_log_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">lg</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="ce_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">CE</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="c_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">C</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="symbols_spot_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">.</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QPushButton" name="left_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">(</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QPushButton" name="right_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">)</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="symbols_except_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">/</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="num_zero_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">0</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="math_fun_sqrt_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">sqrt</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="math_fun_ln_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">ln</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="num_three_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">3</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QPushButton" name="symbols_minus_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">-</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="num_four_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">4</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="num_five_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">5</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="symbols_add_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">+</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="num_eight_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">8</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QPushButton" name="symbols_multiply_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">*</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="num_seven_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">7</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="symbols_exponent_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">^</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="num_one_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="num_two_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">2</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="num_six_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">6</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="num_nine_btn">
+         <property name="minimumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>104</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true">9</string>
+         </property>
+         <property name="buttons" stdset="0">
+          <string notr="true">flat_button_no_border</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>168</y>
+        <width>681</width>
+        <height>59</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>40</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonChim">
+         <property name="text">
+          <string>生化</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonImmy">
+         <property name="text">
+          <string>免疫</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTextEdit" name="formula_textedit">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>60</y>
+        <width>1485</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="inputs" stdset="0">
+       <string>noborder</string>
+      </property>
+     </widget>
+     <zorder>bk_label</zorder>
+     <zorder>label_19</zorder>
+     <zorder>page_up_btn</zorder>
+     <zorder>page_down_btn</zorder>
+     <zorder>label0</zorder>
+     <zorder>widget</zorder>
+     <zorder>widget_2</zorder>
+     <zorder>groupBox_3</zorder>
+     <zorder>attention_label</zorder>
+     <zorder>formula_textedit</zorder>
+     <zorder>name_cal_label</zorder>
+    </widget>
+    <widget class="QLabel" name="label1">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>350</y>
+       <width>400</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>参与计算项目</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="page_label">
+     <property name="geometry">
+      <rect>
+       <x>989</x>
+       <y>448</y>
+       <width>50</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>1538</width>
+       <height>162</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="borders" stdset="0">
+      <string>all</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>36</y>
+       <width>1511</width>
+       <height>144</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>70</number>
+      </property>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="horizontalSpacing">
+         <number>15</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="assay_name_edit">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maxLength">
+           <number>20</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="unit_cmbox">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string notr="true">mg/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mg/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>g/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mmol/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>umol/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mEq/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nkat/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IU/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ug/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ng/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ug/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ug/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nmol/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>U/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>%Uptake</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>%</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mA/min</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IU/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>U/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RLU</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ng/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>uIU/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mIU/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>KU/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nIU/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mIU/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>PEIU/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pq/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>S/CO</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pq/dL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pmol/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>%GHb</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>%A1c</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mg/mL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mg/g</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mg/mmol</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>g/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ng/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ukat/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>COI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>KIU/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mmol/mol</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mol/L</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ratio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>INR</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>s</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>秒</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>结果单位</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>项目名称</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="horizontalSpacing">
+         <number>15</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="display_cmbox">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>是</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>否</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>通道号</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="code_edit">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>是否显示</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="horizontalSpacing">
+         <number>15</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label2">
+          <property name="text">
+           <string>样本类型</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="sample_type_cmbox">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="decimal_digit_cmbox">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string notr="true">0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>小数位数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="horizontalSpacing">
+         <number>15</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>20</number>
+        </property>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>打印名称</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="print_name_edit">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maxLength">
+           <number>20</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>calc_widget</zorder>
+    <zorder>label1</zorder>
+    <zorder>page_label</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>参考范围</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_ref">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>1</y>
+       <width>1548</width>
+       <height>719</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+    </widget>
+    <widget class="QFrame" name="line_v_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string notr="true">solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_h_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>719</y>
+       <width>1548</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string notr="true">solid</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1009</x>
+       <y>731</y>
+       <width>511</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>14</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_ref_btn">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+        <property name="buttons" stdset="0">
+         <string notr="true">btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="modify_ref_btn">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+        <property name="buttons" stdset="0">
+         <string notr="true">btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="del_ref_btn">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>116</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+        <property name="buttons" stdset="0">
+         <string notr="true">btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="line_v_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_8">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>0</y>
+     <width>1</width>
+     <height>856</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>360</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>855</y>
+     <width>360</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_5">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>63</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_9">
+   <property name="geometry">
+    <rect>
+     <x>1911</x>
+     <y>63</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_12">
+   <property name="geometry">
+    <rect>
+     <x>365</x>
+     <y>855</y>
+     <width>1548</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_9">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>63</y>
+     <width>1548</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>874</y>
+     <width>1900</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>70</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>30</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="flat_new_add">
+      <property name="text">
+       <string>新增</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="del_Button">
+      <property name="text">
+       <string>删除</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_save">
+      <property name="text">
+       <string>保存</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="flat_return">
+      <property name="text">
+       <string>返回</string>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">flat</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>toolTipBtn</class>
+   <extends>QPushButton</extends>
+   <header location="global">shared/CustomToolTipCtrls.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

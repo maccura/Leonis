@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCustomCard</class>
+ <widget class="QWidget" name="QCustomCard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>34</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCustomCard</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#QCustomLabel  {
+	background: red;
+width: 100px;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTimeEdit" name="timeEdit">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>34</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>34</height>
+      </size>
+     </property>
+     <property name="displayFormat">
+      <string notr="true">HH:mm</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>410</width>
+       <height>34</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>410</width>
+       <height>34</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	background-color:rgb(228,231,236);
+}</string>
+     </property>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-5</y>
+        <width>410</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox  {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+QAbstractItemView  {
+	border:1px solid #a4a4a4;
+	border-bottom: 0;
+}
+
+QAbstractItemView::item  {
+	border: 0;
+	padding-left:15px;
+}
+
+QAbstractItemView::item:hover  {
+	border: 0;
+	background: #e5ebff;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>370</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel  {
+	background: #e4e7ec;
+	border-radius: 4px;
+	padding-left: 2px;
+}</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

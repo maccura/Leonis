@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QReCheckSimpleDialog</class>
+ <widget class="BaseDlg" name="QReCheckSimpleDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QReCheckDialog</string>
+  </property>
+  <widget class="QLineEdit" name="rack_Edit">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>100</y>
+     <width>250</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pos_2">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>170</y>
+     <width>100</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">2</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_recheck</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pos_1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>170</y>
+     <width>100</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">1</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_recheck</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pos_3">
+   <property name="geometry">
+    <rect>
+     <x>365</x>
+     <y>170</y>
+     <width>100</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">3</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_recheck</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pos_4">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>170</y>
+     <width>100</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">4</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_recheck</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pos_5">
+   <property name="geometry">
+    <rect>
+     <x>605</x>
+     <y>170</y>
+     <width>100</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">5</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_recheck</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ok_btn">
+   <property name="geometry">
+    <rect>
+     <x>462</x>
+     <y>303</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel_btn">
+   <property name="geometry">
+    <rect>
+     <x>592</x>
+     <y>303</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>81</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>架号</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>81</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>位置号</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

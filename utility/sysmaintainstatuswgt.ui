@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SysMaintainStatusWgt</class>
+ <widget class="QWidget" name="SysMaintainStatusWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SysMaintainStatusWgt</string>
+  </property>
+  <widget class="QLabel" name="BkMovieLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>230</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="status" stdset="0">
+    <string>not_maintain</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MaintainStatusLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>81</y>
+     <width>230</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>未维护</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="status" stdset="0">
+    <string>not_maintain</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ProgressLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>137</y>
+     <width>230</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

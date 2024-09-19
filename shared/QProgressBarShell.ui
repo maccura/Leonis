@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QProgressBarShell</class>
+ <widget class="QWidget" name="QProgressBarShell">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>142</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>QProgressBarShell</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>15</y>
+     <width>189</width>
+     <height>127</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>189</width>
+     <height>127</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>189</width>
+     <height>127</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>189</width>
+     <height>127</height>
+    </size>
+   </property>
+   <widget class="QBottleProgressBar" name="progress" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>189</width>
+      <height>127</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="balance">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>54</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>0%</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="fonts" stdset="0">
+     <string notr="true">14</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="shell" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>189</width>
+      <height>127</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <zorder>progress</zorder>
+   <zorder>shell</zorder>
+   <zorder>balance</zorder>
+  </widget>
+  <widget class="QPushButton" name="detect_btn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>57</y>
+     <width>54</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>54</width>
+     <height>54</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>54</width>
+     <height>54</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QBottleProgressBar</class>
+   <extends>QWidget</extends>
+   <header>qbottleprogressbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

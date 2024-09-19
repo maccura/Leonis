@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeveyJennPlot</class>
+ <widget class="QWidget" name="LeveyJennPlot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1211</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LeveyJennPlot</string>
+  </property>
+  <widget class="QLabel" name="BkLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>859</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="QcScrollArea">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>43</y>
+     <width>1158</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="ScrollContent">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1153</width>
+      <height>399</height>
+     </rect>
+    </property>
+    <widget class="QwtPlot" name="QcGraphic" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-44</x>
+       <y>-4</y>
+       <width>1247</width>
+       <height>387</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="PtInfoViewFrame">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>53</y>
+     <width>127</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#PtInfoViewFrame
+{
+background-color: rgba(0, 0, 0, 50%);
+border-radius:4px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="PointInfoFrame">
+    <property name="geometry">
+     <rect>
+      <x>-300</x>
+      <y>0</y>
+      <width>731</width>
+      <height>53</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>53</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>53</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background:transparent;
+color: rgb(255, 255, 255);
+font-family:&quot;Source Han Sans SC&quot;;
+font-size:12px;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="1,0,0,1">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>6</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>6</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0,1">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="ResultNameLab">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>结果：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ResultValLab">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>7777</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="3">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="0,0,1">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="TimeNameLab">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>时间：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="TimeValLab">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2022/01/01</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="GraphicFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1209</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QwtPlot" name="QcGraphicBk" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-3</y>
+      <width>1202</width>
+      <height>400</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCheckBox" name="ShowNoCalcQcCB">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>12</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>显示子点</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>10</y>
+     <width>53</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="Qc1IconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Qc1TextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>图表1</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCheckBox" name="ShowSubPointCB">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>12</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>显示不计算值</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>10</y>
+     <width>53</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="Qc3IconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Qc3TextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>图表3</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>10</y>
+     <width>95</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="NoCalcQcIconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="NoCalcQcTextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>不计算质控点</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>10</y>
+     <width>53</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="Qc2IconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Qc2TextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>图表2</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="ShowDays">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>12</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日间质控</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ShowTimes">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>12</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日内质控</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>10</y>
+     <width>53</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="WarningIconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="WarningTextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>警告</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>10</y>
+     <width>53</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="OutCtrlIconLab">
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="OutCtrlTextLab">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>失控</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>GraphicFrame</zorder>
+  <zorder>BkLab</zorder>
+  <zorder>QcScrollArea</zorder>
+  <zorder>PtInfoViewFrame</zorder>
+  <zorder>ShowNoCalcQcCB</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>ShowSubPointCB</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>layoutWidget_4</zorder>
+  <zorder>ShowDays</zorder>
+  <zorder>ShowTimes</zorder>
+  <zorder>layoutWidget_5</zorder>
+  <zorder>layoutWidget_6</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QWidget</extends>
+   <header>qwt_plot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

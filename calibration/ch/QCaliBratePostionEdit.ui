@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCaliBratePostionEdit</class>
+ <widget class="QWidget" name="QCaliBratePostionEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCaliBratePostionEdit</string>
+  </property>
+  <widget class="QComboBox" name="cup_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>100</y>
+     <width>250</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ok_Button">
+   <property name="geometry">
+    <rect>
+     <x>477</x>
+     <y>313</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_Button">
+   <property name="geometry">
+    <rect>
+     <x>617</x>
+     <y>313</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>176</y>
+     <width>711</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="four_Button">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>04</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>location</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="three_Button">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>30</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>03</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>location</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="five_Button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>05</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>location</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="two_Button">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>02</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>location</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="one_Button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>120</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>01</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>location</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>架号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>407</x>
+     <y>100</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>样本杯</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>159</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>位置号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="rack_edit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>99</y>
+     <width>280</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

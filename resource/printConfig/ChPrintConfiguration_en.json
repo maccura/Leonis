@@ -1,0 +1,814 @@
+{
+    "device": "leonis",
+    "print_module_ds_list": [
+        {
+            "struct ChCaliRecordInfo": [
+                "Biochemical calibration record",
+                [
+                    "strInstrumentModel",
+                    "Instrument model:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time:",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Calibrator records",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Calibrator records",
+                    "TB",
+                    [
+                        [
+                            "strIndex",
+                            "S/N",
+                            "ST"
+                        ],
+                        [
+                            "strCaliName",
+                            "Cal. name",
+                            "ST"
+                        ],
+                        [
+                            "strCaliLot",
+                            "Calibrator lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strCaliAssays",
+                            "Calibration Item",
+                            "ST"
+                        ],
+                        [
+                            "strExpirationDate",
+                            "Expiry Date",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator1",
+                            "Calibrator 1",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator2",
+                            "Calibrator 2",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator3",
+                            "Calibrator 3",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator4",
+                            "Calibrator 4",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator5",
+                            "Calibrator 5",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrator6",
+                            "Calibrator 6",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ChCupBlankTestInfo": [
+                "Cup blank result",
+                [
+                    "strModel",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTestTime",
+                    "Test time:",
+                    "ST"
+                ],
+                [
+                    "strValueType",
+                    "Indication type:",
+                    "ST"
+                ],
+                [
+                    "strErrorCupNums",
+                    "Abnormal reaction cup number:",
+                    "ST"
+                ],
+                [
+                    "vecCupResult",
+                    "Data results",
+                    "TB",
+                    [
+                        [
+                            "strCupNum",
+                            "Cuvette No",
+                            "ST"
+                        ],
+                        [
+                            "str340Value",
+                            "340nm",
+                            "ST"
+                        ],
+                        [
+                            "str380Value",
+                            "380nm",
+                            "ST"
+                        ],
+                        [
+                            "str405Value",
+                            "405nm",
+                            "ST"
+                        ],
+                        [
+                            "str450Value",
+                            "450nm",
+                            "ST"
+                        ],
+                        [
+                            "str480Value",
+                            "480nm",
+                            "ST"
+                        ],
+                        [
+                            "str505Value",
+                            "505nm",
+                            "ST"
+                        ],
+                        [
+                            "str546Value",
+                            "546nm",
+                            "ST"
+                        ],
+                        [
+                            "str570Value",
+                            "570nm",
+                            "ST"
+                        ],
+                        [
+                            "str600Value",
+                            "600nm",
+                            "ST"
+                        ],
+                        [
+                            "str660Value",
+                            "660nm",
+                            "ST"
+                        ],
+                        [
+                            "str700Value",
+                            "700nm",
+                            "ST"
+                        ],
+                        [
+                            "str750Value",
+                            "750nm",
+                            "ST"
+                        ],
+                        [
+                            "str800Value",
+                            "800nm",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ChCupBlankCalculateInfo": [
+                "Cup blank calculation result",
+                [
+                    "strModel",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strTestTime1",
+                    "Test time 1:",
+                    "ST"
+                ],
+                [
+                    "strTestTime2",
+                    "Test time 2:",
+                    "ST"
+                ],
+                [
+                    "vecCupResult",
+                    "Data results",
+                    "TB",
+                    [
+                        [
+                            "strCupNum",
+                            "Cuvette No",
+                            "ST"
+                        ],
+                        [
+                            "str340Value",
+                            "340nm",
+                            "ST"
+                        ],
+                        [
+                            "str380Value",
+                            "380nm",
+                            "ST"
+                        ],
+                        [
+                            "str405Value",
+                            "405nm",
+                            "ST"
+                        ],
+                        [
+                            "str450Value",
+                            "450nm",
+                            "ST"
+                        ],
+                        [
+                            "str480Value",
+                            "480nm",
+                            "ST"
+                        ],
+                        [
+                            "str505Value",
+                            "505nm",
+                            "ST"
+                        ],
+                        [
+                            "str546Value",
+                            "546nm",
+                            "ST"
+                        ],
+                        [
+                            "str570Value",
+                            "570nm",
+                            "ST"
+                        ],
+                        [
+                            "str600Value",
+                            "600nm",
+                            "ST"
+                        ],
+                        [
+                            "str660Value",
+                            "660nm",
+                            "ST"
+                        ],
+                        [
+                            "str700Value",
+                            "700nm",
+                            "ST"
+                        ],
+                        [
+                            "str750Value",
+                            "750nm",
+                            "ST"
+                        ],
+                        [
+                            "str800Value",
+                            "800nm",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ChPhotoCheckResultInfo": [
+                "Photometer test results",
+                [
+                    "strModel",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "strCurTestTime",
+                    "Current test time:",
+                    "ST"
+                ],
+                [
+                    "strHisTestTime",
+                    "Historical test time:",
+                    "ST"
+                ],
+                [
+                    "vecCurResult",
+                    "Current data result",
+                    "TB",
+                    [
+                        [
+                            "strWave",
+                            "Wavelength",
+                            "ST"
+                        ],
+                        [
+                            "strMeanValue",
+                            "Mean value",
+                            "ST"
+                        ],
+                        [
+                            "strRangeValue",
+                            "Range",
+                            "ST"
+                        ]
+                    ]
+                ],
+                [
+                    "vecHisResult",
+                    "Historical data results",
+                    "TB",
+                    [
+                        [
+                            "strWave",
+                            "Wavelength",
+                            "ST"
+                        ],
+                        [
+                            "strMeanValue",
+                            "Mean value",
+                            "ST"
+                        ],
+                        [
+                            "strRangeValue",
+                            "Range",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CupHistoryInfo": [
+                "Cuvette history",
+                [
+                    "strModule",
+                    "Module:",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Print time:",
+                    "ST"
+                ],
+                [
+                    "vecRecord",
+                    "Cuvette history",
+                    "TB",
+                    [
+                        [
+                            "strCupNum",
+                            "Cuvette No",
+                            "ST"
+                        ],
+                        [
+                            "strStatus",
+                            "St.",
+                            "ST"
+                        ],
+                        [
+                            "strTestTimes",
+                            "Total number of tests",
+                            "ST"
+                        ],
+                        [
+                            "strTestingAssay",
+                            "Items being checked",
+                            "ST"
+                        ],
+                        [
+                            "strTestedAssay",
+                            "The first ten items",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliResultInfoCh": [
+                "Biochemical calibration result",
+                [
+                    "strModelName",
+                    "Module ",
+                    "ST"
+                ],
+                [
+                    "strItemName",
+                    "Project name",
+                    "ST"
+                ],
+                [
+                    "strUnit",
+                    "Unit",
+                    "ST"
+                ],
+                [
+                    "strDeviceNum",
+                    "Instrument No.",
+                    "ST"
+                ],
+                [
+                    "strSoftVersion",
+                    "Software version ",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reagent batch number",
+                    "ST"
+                ],
+                [
+                    "strReagentSN",
+                    "Reagent bottle.",
+                    "ST"
+                ],
+                [
+                    "strCalibratorLot",
+                    "Calibrator lot No.",
+                    "ST"
+                ],
+                [
+                    "strCalibrateDate",
+                    "Calibration time",
+                    "ST"
+                ],
+                [
+                    "strAcidityLot",
+                    "Acidic detergent lot No.",
+                    "ST"
+                ],
+                [
+                    "strAlkalinityLot",
+                    "Alkaline detergent lot No.",
+                    "ST"
+                ],
+                [
+                    "strCaliType",
+                    "Calibration method",
+                    "ST"
+                ],
+                [
+                    "strCaliMode",
+                    "EXEC method",
+                    "ST"
+                ],
+                [
+                    "strAlarm",
+                    "Data alarm",
+                    "ST"
+                ],
+                [
+                    "strExportBy",
+                    "Exporter",
+                    "ST"
+                ],
+                [
+                    "strPrintBy",
+                    "Printed by",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Printing time",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "vecCaliParameters",
+                    "Parameter list",
+                    "TB",
+                    [
+                        [
+                            "strCaliParameter",
+                            "Calibration parameters",
+                            "ST"
+                        ],
+                        [
+                            "strParameterValue",
+                            "Result ",
+                            "ST"
+                        ]
+                    ]
+                ],
+                [
+                    "vecCaliResultData",
+                    "Calibrator data",
+                    "TB",
+                    [
+                        [
+                            "strLevel",
+                            "Calibrator level",
+                            "ST"
+                        ],
+                        [
+                            "strCalibratorPos",
+                            "Calibrator position",
+                            "ST"
+                        ],
+                        [
+                            "strFirstCup",
+                            "First cup number",
+                            "ST"
+                        ],
+                        [
+                            "strFirstCupPreAssay",
+                            "Privious reaction for the first time",
+                            "ST"
+                        ],
+                        [
+                            "strSecCup",
+                            "Second cup number",
+                            "ST"
+                        ],
+                        [
+                            "strSecCupPreAssay",
+                            "Privious reaction for the second time",
+                            "ST"
+                        ],
+                        [
+                            "strAbs1",
+                            "Absorbance 1",
+                            "ST"
+                        ],
+                        [
+                            "strAbs2",
+                            "Absorbance 2",
+                            "ST"
+                        ],
+                        [
+                            "strAvgAbs",
+                            "Mean absorbance",
+                            "ST"
+                        ],
+                        [
+                            "strConc",
+                            "Concentration",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct ReactCurveData": [
+                "Biochemical reaction curve",
+                [
+                    "strTitle",
+                    "Title",
+                    "ST"
+                ],
+                [
+                    "strReagentName",
+                    "Project name",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module ",
+                    "ST"
+                ],
+                [
+                    "strCaliName",
+                    "Cal. name",
+                    "ST"
+                ],
+                [
+                    "strReagentLot",
+                    "Reagent batch number",
+                    "ST"
+                ],
+                [
+                    "strReagentSN",
+                    "Reagent bottle.",
+                    "ST"
+                ],
+                [
+                    "strCaliMode",
+                    "EXEC method",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Printing time",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "grpCurveTimes",
+                    "Reaction curve sequence data",
+                    "GRP",
+                    [
+                        [
+                            "strCaliSeqNo",
+                            "Calibrator order",
+                            "ST"
+                        ],
+                        [
+                            "vecCaliLvData",
+                            "Calibrator reaction data",
+                            "TB",
+                            [
+                                [
+                                    "strPonitIndex",
+                                    "LTG",
+                                    "ST"
+                                ],
+                                [
+                                    "strPrimaryWave",
+                                    "Primary WL",
+                                    "ST"
+                                ],
+                                [
+                                    "strSubWave",
+                                    "Secondary WL",
+                                    "ST"
+                                ],
+                                [
+                                    "strWaveDiff",
+                                    "PRI - SEC WL",
+                                    "ST"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliHistoryInfoCh": [
+                "Biochemical calibration history",
+                [
+                    "strTitle",
+                    "Calibration history",
+                    "ST"
+                ],
+                [
+                    "strName",
+                    "Project name",
+                    "ST"
+                ],
+                [
+                    "strUnit",
+                    "Unit",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Printing time",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module ",
+                    "ST"
+                ],
+                [
+                    "grpCaliTimes",
+                    "Calibration sequence data",
+                    "GRP",
+                    [
+                        [
+                            "strCaliSeqNo",
+                            "Calibration sequence",
+                            "ST"
+                        ],
+                        [
+                            "strCalibratorLot",
+                            "Calibrator lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strReagentLot",
+                            "Reagent batch number",
+                            "ST"
+                        ],
+                        [
+                            "strReagentSN",
+                            "Reagent bottle.",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrateDate",
+                            "Calibration time",
+                            "ST"
+                        ],
+                        [
+                            "strCaliResult",
+                            "Calibration Results",
+                            "ST"
+                        ],
+                        [
+                            "strCaliMode",
+                            "EXEC method",
+                            "ST"
+                        ],
+                        [
+                            "strAlarm",
+                            "Data alarm",
+                            "ST"
+                        ],
+                        [
+                            "vecCaliLvData",
+                            "Biochemical calibrator reaction data",
+                            "TB",
+                            [
+                                [
+                                    "strCalibrator",
+                                    "Calibrator",
+                                    "ST"
+                                ],
+                                [
+                                    "strCalibratorPos",
+                                    "Calibrator position",
+                                    "ST"
+                                ],
+                                [
+                                    "strFirstCup",
+                                    "First cup number",
+                                    "ST"
+                                ],
+                                [
+                                    "strFirstCupPreAssay",
+                                    "Privious reaction for the first time",
+                                    "ST"
+                                ],
+                                [
+                                    "strSecCup",
+                                    "Second cup number",
+                                    "ST"
+                                ],
+                                [
+                                    "strSecCupPreAssay",
+                                    "Privious reaction for the second time",
+                                    "ST"
+                                ],
+                                [
+                                    "strAbs1",
+                                    "Absorbance 1",
+                                    "ST"
+                                ],
+                                [
+                                    "strAbs2",
+                                    "Absorbance 2",
+                                    "ST"
+                                ],
+                                [
+                                    "strAvgAbs",
+                                    "Mean absorbance",
+                                    "ST"
+                                ],
+                                [
+                                    "strConc",
+                                    "Concentration",
+                                    "ST"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ]
+}

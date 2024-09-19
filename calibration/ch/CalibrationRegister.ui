@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalibrationRegister</class>
+ <widget class="QWidget" name="CalibrationRegister">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1315</width>
+    <height>801</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CalibrationRegister</string>
+  </property>
+  <widget class="QPushButton" name="editBtn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>760</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>edit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delBtn">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>760</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CaliDilution">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>760</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>dilution</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="settingBtn">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>760</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>setting</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="caliGroup">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>391</width>
+     <height>681</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="caliDetail">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>40</y>
+     <width>831</width>
+     <height>681</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

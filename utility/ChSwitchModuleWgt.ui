@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChSwitchModuleWgt</class>
+ <widget class="QWidget" name="ChSwitchModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1320</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ChSwitchModuleWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QScrollBar:vertical  {
+    width: 14px;
+    background: #f30;
+    padding: 0;
+}</string>
+  </property>
+  <property name="checks" stdset="0">
+   <string notr="true">push</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>850</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>850</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QScrollBar:vertical  {
+    width: 14px;
+    background: #f30;
+    padding: 0;
+}
+ QScrollArea  {
+	border: 1px solid blue;
+}</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="widget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1304</width>
+        <height>850</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>850</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>850</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

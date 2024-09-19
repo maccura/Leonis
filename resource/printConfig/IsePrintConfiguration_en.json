@@ -1,0 +1,266 @@
+{
+    "device": "leonis",
+    "print_module_ds_list": [
+        {
+            "struct CaliResultInfoIse": [
+                "ISE calibration results",
+                [
+                    "strReagentName",
+                    "Project name",
+                    "ST"
+                ],
+                [
+                    "strPos",
+                    "Position",
+                    "ST"
+                ],
+                [
+                    "strCalibrateDate",
+                    "Calibration time",
+                    "ST"
+                ],
+                [
+                    "strUnit",
+                    "Unit",
+                    "ST"
+                ],
+                [
+                    "strCalibratorLot",
+                    "Calibrator lot No.",
+                    "ST"
+                ],
+                [
+                    "strCalibrator1",
+                    "High concentration calibrator position",
+                    "ST"
+                ],
+                [
+                    "strCalibrator2",
+                    "Low concentration calibrator position",
+                    "ST"
+                ],
+                [
+                    "strIsLot",
+                    "IC lot No.",
+                    "ST"
+                ],
+                [
+                    "strDiluLot",
+                    "BS lot No.",
+                    "ST"
+                ],
+                [
+                    "strDeviceNum",
+                    "Instrument No.",
+                    "ST"
+                ],
+                [
+                    "strSoftVersion",
+                    "Software version number",
+                    "ST"
+                ],
+                [
+                    "strCaliResult",
+                    "Calibration Results",
+                    "ST"
+                ],
+                [
+                    "strTitle",
+                    "Title",
+                    "ST"
+                ],
+                [
+                    "strModelName",
+                    "Module ",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Printing time",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "strPrintBy",
+                    "Printed by",
+                    "ST"
+                ],
+                [
+                    "strExportBy",
+                    "Exporter",
+                    "ST"
+                ],
+                [
+                    "vecCaliResultData",
+                    "Calibrator records",
+                    "TB",
+                    [
+                        [
+                            "strAssayName",
+                            "Project name",
+                            "ST"
+                        ],
+                        [
+                            "strLowSamleEmf",
+                            "Low value",
+                            "ST"
+                        ],
+                        [
+                            "strLowBaseEmf",
+                            "Low value reference",
+                            "ST"
+                        ],
+                        [
+                            "strHighSamleEmf",
+                            "High value",
+                            "ST"
+                        ],
+                        [
+                            "strHighBaseEmf",
+                            "High value reference",
+                            "ST"
+                        ],
+                        [
+                            "strSlope",
+                            "Slope",
+                            "ST"
+                        ],
+                        [
+                            "strDilutionRatio",
+                            "Dilution factor",
+                            "ST"
+                        ],
+                        [
+                            "strAlarm",
+                            "Data alarm",
+                            "ST"
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "struct CaliHistoryInfoIse": [
+                "ISE calibration history",
+                [
+                    "strTitle",
+                    "Calibration history",
+                    "ST"
+                ],
+                [
+                    "strName",
+                    "Project name",
+                    "ST"
+                ],
+                [
+                    "strUnit",
+                    "Unit",
+                    "ST"
+                ],
+                [
+                    "strExportTime",
+                    "Export time",
+                    "ST"
+                ],
+                [
+                    "strPrintTime",
+                    "Printing time",
+                    "ST"
+                ],
+                [
+                    "strPos",
+                    "Position",
+                    "ST"
+                ],
+                [
+                    "grpCaliTimesData",
+                    "ISE calibration sequence data",
+                    "GRP",
+                    [
+                        [
+                            "strCaliSeqNo",
+                            "Calibration sequence",
+                            "ST"
+                        ],
+                        [
+                            "strCalibratorLot",
+                            "Calibrator lot No.",
+                            "ST"
+                        ],
+                        [
+                            "IsLot",
+                            "IC lot No.",
+                            "ST"
+                        ],
+                        [
+                            "IsSn",
+                            "BS btl No.",
+                            "ST"
+                        ],
+                        [
+                            "strDiluLot",
+                            "BS lot No.",
+                            "ST"
+                        ],
+                        [
+                            "strDiluSn",
+                            "BS btl No.",
+                            "ST"
+                        ],
+                        [
+                            "strCalibrateDate",
+                            "Calibration time",
+                            "ST"
+                        ],
+                        [
+                            "strCaliResult",
+                            "Calibration Results",
+                            "ST"
+                        ],
+                        [
+                            "strAlarm",
+                            "Data alarm",
+                            "ST"
+                        ],
+                        [
+                            "strSlop",
+                            "Slope value",
+                            "ST"
+                        ],
+                        [
+                            "vecCaliLvData",
+                            "ISE calibrator reaction data",
+                            "TB",
+                            [
+                                [
+                                    "strCalibrator",
+                                    "Calibrator",
+                                    "ST"
+                                ],
+                                [
+                                    "strConc",
+                                    "Concentration",
+                                    "ST"
+                                ],
+                                [
+                                    "strEmf",
+                                    "Electromotive force",
+                                    "ST"
+                                ],
+                                [
+                                    "strBase",
+                                    "Benchmark",
+                                    "ST"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ]
+}

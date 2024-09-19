@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IseProgressBar</class>
+ <widget class="QWidget" name="IseProgressBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>559</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="balance">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>170</y>
+     <width>178</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0%</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="fonts" stdset="0">
+    <string>14</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="shell" native="true">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>2</y>
+     <width>178</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>228</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>228</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QBottleProgressBar" name="progress" native="true">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>2</y>
+     <width>178</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>228</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>228</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="detect_btn">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>157</y>
+     <width>64</width>
+     <height>74</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>64</width>
+     <height>74</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>54</width>
+     <height>74</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="margins" stdset="0">
+    <string>top_20</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QBottleProgressBar</class>
+   <extends>QWidget</extends>
+   <header>qbottleprogressbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

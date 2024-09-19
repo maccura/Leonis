@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDetectModuleDebugDlg</class>
+ <widget class="QWidget" name="QDetectModuleDebugDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QDetectModuleDebugDlg</string>
+  </property>
+  <widget class="QFrame" name="devListFrame">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>80</y>
+     <width>750</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clean_btn">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>770</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_btn">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>770</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>770</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_mode">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>无管噪声流程</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>有管噪声流程</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>发光剂检测流程</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>140</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>检测流程</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_val">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>243</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="suffix">
+    <string>uL</string>
+   </property>
+   <property name="maximum">
+    <number>99999999</number>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_AttenFactor">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>293</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximum">
+    <double>10000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>191</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>重复次数</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>243</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>吸样量</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>344</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>使用底物组</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>293</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>分光系数</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_steps">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>191</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>50</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>100</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>140</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>最大值：</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_avr">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>243</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>9999999999999999583119736832.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>191</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>仪器噪声：</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_std_dev">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>293</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>9999999999999999583119736832.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_NS">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>191</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>99999999999999991433150857216.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_max">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>140</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>9999999999999999583119736832.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>243</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>平均值：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>293</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>标准差：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>405</y>
+     <width>750</width>
+     <height>343</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::TextEditorInteraction</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_sub_group">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>344</y>
+     <width>250</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>41</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>自动</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>底物组1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>底物组2</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QFrame" name="line_v_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>1</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>130</y>
+     <width>1</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>395</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_5">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>130</y>
+     <width>1</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_6">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>130</y>
+     <width>1</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>395</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_4">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>130</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="export_btn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>770</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

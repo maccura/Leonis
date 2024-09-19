@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StopMaintainDlg</class>
+ <widget class="BaseDlg" name="StopMaintainDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>StopMaintainDlg</string>
+  </property>
+  <widget class="QFrame" name="DevFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>210</y>
+     <width>961</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="optionBtnFrame">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>580</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="StopMtBtn">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>10</y>
+      <width>116</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>116</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>116</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>执行</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseBtn">
+    <property name="geometry">
+     <rect>
+      <x>144</x>
+      <y>10</y>
+      <width>116</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>116</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>116</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string>btn_dlg</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="TrackFrame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>961</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>optionBtnFrame</zorder>
+  <zorder>DevFrame</zorder>
+  <zorder>TrackFrame</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

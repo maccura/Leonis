@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReagentOverview</class>
+ <widget class="QWidget" name="ReagentOverview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>910</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ReagentOverview</string>
+  </property>
+  <property name="borders" stdset="0">
+   <string notr="true">none</string>
+  </property>
+  <widget class="QFrame" name="VolumnOverShow">
+   <property name="geometry">
+    <rect>
+     <x>1202</x>
+     <y>0</y>
+     <width>710</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>710</width>
+      <height>792</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="borders" stdset="0">
+     <string notr="true">all</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>1196</width>
+     <height>710</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="border">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1198</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string notr="true">all</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Comput_Button">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>813</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>需求计算</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string notr="true">flat</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="AssayCards">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>722</y>
+     <width>1196</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QPushButton" name="Next_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1137</x>
+      <y>3</y>
+      <width>50</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+    <property name="icons" stdset="0">
+     <string notr="true">page_next</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1075</x>
+      <y>3</y>
+      <width>60</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1/3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Pre_Btn">
+    <property name="geometry">
+     <rect>
+      <x>1023</x>
+      <y>3</y>
+      <width>50</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+    <property name="icons" stdset="0">
+     <string notr="true">page_pre</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>15</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>总测试数为0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>15</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="radiuses" stdset="0">
+     <string notr="true">rds_4</string>
+    </property>
+    <property name="bks" stdset="0">
+     <string notr="true">clr_06</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>15</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="radiuses" stdset="0">
+     <string notr="true">rds_4</string>
+    </property>
+    <property name="bks" stdset="0">
+     <string notr="true">clr_04</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>222</x>
+      <y>15</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂不足</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>327</x>
+      <y>15</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="radiuses" stdset="0">
+     <string notr="true">rds_4</string>
+    </property>
+    <property name="bks" stdset="0">
+     <string notr="true">clr_11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>15</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>正常</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>Comput_Button</zorder>
+  <zorder>border</zorder>
+  <zorder>VolumnOverShow</zorder>
+  <zorder>stackedWidget</zorder>
+  <zorder>AssayCards</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

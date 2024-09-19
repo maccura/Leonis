@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DbgParamCaliWidget</class>
+ <widget class="QWidget" name="DbgParamCaliWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1551</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">DbgParamCaliWidget</string>
+  </property>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1900</x>
+     <y>0</y>
+     <width>1</width>
+     <height>812</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>792</y>
+     <width>1549</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="ParamFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1551</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="PtCntAndSegCntFrame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>0</y>
+      <width>1541</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="MajorCurvePtCntLab">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>20</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>主标曲点数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MajorCurvePtCntEdit">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>20</y>
+       <width>113</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CaliSegCntLab">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>20</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>校准段数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CaliSegCntEdit">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>20</y>
+       <width>113</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CaliDocCntLab">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>校准品个数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CaliDocCntEdit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>113</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="CaliParamTbl">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>80</y>
+      <width>1541</width>
+      <height>705</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>46</number>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="line_v">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>792</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1549</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string notr="true">solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

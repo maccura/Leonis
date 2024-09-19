@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>McQcLjGraphic</class>
+ <widget class="QWidget" name="McQcLjGraphic">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1208</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">McQcLjGraphic</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="BkLab">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>1150</width>
+     <height>497</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="TopFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1208</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1208</width>
+     <height>58</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1208</width>
+     <height>58</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,0,0,0,0,0,0,0,0">
+    <property name="spacing">
+     <number>19</number>
+    </property>
+    <property name="leftMargin">
+     <number>290</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="ShowNoCalcQcCB">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>显示不计算点</string>
+        </property>
+        <property name="text">
+         <string>显示不计算点</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">16</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ShowSubPointCB">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>显示子点</string>
+        </property>
+        <property name="text">
+         <string>显示子点</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">16</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>22</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Qc1IconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Qc1TextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>图表1</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Qc2IconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Qc2TextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>图表2</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Qc3IconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Qc3TextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>图表3</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Qc4IconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Qc4TextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>图表4</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="NoCalcQcIconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="NoCalcQcTextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>不计算点</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="WarnQcIconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="WarnQcTextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>警告</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="OutCtrlIconLab">
+        <property name="minimumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="OutCtrlQcTextLab">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>失控</string>
+        </property>
+        <property name="fonts" stdset="0">
+         <string notr="true">14</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QScrollArea" name="QcScrollArea">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>55</y>
+     <width>1157</width>
+     <height>460</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="widgetResizable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="ScrollContent">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1152</width>
+      <height>412</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="GraphicFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>1208</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bk_light_gray">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>0</y>
+     <width>1145</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QwtPlot" name="QcGraphic" native="true">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>52</y>
+     <width>1201</width>
+     <height>428</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QScrollBar" name="GraphicScrollBar">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>501</y>
+     <width>1197</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>13</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>13</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar:horizontal  {
+    height: 16px;
+    background: #e4e7ec;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 52px;
+    border-top: 0;
+    border-right: 1px solid red;
+
+}
+
+QScrollBar[InWork=true]::handle:horizontal  {
+    height: 13px;
+    min-height: 12px;
+    min-width: 30px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 2px 3px 3px 2px;
+    border: 0;
+}
+
+QScrollBar[InWork=false]::handle:horizontal  {
+    height: 13px;
+    min-height: 12px;
+    min-width: 30px;
+    background: #e4e7ec;
+    border-radius: 4px;
+    margin: 2px 3px 3px 2px;
+    border: 0;
+}
+
+QScrollBar::sub-line:horizontal  {
+    width: 0;
+}
+
+QScrollBar::add-line:horizontal  {
+    width: 0;
+    border-right: 0;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="InWork" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <zorder>bk_light_gray</zorder>
+  <zorder>BkLab</zorder>
+  <zorder>GraphicFrame</zorder>
+  <zorder>TopFrame</zorder>
+  <zorder>QcScrollArea</zorder>
+  <zorder>QcGraphic</zorder>
+  <zorder>GraphicScrollBar</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QWidget</extends>
+   <header>qwt_plot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

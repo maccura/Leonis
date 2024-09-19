@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QUnderDeckSupply</class>
+ <widget class="QWidget" name="QUnderDeckSupply">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QUnderDeckSupply</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="Area_widget">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>1</y>
+     <width>30</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #f2f2f2;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="titles" stdset="0">
+    <string>sub_tit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>342</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>page_block</string>
+   </property>
+   <property name="radiuses" stdset="0">
+    <string>rds_4</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>291</width>
+     <height>370</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>8</number>
+    </property>
+    <property name="topMargin">
+     <number>8</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QSpecialProgessBar" name="Diluent_Sample" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="borders" stdset="0">
+       <string>state_hover</string>
+      </property>
+      <property name="radiuses" stdset="0">
+       <string>rds_6</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpecialProgessBar" name="Hitergent_water" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="borders" stdset="0">
+       <string>state_hover</string>
+      </property>
+      <property name="radiuses" stdset="0">
+       <string>rds_6</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpecialProgessBar" name="Reagent_Wash" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="borders" stdset="0">
+       <string>state_hover</string>
+      </property>
+      <property name="radiuses" stdset="0">
+       <string>rds_6</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpecialProgessBar" name="Reagent_Wash_2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="borders" stdset="0">
+       <string>state_hover</string>
+      </property>
+      <property name="radiuses" stdset="0">
+       <string>rds_6</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>13</y>
+     <width>294</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>state_hover</string>
+   </property>
+   <property name="radiuses" stdset="0">
+    <string>rds_6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>67</y>
+     <width>294</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>state_hover</string>
+   </property>
+   <property name="radiuses" stdset="0">
+    <string>rds_6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>121</y>
+     <width>294</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="borders" stdset="0">
+    <string>state_hover</string>
+   </property>
+   <property name="radiuses" stdset="0">
+    <string>rds_6</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>Area_widget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QSpecialProgessBar</class>
+   <extends>QWidget</extends>
+   <header>src/leonis/reagent/ch/QSpecialProgessBar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

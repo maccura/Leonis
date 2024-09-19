@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImDataAlarmRetestSettingsDlg</class>
+ <widget class="QWidget" name="ImDataAlarmRetestSettingsDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1424</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据报警复查</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>90</y>
+     <width>1291</width>
+     <height>751</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="6,0,0">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="QTableView" name="tableViewAlarmRetestSettings"/>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>18</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonOk">
+        <property name="minimumSize">
+         <size>
+          <width>122</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+        <property name="buttons" stdset="0">
+         <string>btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCancel">
+        <property name="minimumSize">
+         <size>
+          <width>122</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+        <property name="buttons" stdset="0">
+         <string>btn_dlg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="line_h_4">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>90</y>
+     <width>1290</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_5">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>775</y>
+     <width>1289</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ImDataAlarmRetestSettingsDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1103</x>
+     <y>703</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

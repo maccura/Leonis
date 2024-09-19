@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintainDefaultSetDlg</class>
+ <widget class="BaseDlg" name="MaintainDefaultSetDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MaintainDefaultSetDlg</string>
+  </property>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>370</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_btn">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>370</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="paramStackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>371</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>4</number>
+   </property>
+   <widget class="QWidget" name="page_Normal"/>
+   <widget class="QWidget" name="page_ChPipeFill">
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <widget class="QCheckBox" name="acid_clean_solu_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>酸性清洗液</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="acid_stan_solu_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>15</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>15</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="alkalinity_clean_solu_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="alkalinity_clean_solu_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>55</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>碱性清洗液</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_ProbeClean">
+    <widget class="QCheckBox" name="sample_probe_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>样本针清洗</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sample_probe_clean_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>110</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="reagent_probe_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>试剂针清洗</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="reagent_probe_clean_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>110</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浸泡时间</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sp_sock_time_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>min</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="rp_sock_time_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>150</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>150</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>min</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>浸泡时间</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_IseDrainage">
+    <widget class="QLineEdit" name="Ise_drainage_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次数</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_IsePipeFill">
+    <widget class="QLineEdit" name="Ise_buffer_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>65</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>65</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Ise_stan_solu_times_edit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>次</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="Ise_buffer_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AT缓冲液</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="Ise_stan_solu_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>15</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>内部标准液</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="execution_times_edit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>100</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>执行次数</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>100</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>次</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

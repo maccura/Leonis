@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCaliBrateFilter</class>
+ <widget class="QWidget" name="QCaliBrateFilter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>335</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCaliBrateFilter</string>
+  </property>
+  <widget class="QComboBox" name="Time_ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>94</y>
+     <width>310</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Assay_ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>164</y>
+     <width>310</width>
+     <height>40</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ok_Button">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>231</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Cancel_button">
+   <property name="geometry">
+    <rect>
+     <x>299</x>
+     <y>231</y>
+     <width>116</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>btn_dlg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>462</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>筛选</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>94</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>时间</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>164</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>项目</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UtilityWidget</class>
+ <widget class="QWidget" name="UtilityWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>965</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">UtilityWidget</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1922</width>
+     <height>961</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_main">
+    <widget class="QWidget" name="widgetAssay" native="true">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>83</y>
+       <width>511</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetSystem" native="true">
+     <property name="geometry">
+      <rect>
+       <x>762</x>
+       <y>83</y>
+       <width>1011</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetCheck" native="true">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>485</y>
+       <width>511</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetInstrument" native="true">
+     <property name="geometry">
+      <rect>
+       <x>762</x>
+       <y>485</y>
+       <width>1011</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="DebugBtnWgt" native="true">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>755</y>
+       <width>1250</width>
+       <height>141</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>widgetSystem</zorder>
+    <zorder>widgetAssay</zorder>
+    <zorder>widgetCheck</zorder>
+    <zorder>widgetInstrument</zorder>
+    <zorder>DebugBtnWgt</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

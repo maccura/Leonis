@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChUltraMixModuleWgt</class>
+ <widget class="QWidget" name="ChUltraMixModuleWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1230</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">ChUltraMixModuleWgt</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>656</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerPixel</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>44</number>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>44</number>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>0</y>
+     <width>611</width>
+     <height>656</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>名称</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>电流标定返回值：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>300</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>参考值</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>390</y>
+      <width>481</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_save">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>140</y>
+      <width>111</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_eleCali">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>290</y>
+      <width>151</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>电流标定</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_useRet">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>151</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>使用电流标定返回值</string>
+    </property>
+    <property name="buttons" stdset="0">
+     <string notr="true">btn_dlg</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_val">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="maximum">
+     <number>999999999</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

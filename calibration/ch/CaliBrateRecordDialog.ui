@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CaliBrateRecordDialog</class>
+ <widget class="BaseDlg" name="CaliBrateRecordDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1640</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="selectWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>1531</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>29</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>登记方式</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>29</y>
+      <width>1001</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>70</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QRadioButton" name="radioButton_scanModel">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>扫描登记</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_manualModel">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>手工登记</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_downModel">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>下载登记</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1151</x>
+      <y>28</y>
+      <width>391</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_16">
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_symbol">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_symbolName">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>不区分试剂批号</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>1571</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="scan_hand_page">
+    <widget class="QGroupBox" name="groupBox_input">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>375</width>
+       <height>675</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="inputLayout">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>30</number>
+      </property>
+      <property name="rightMargin">
+       <number>30</number>
+      </property>
+      <property name="bottomMargin">
+       <number>30</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="scanLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="scan">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>条码扫描</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="scanEdit">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="caliGrpNameLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="name">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>校准品名称</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="nameEdit">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maxLength">
+           <number>50</number>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="caliSnLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="calibrateSn">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>校准品编号</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="snedit">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="caliLotLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="calibratelot">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>校准品批号</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lotedit">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="caliTypeLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="calibratelot_3">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>校准品类型</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cali_meterial_type">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="timeoutLayout">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="expiredate">
+          <property name="minimumSize">
+           <size>
+            <width>115</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>失效日期</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QBaseDateEdit" name="dateEdit">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_errorshow">
+        <property name="minimumSize">
+         <size>
+          <width>339</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>17</width>
+          <height>72</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTableView" name="calibrateBrowse">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>51</y>
+       <width>1151</width>
+       <height>629</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>200</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+    </widget>
+    <widget class="QCheckBox" name="calibrate_water">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>5</y>
+       <width>1141</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>校准品1使用系统水</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="bks" stdset="0">
+      <string>gray</string>
+     </property>
+     <property name="paddings_left" stdset="0">
+      <string>l_10</string>
+     </property>
+     <property name="bordersB" stdset="0">
+      <string>bottom</string>
+     </property>
+     <property name="bordersT" stdset="0">
+      <string>top</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_out">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1540</width>
+       <height>685</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_v_3">
+     <property name="geometry">
+      <rect>
+       <x>1534</x>
+       <y>50</y>
+       <width>1</width>
+       <height>630</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_v_4">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>50</y>
+       <width>1</width>
+       <height>630</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_h_5">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>679</y>
+       <width>1151</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_h_tableTop">
+     <property name="geometry">
+      <rect>
+       <x>384</x>
+       <y>50</y>
+       <width>1151</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <zorder>groupBox_out</zorder>
+    <zorder>groupBox_input</zorder>
+    <zorder>calibrateBrowse</zorder>
+    <zorder>calibrate_water</zorder>
+    <zorder>line_v_3</zorder>
+    <zorder>line_h_5</zorder>
+    <zorder>line_v_4</zorder>
+    <zorder>line_h_tableTop</zorder>
+   </widget>
+   <widget class="QWidget" name="download_page">
+    <widget class="QTableView" name="calibrateDown">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>89</y>
+       <width>1540</width>
+       <height>596</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>254</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>46</number>
+     </attribute>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_screen">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1540</width>
+       <height>79</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="borders" stdset="0">
+      <string>all</string>
+     </property>
+     <property name="bks" stdset="0">
+      <string>gray</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <property name="spacing">
+       <number>120</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>校准品名称</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_cali_name">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>校准品批号</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit__cali_lot">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <property name="spacing">
+         <number>30</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>校准品效期</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_expire_date">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>290</width>
+              <height>40</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>全部</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>有效期内</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_query">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>查询</string>
+            </property>
+            <property name="buttons" stdset="0">
+             <string notr="true">flat_btn</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_reset_cal">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>重置</string>
+            </property>
+            <property name="buttons" stdset="0">
+             <string notr="true">flat_btn</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="line_h_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>89</y>
+       <width>1540</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_h_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>684</y>
+       <width>1540</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_v">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>89</y>
+       <width>1</width>
+       <height>596</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_v_2">
+     <property name="geometry">
+      <rect>
+       <x>1539</x>
+       <y>89</y>
+       <width>1</width>
+       <height>596</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lines" stdset="0">
+      <string>solid</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>861</y>
+     <width>1546</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>14</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="yes">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="no">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="buttons" stdset="0">
+       <string notr="true">btn_dlg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QBaseDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header location="global">shared/QComDelegate.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

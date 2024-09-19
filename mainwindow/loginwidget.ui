@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWidget</class>
+ <widget class="QWidget" name="LoginWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LoginWidget</string>
+  </property>
+  <widget class="QLineEdit" name="userNameEdit">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>485</y>
+     <width>405</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+   <property name="lineEdits" stdset="0">
+    <string>login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="userNameLabel">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>500</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordEdit">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>565</y>
+     <width>405</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="lineEdits" stdset="0">
+    <string>login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="errorTips">
+   <property name="geometry">
+    <rect>
+     <x>762</x>
+     <y>616</y>
+     <width>701</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>登录名或密码有误，请重新输入。</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="backgrounds" stdset="0">
+    <string>errTips</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>645</y>
+     <width>405</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>登 录</string>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>login</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>645</y>
+     <width>49</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttons" stdset="0">
+    <string>exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="passwordLabel">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>585</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bkLoginLab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo_main">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>345</y>
+     <width>1920</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="devtype" stdset="0">
+    <string>ch-im</string>
+   </property>
+  </widget>
+  <zorder>bkLoginLab</zorder>
+  <zorder>userNameEdit</zorder>
+  <zorder>userNameLabel</zorder>
+  <zorder>passwordEdit</zorder>
+  <zorder>errorTips</zorder>
+  <zorder>loginButton</zorder>
+  <zorder>passwordLabel</zorder>
+  <zorder>logo_main</zorder>
+  <zorder>closeButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>userNameEdit</tabstop>
+  <tabstop>passwordEdit</tabstop>
+  <tabstop>loginButton</tabstop>
+  <tabstop>closeButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

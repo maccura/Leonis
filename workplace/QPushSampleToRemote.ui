@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPushSampleToRemote</class>
+ <widget class="BaseDlg" name="QPushSampleToRemote">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPushSampleToRemote</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>29</y>
+     <width>671</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ok_btn_multi">
+     <property name="geometry">
+      <rect>
+       <x>388</x>
+       <y>274</y>
+       <width>116</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string notr="true">btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cancle_btn_multi">
+     <property name="geometry">
+      <rect>
+       <x>518</x>
+       <y>274</y>
+       <width>116</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+     <property name="buttons" stdset="0">
+      <string notr="true">btn_dlg</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>40</y>
+       <width>501</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="firstresult_btn_multi">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>361</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>检测结果</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>471</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QRadioButton" name="recheck_btn_multi">
+         <property name="text">
+          <string>复查结果</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_multi">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QCheckBox" name="transfer_set">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>214</y>
+       <width>601</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>不再显示该弹窗（默认执行本次设置内容）</string>
+     </property>
+     <property name="fonts" stdset="0">
+      <string notr="true">16</string>
+     </property>
+    </widget>
+    <zorder>label_2</zorder>
+    <zorder>groupBox_2</zorder>
+    <zorder>transfer_set</zorder>
+    <zorder>ok_btn_multi</zorder>
+    <zorder>cancle_btn_multi</zorder>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>101</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数据类型：</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseDlg</class>
+   <extends>QWidget</extends>
+   <header>shared/basedlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

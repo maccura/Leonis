@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QAssayTabWidgets</class>
+ <widget class="QTabWidget" name="QAssayTabWidgets">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QAssayTabWidgets</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabBar::tab  {
+	min-height: 32px;
+	max-height: 32px;
+	min-width: 32px;
+	max-width: 32px;
+	border-width:9px 9px 9px 9px;
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg.png) 9 9 9 9 fill repeat;
+	font-size: 18px;
+	margin-left: 15px;
+	border-radius: 0;
+
+
+}
+
+
+QTabWidget::tab-bar  {
+	alignment: right;
+	margin-right: 10px;
+}	
+
+
+
+QTabBar::tab:hover  {
+	border-width:9px 9px 9px 9px;
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg-hv.png) 9 9 9 9 fill repeat;
+	border-radius: 0;
+	color: #333;
+}
+
+QTabBar::tab:pressed  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+QTabBar::tab:selected  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+
+QTabBar::tab:disabled  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(224, 224, 224),stop:1 rgb(255, 255, 255));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-dis.png) 9 9 9 9 fill repeat;
+	color: #adadad;
+}
+
+
+
+
+
+
+
+#dilution, #batchRegister, #save  {
+
+	min-height: 32px;
+	max-height: 32px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg.png) 9 9 9 9 fill repeat;
+	font-size: 18px;
+}
+#dilution:hover, #batchRegister:hover, #save:hover  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(195, 195, 198), stop:1 rgb(253, 253, 253));
+    border-image: url(:/Leonis/resource/image/bk-btn-dlg-hv.png) 9 9 9 9 fill repeat;
+}
+#dilution:pressed, #batchRegister:pressed, #save:pressed  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(0, 78, 174),stop:1 rgb(4, 104, 224));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-pressed.png) 9 9 9 9 fill repeat;
+	color: #fff;
+}
+#dilution:disabled, #batchRegister:disabled, #save:disabled  {
+	border-width:9px 9px 9px 9px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(224, 224, 224),stop:1 rgb(255, 255, 255));
+	border-image: url(:/Leonis/resource/image/bk-btn-dlg-dis.png) 9 9 9 9 fill repeat;
+	color: #adadad;
+}</string>
+  </property>
+  <property name="tabPosition">
+   <enum>QTabWidget::North</enum>
+  </property>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

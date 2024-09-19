@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImCalHisWidget</class>
+ <widget class="QWidget" name="ImCalHisWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>853</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImCalHisWidget</string>
+  </property>
+  <widget class="QTableWidget" name="AssayNameTbl">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>4</y>
+     <width>230</width>
+     <height>785</height>
+    </rect>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>46</number>
+   </attribute>
+  </widget>
+  <widget class="QTableWidget" name="CalRltTbl">
+   <property name="geometry">
+    <rect>
+     <x>851</x>
+     <y>4</y>
+     <width>1059</width>
+     <height>157</height>
+    </rect>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>37</number>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="CalHisCurveWgt" native="true">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>166</y>
+     <width>1668</width>
+     <height>621</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="CalInfoFrame">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>4</y>
+     <width>604</width>
+     <height>157</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #e4e7ec;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="RgntLotLab">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>74</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂批号：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AssayNameLab">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>项目名称：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ConcUnitLab">
+    <property name="geometry">
+     <rect>
+      <x>293</x>
+      <y>30</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浓度单位：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CalLotLab">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>118</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准品批号：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CalTimeLab">
+    <property name="geometry">
+     <rect>
+      <x>293</x>
+      <y>118</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校准时间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RgntBnLab">
+    <property name="geometry">
+     <rect>
+      <x>293</x>
+      <y>74</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>试剂瓶号：</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

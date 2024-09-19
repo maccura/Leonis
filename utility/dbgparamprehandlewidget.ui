@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DbgParamPrehandleWidget</class>
+ <widget class="QWidget" name="DbgParamPrehandleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1562</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">DbgParamPrehandleWidget</string>
+  </property>
+  <widget class="QFrame" name="ParamFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1562</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#ParamFrame
+{
+	border:1px solid #a4a4a4;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="FirAddRgntVolEdit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>60</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AssayNaneLab">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>项目名称</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AssayNaneEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>21</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FirAddRgntVolLab">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>第一步加试剂数量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DefaultDltRatioLab">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>默认稀释倍数</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="DefaultDltRatioEdit">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>60</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AssayCodeEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>60</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AssayCodeLab">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>20</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>通道号</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ReactionMethodLab">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>反应方式</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SndAddRgntVolEdit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>160</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SndAddRgntVolLab">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>第二步加试剂数量</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="MaxDltRatioEdit">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>160</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MaxDltRatioLab">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>120</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>最大稀释倍数</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SampVolEdit">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>160</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SampVolLab">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>120</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加样量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DltIdLab">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>稀释液ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="DltIdEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WhetherTubeLab">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>450</y>
+      <width>181</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>是否转管</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="WhetherTubeEdit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>490</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SampVolUnitLab">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>160</y>
+      <width>71</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ul</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>220</y>
+      <width>1551</width>
+      <height>194</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTableView" name="RgntParamTbl">
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>46</number>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="RgntParamTbl_2">
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>46</number>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="ReactionMethodCombo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

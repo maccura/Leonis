@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImAnalysisParamWidget</class>
+ <widget class="QWidget" name="ImAnalysisParamWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1561</width>
+    <height>868</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AnalysisParamWidget</string>
+  </property>
+  <widget class="QFrame" name="ParamFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1551</width>
+     <height>811</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QGroupBox" name="AnalysisParam_info">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>1541</width>
+      <height>495</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>基础信息</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="borders" stdset="0">
+     <string>group_tit</string>
+    </property>
+    <widget class="QLabel" name="AssayNaneLab_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>项目名称</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AssayNaneLab">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>简    称</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fullNameEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AssayNameEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="PrintNameEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PrintNameLab">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>281</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印名称</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>350</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>参数版本</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AssayNumLab">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>通道号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AssayCodeEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ResUnitLab">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>145</y>
+       <width>281</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>结果单位</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ResUnitCombo">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DecimalLab">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>250</y>
+       <width>271</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>小数位数</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="DecimalCombo">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>290</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>301</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>默认稀释倍数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="DefaultDiluEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_7">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>150</y>
+       <width>511</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>线性范围</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AlarmRangeLowerEdit">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>190</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_6">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>50</y>
+       <width>511</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>报告范围</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="RepRangeLowerEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>90</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="AssayVerCombo">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>390</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_2">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>50</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开瓶有效期（天）</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="OpenDaysEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>90</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_3">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>150</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>瓶校准周期（天）</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="BotCaliWeekEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>190</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_4">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>250</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>批校准周期（天）</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LotCaliWeekEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>290</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="RepRangeUpperEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>90</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AlarmRangeUpperEdit">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>190</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Lab_8">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>250</y>
+       <width>441</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>曲线延伸</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>190</y>
+       <width>20</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>90</y>
+       <width>20</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="l_extend_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>290</y>
+       <width>61</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>L</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="h_extend_ckbox">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>290</y>
+       <width>61</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>H</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="PosNegGrpBox">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>503</y>
+      <width>1541</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>定量项目阴/阳性阈值</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="borders" stdset="0">
+     <string>group_tit_check</string>
+    </property>
+    <widget class="QWidget" name="widget1" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>45</y>
+       <width>1501</width>
+       <height>239</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="Lab_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>441</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>175</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>阴  性</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Lab_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>441</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>175</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>阳  性</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>442</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QComboBox" name="NegOperatorCombo">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="NegNumEdit">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maxLength">
+          <number>15</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>442</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QComboBox" name="PosOperatorCombo">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="PosNumEdit">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maxLength">
+          <number>15</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="line_v_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1</width>
+     <height>793</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_v_2">
+   <property name="geometry">
+    <rect>
+     <x>1550</x>
+     <y>0</y>
+     <width>1</width>
+     <height>790</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1556</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="line_h_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>792</y>
+     <width>1556</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lines" stdset="0">
+    <string>solid</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>fullNameEdit</tabstop>
+  <tabstop>AssayNameEdit</tabstop>
+  <tabstop>PrintNameEdit</tabstop>
+  <tabstop>DefaultDiluEdit</tabstop>
+  <tabstop>AssayCodeEdit</tabstop>
+  <tabstop>ResUnitCombo</tabstop>
+  <tabstop>DecimalCombo</tabstop>
+  <tabstop>AssayVerCombo</tabstop>
+  <tabstop>OpenDaysEdit</tabstop>
+  <tabstop>BotCaliWeekEdit</tabstop>
+  <tabstop>LotCaliWeekEdit</tabstop>
+  <tabstop>RepRangeLowerEdit</tabstop>
+  <tabstop>RepRangeUpperEdit</tabstop>
+  <tabstop>AlarmRangeLowerEdit</tabstop>
+  <tabstop>AlarmRangeUpperEdit</tabstop>
+  <tabstop>l_extend_ckbox</tabstop>
+  <tabstop>h_extend_ckbox</tabstop>
+  <tabstop>PosNegGrpBox</tabstop>
+  <tabstop>PosOperatorCombo</tabstop>
+  <tabstop>PosNumEdit</tabstop>
+  <tabstop>NegOperatorCombo</tabstop>
+  <tabstop>NegNumEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
